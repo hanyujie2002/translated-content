@@ -599,4 +599,4 @@ GFM 表格语法的主要限制是：
 顶部和底部外边距对放置的行级元素（例如，\{{HTMLElement("span")}} 或 \{{HTMLElement("code")}}）没有影响。
 ```
 
-参见[使用宏](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Macros)以获取更多关于宏的信息。
+参见[使用宏](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Macros) 以获取更多关于宏的信息。

@@ -277,7 +277,7 @@ const button = driver.findElement(By.css("button:nth-of-type(1)"));
 
 ### 测试元素
 
-同 web 文档和元素交互的方式很多。在 WebDriver 的文档中有很多常用的例子，你可以从[获取文本值](https://www.selenium.dev/documentation/webdriver/elements/information/#text-content)开始。
+同 web 文档和元素交互的方式很多。在 WebDriver 的文档中有很多常用的例子，你可以从[获取文本值](https://www.selenium.dev/documentation/webdriver/elements/information/#text-content) 开始。
 
 如果需要获取按钮中的文本，可以这样操作：
 
@@ -578,7 +578,7 @@ driver.quit();
 
 点击测试链接，会打开一个播放记录了测试视频的屏幕和在测试过程中相关的日志详情。
 
-> **备注：** Browserstack 自动化仪表盘的 _Resources_ 菜单选项上提供了许多运行自动化测试的有用信息。查看[使用 Node JS 编写自动化测试的文档](https://www.browserstack.com/docs/automate/selenium/getting-started/nodejs)获取相关信息，研究一下使用 BrowserStack 可以帮你做到哪些事情。
+> **备注：** Browserstack 自动化仪表盘的 _Resources_ 菜单选项上提供了许多运行自动化测试的有用信息。查看[使用 Node JS 编写自动化测试的文档](https://www.browserstack.com/docs/automate/selenium/getting-started/nodejs) 获取相关信息，研究一下使用 BrowserStack 可以帮你做到哪些事情。
 
 > **备注：** 如果你不想自己写测试用例，可以使用文档中嵌入的生成器，参见[运行你的首个测试](https://www.browserstack.com/docs/automate/selenium/getting-started/nodejs#run-your-first-test)）。
 
@@ -642,7 +642,7 @@ driver.quit();
 
 代码很直观——测试一完成，就会发送一个 API 调用到 BrowserStack 来更新测试状态是通过还是完成，并且给出相关的原因。
 
-现在回到 [BrowserStack 自动化仪表盘](https://www.browserstack.com/automate)页面，你会看到测试会话如之前一样正常运行，并且增加了更新的数据：
+现在回到 [BrowserStack 自动化仪表盘](https://www.browserstack.com/automate) 页面，你会看到测试会话如之前一样正常运行，并且增加了更新的数据：
 
 ![BrowserStack 自定义结果](bstack_custom_results.png)
 
@@ -712,7 +712,7 @@ driver.quit();
 
 > **备注：** Sauce Labs 的[平台配置器](https://saucelabs.com/platform/platform-configurator#/)是一个有用的工具，可以根据你想测试的浏览器或操作系统，生成 capability 对象，以反馈给你的驱动实例。
 
-> **备注：** 你可以查看[使用 Selenium 进行 Web 自动化测试](https://docs.saucelabs.com/web-apps/automated-testing/selenium/)和[实时 Selenium Node.js 测试](https://docs.saucelabs.com/web-apps/automated-testing/selenium/sample-scripts/#nodejs)获取更多关于 Sauce Labs 和 Selenium 测试的有用信息。
+> **备注：** 你可以查看[使用 Selenium 进行 Web 自动化测试](https://docs.saucelabs.com/web-apps/automated-testing/selenium/)和[实时 Selenium Node.js 测试](https://docs.saucelabs.com/web-apps/automated-testing/selenium/sample-scripts/#nodejs) 获取更多关于 Sauce Labs 和 Selenium 测试的有用信息。
 
 #### 编程填充 Sauce Labs 的测试详情
 
@@ -774,7 +774,7 @@ driver.quit();
 
 这里，我们根据测试结果是通过或失败，将 `testPassed` 变量设置为 `true` 或 `false`，然后使用 `saucelabs.updateJob()` 方法来更新详情。
 
-回到 [Sauce Labs 自动化测试仪表盘](https://app.saucelabs.com/dashboard/tests)页面，你应该看到你刚创建的 job 现在有更新的数据附在上面：
+回到 [Sauce Labs 自动化测试仪表盘](https://app.saucelabs.com/dashboard/tests) 页面，你应该看到你刚创建的 job 现在有更新的数据附在上面：
 
 ![Sauce Labs 更新过的 Job 信息](sauce_labs_updated_job_info.png)
 

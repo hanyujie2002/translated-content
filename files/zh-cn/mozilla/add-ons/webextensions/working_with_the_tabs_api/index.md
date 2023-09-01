@@ -17,7 +17,7 @@ slug: Mozilla/Add-ons/WebExtensions/Working_with_the_Tabs_API
 
 最后，我们通过查看 API 提供的其他一些其他功能。
 
-> **备注：** 其他地方有一些 Tab API 功能。这些是可用于使用脚本操作选项卡内容的方法{{WebExtAPIRef("tabs.connect")}}，{{WebExtAPIRef("tabs.sendMessage")}}和{{WebExtAPIRef("tabs.executeScript")}}。如果你需要有关这些方法的更多信息，请参阅概念文章[内容脚本](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Content_scripts)和操作指南[修改网页](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Modify_a_web_page)。
+> **备注：** 其他地方有一些 Tab API 功能。这些是可用于使用脚本操作选项卡内容的方法{{WebExtAPIRef("tabs.connect")}}，{{WebExtAPIRef("tabs.sendMessage")}}和{{WebExtAPIRef("tabs.executeScript")}}。如果你需要有关这些方法的更多信息，请参阅概念文章[内容脚本](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Content_scripts) 和操作指南[修改网页](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Modify_a_web_page)。
 
 ## 权限和选项卡 API
 
@@ -40,7 +40,7 @@ slug: Mozilla/Add-ons/WebExtensions/Working_with_the_Tabs_API
 - 用户必须通过其浏览器或页面操作，上下文菜单或快捷键与扩展进行交互。
 - 它仅在活动选项卡中授予权限。
 
-这种方法的好处是用户不会收到权限警告，也就是说你的扩展程序可以“访问所有网站的数据”。这是因为`<all_urls>`权限使扩展能够在任何选项卡中随时执行脚本，而[`"activeTab"`](/zh-CN/Add-ons/WebExtensions/manifest.json/permissions#activeTab_permission)仅限于允许扩展在当前选项卡中执行用户请求的操作。
+这种方法的好处是用户不会收到权限警告，也就是说你的扩展程序可以“访问所有网站的数据”。这是因为`<all_urls>`权限使扩展能够在任何选项卡中随时执行脚本，而[`"activeTab"`](/zh-CN/Add-ons/WebExtensions/manifest.json/permissions#activeTab_permission) 仅限于允许扩展在当前选项卡中执行用户请求的操作。
 
 ## Discovering more about tabs and their properties
 

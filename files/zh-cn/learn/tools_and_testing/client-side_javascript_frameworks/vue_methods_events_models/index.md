@@ -109,7 +109,7 @@ slug: Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_methods_even
 
 ![Our todo list app rendered with a text input to enter new todos](rendered-form-with-text-input.png)
 
-如果你填写并单击“添加”按钮，页面会将表单发送回服务器，但这并不是我们真正想要的。我们真正想要做的是在 [`submit` 事件](/zh-CN/docs/Web/API/HTMLFormElement/submit_event)上运行一个方法，该方法将添加 `App` 中定义的 `ToDoItem` 数据列表的新待办事项。为此，我们需要向组件实例添加一个方法。
+如果你填写并单击“添加”按钮，页面会将表单发送回服务器，但这并不是我们真正想要的。我们真正想要做的是在 [`submit` 事件](/zh-CN/docs/Web/API/HTMLFormElement/submit_event) 上运行一个方法，该方法将添加 `App` 中定义的 `ToDoItem` 数据列表的新待办事项。为此，我们需要向组件实例添加一个方法。
 
 ## 创建一个方法并用 v-on 绑定这个方法到一个事件上
 
@@ -217,7 +217,7 @@ slug: Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_methods_even
 
 与事件修饰符类似，我们也可以添加修饰符来改变 `v-model` 的行为。在我们的案例中，有两个值得考虑。第一个，`.trim`，将删除输入之前或之后的空格。我们可以将修饰符添加到我们的 `v-model` 语句中，如下所示：`v-model.trim="label"`。
 
-我们应该考虑的第二个修饰符称为 `.lazy`。当 `v-model` 同步文本输入的值时，此修饰符会发生变化。如前所述，`v-model` 同步通过使用事件更新变量来工作。对于文本输入，此同步使用 [`input` 事件](/zh-CN/docs/Web/API/HTMLElement/input_event)进行。通常，这意味着 Vue 在每次击键后都会同步数据。`.lazy` 修饰符导致 `v-model` 使用 [`change` 事件](/zh-CN/docs/Web/API/HTMLElement/change_event)代替。这意味着 Vue 只会在输入失去焦点或提交表单时同步数据。就我们的目的而言，这更合理，因为我们只需要最终数据。
+我们应该考虑的第二个修饰符称为 `.lazy`。当 `v-model` 同步文本输入的值时，此修饰符会发生变化。如前所述，`v-model` 同步通过使用事件更新变量来工作。对于文本输入，此同步使用 [`input` 事件](/zh-CN/docs/Web/API/HTMLElement/input_event) 进行。通常，这意味着 Vue 在每次击键后都会同步数据。`.lazy` 修饰符导致 `v-model` 使用 [`change` 事件](/zh-CN/docs/Web/API/HTMLElement/change_event) 代替。这意味着 Vue 只会在输入失去焦点或提交表单时同步数据。就我们的目的而言，这更合理，因为我们只需要最终数据。
 
 要同时使用 `.lazy` 修饰符和 `.trim` 修饰符，我们可以将它们链接起来，例如 `v-model.lazy.trim="label"`。
 

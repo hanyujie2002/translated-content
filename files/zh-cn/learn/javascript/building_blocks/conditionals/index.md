@@ -204,7 +204,7 @@ if (choice === "sunny") {
 
 ### 逻辑运算符：与、或、非
 
-如果要测试多个条件，而不需要编写嵌套 `if...else` 语句，[逻辑运算符](/zh-CN/docs/Web/JavaScript/Reference/Operators)可以帮助你。当在条件下使用时，前两个执行以下操作：
+如果要测试多个条件，而不需要编写嵌套 `if...else` 语句，[逻辑运算符](/zh-CN/docs/Web/JavaScript/Reference/Operators) 可以帮助你。当在条件下使用时，前两个执行以下操作：
 
 - `&&`——逻辑与。允许你把两个或多个表达式连在一起，这样所有的表达式都必须单独评估为 `true`，整个表达式才能返回 `true`。
 - `||`——逻辑或。允许你把两个或多个表达式连在一起，其中一个或多个表达式必须单独评估为 `true`，整个表达式才能返回 `true`。
@@ -361,7 +361,7 @@ function setWeather() {
 
 ## 三元运算符
 
-在我们举一些例子之前，我们要介绍一下最后一句语法。[三元或条件运算符](/zh-CN/docs/Web/JavaScript/Reference/Operators/Conditional_operator)是一个语法的小点，用于测试一个条件，并返回一个值/表达式，如果它是 `true` 则返回其中一个，否则（`false`）返回另外一个——这在某些情况下是很有用的，如果你通过 `true`/`false` 条件来选择，这比 `if...else` 块占用的代码要少很多。伪代码看起来像这样：
+在我们举一些例子之前，我们要介绍一下最后一句语法。[三元或条件运算符](/zh-CN/docs/Web/JavaScript/Reference/Operators/Conditional_operator) 是一个语法的小点，用于测试一个条件，并返回一个值/表达式，如果它是 `true` 则返回其中一个，否则（`false`）返回另外一个——这在某些情况下是很有用的，如果你通过 `true`/`false` 条件来选择，这比 `if...else` 块占用的代码要少很多。伪代码看起来像这样：
 
 ```
 condition ? 运行这段代码 : 否则，运行这段代码
@@ -412,7 +412,7 @@ select.addEventListener("change", () =>
 
 在这里，我们有一个 {{htmlelement('select')}} 选择主题（黑色或白色）的元素，加上一个简单 {{htmlelement("Heading_Elements", "h1")}} 以显示网站标题。我们也有一个函数叫做 `update()`，它将两种颜色作为参数（输入）。网站的背景颜色设置为第一个提供的颜色，其文本颜色设置为第二个提供的颜色。
 
-最后，我们还有一个 [onchange](/zh-CN/docs/Web/API/HTMLElement/change_event)事件监听器，用于运行一个包含三元运算符的函数。它以 `select.value === 'black'` 测试条件开始。如果这返回 `true`，我们运行带有黑色和白色参数的函数 `update()`，这意味着我们最终得到黑色的背景颜色和白色的文字颜色。如果返回 `false`，我们运行带有白色和黑色参数的函数 `update()`，这意味着站点颜色被反转。
+最后，我们还有一个 [onchange](/zh-CN/docs/Web/API/HTMLElement/change_event) 事件监听器，用于运行一个包含三元运算符的函数。它以 `select.value === 'black'` 测试条件开始。如果这返回 `true`，我们运行带有黑色和白色参数的函数 `update()`，这意味着我们最终得到黑色的背景颜色和白色的文字颜色。如果返回 `false`，我们运行带有白色和黑色参数的函数 `update()`，这意味着站点颜色被反转。
 
 > **备注：** 你可以[在 GitHub 上找到这个例子](https://github.com/mdn/learning-area/blob/main/javascript/building-blocks/simple-ternary.html)（也可以[在线运行](https://mdn.github.io/learning-area/javascript/building-blocks/simple-ternary.html)。）
 

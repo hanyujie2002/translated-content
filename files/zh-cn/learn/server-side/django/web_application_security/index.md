@@ -5,7 +5,7 @@ slug: Learn/Server-side/Django/web_application_security
 
 {{LearnSidebar}}{{PreviousMenuNext("Learn/Server-side/Django/Deployment", "Learn/Server-side/Django/django_assessment_blog", "Learn/Server-side/Django")}}
 
-保护用户数据是任何网站设计的重要部分。我们之前在文章[web 安全](/zh-CN/docs/Web/Security)中解释了一些更常见的安全威胁--本文提供了 Django 的内置保护如何处理这些威胁的实际演示。
+保护用户数据是任何网站设计的重要部分。我们之前在文章 [web 安全](/zh-CN/docs/Web/Security) 中解释了一些更常见的安全威胁--本文提供了 Django 的内置保护如何处理这些威胁的实际演示。
 
 <table class="learn-box standard-table">
   <tbody>
@@ -31,7 +31,7 @@ slug: Learn/Server-side/Django/web_application_security
 
 ## 概述
 
-[web 安全](/zh-CN/docs/Web/Security)主題提供一个概述，说明了网站安全对于服务器端设计的意义，以及以及一些需要应对的常见威胁。本文中包含一个关键的概念：如果网站信任任何来自浏览器的数据，几乎所有的攻击方法都会成功。
+[web 安全](/zh-CN/docs/Web/Security) 主題提供一个概述，说明了网站安全对于服务器端设计的意义，以及以及一些需要应对的常见威胁。本文中包含一个关键的概念：如果网站信任任何来自浏览器的数据，几乎所有的攻击方法都会成功。
 
 > **警告：** 切记，对于网站安全来说最重要一点就是“**永远不要相信浏览器端提交的数据**”。这些数据包括使用 `GET` 方式请求时 URL 中的参数，`POST` 方式请求的数据，HTTP headers 和 cookies，以及用户上传的文件等等。请确保一定要检查和清洗这些提交的数据。对于网站安全来说，总是要做好最坏的打算。
 
@@ -45,7 +45,7 @@ slug: Learn/Server-side/Django/web_application_security
 
 XSS(英语：Cross site scripting，通常简称：XSS) 是指一类恶意攻击者将代码通过网站注入到其他用户浏览器中的攻击方式。一般攻击者会把恶意代码作为普通数据放入到网站数据库中，这样其他用户在获取和展示数据的过程中就会受到攻击。此外，攻击者还可以通过引诱用户点击某些链接来执行恶意的 JavaScript 代码。
 
-Django 的模板系统可以帮你抵挡大部分的 XSS 攻击，实现的方式在于转义对于 HTML 来说比较**“危险”**的特殊字符 (可参考官方文档：[escaping specific characters](https://docs.djangoproject.com/en/2.0/ref/templates/language/#automatic-html-escaping))。现在，我们用[Django Tutorial Part 9: Working with forms](/zh-CN/docs/learn/Server-side/Django/Forms) 这一章中的“创建作者”表单来做个演示，尝试向我们的本地图书馆网站注入一些 JavaScript 脚本。
+Django 的模板系统可以帮你抵挡大部分的 XSS 攻击，实现的方式在于转义对于 HTML 来说比较**“危险”**的特殊字符 (可参考官方文档：[escaping specific characters](https://docs.djangoproject.com/en/2.0/ref/templates/language/#automatic-html-escaping))。现在，我们用 [Django Tutorial Part 9: Working with forms](/zh-CN/docs/learn/Server-side/Django/Forms) 这一章中的“创建作者”表单来做个演示，尝试向我们的本地图书馆网站注入一些 JavaScript 脚本。
 
 1. 使用开发服务器启动网站 (参考命令：`python3 manage.py runserver`)。
 2. 在浏览器中打开网站，并用超级用户身份登录。
@@ -159,14 +159,14 @@ Django 还提供了很多其他形式的防护措施 (大部分不是很容易�
 - SQL 注入防护
   - : SQL 注入漏洞可以让攻击者直接对网站数据库执行构造好的 SQL 语句，在无需用户权限的情况下即可实现对数据的访问、修改甚至是删除。绝大多数的情况下，使用 Django 的查询集/模型直接进行数据库访问时，实际使用的 SQL 语句已经被底层的数据库驱动妥善地进行了转义。如果必须要直接执行自定义的 SQL 语句，那么也请一定要注意防范 SQL 注入的问题。
 - 点击劫持防护
-  - : 点击劫持是指攻击者通过诱导用户，用户本意要访问 A 网站，最终却访问到了 B 网站。举例说明，攻击者可以给用户显示一个合法的银行网站，同时把用户名密码登录框改为不可见的[\<iframe>](/zh-CN/docs/Web/HTML/Element/iframe) 标签，以此来窃取用户的登录信息。Django 通过 [`X-Frame-Options`](https://docs.djangoproject.com/en/2.0/ref/middleware/#django.middleware.clickjacking.XFrameOptionsMiddleware)中间件来防御点击劫持攻击，在支持的浏览器中，这种方式可以避免网站在 iframe 中显示。
+  - : 点击劫持是指攻击者通过诱导用户，用户本意要访问 A 网站，最终却访问到了 B 网站。举例说明，攻击者可以给用户显示一个合法的银行网站，同时把用户名密码登录框改为不可见的[\<iframe>](/zh-CN/docs/Web/HTML/Element/iframe) 标签，以此来窃取用户的登录信息。Django 通过 [`X-Frame-Options`](https://docs.djangoproject.com/en/2.0/ref/middleware/#django.middleware.clickjacking.XFrameOptionsMiddleware) 中间件来防御点击劫持攻击，在支持的浏览器中，这种方式可以避免网站在 iframe 中显示。
 - 强制 SSL/HTTPS
 
   - : web 服务器可通过启用 SSL/HTTPS 来加密网站和浏览器之间的所有通信流量，包括了身份认证及其他通过纯文本方式来发送的数据流量 (强烈建议启用 HTTPS)。如果 HTTPS 已启用，Django 还提供了一起实用的保护措施：
 
 - [`SECURE_PROXY_SSL_HEADER`](https://docs.djangoproject.com/en/2.0/ref/settings/#std:setting-SECURE_PROXY_SSL_HEADER) 设置可以用于检查内容是否安全，可用于代理和 Django 之间使用非 HTTPS 方式通讯的情况下。
 - [`SECURE_SSL_REDIRECT`](https://docs.djangoproject.com/en/2.0/ref/settings/#std:setting-SECURE_SSL_REDIRECT) 可以将所有 HTTP 的请求重定向到 HTTPS。
-- 使用 [HTTP Strict Transport Security](https://docs.djangoproject.com/en/2.0/ref/middleware/#http-strict-transport-security) (HSTS) 头来通知浏览器未来与此网站的连接仅使用 HTTPS。与 HTTP 连接重定向至 HTTPS 的配置相结合后，HSTS 可以确保之后的连接强制使用 HTTPS。HSTS 还有 [`SECURE_HSTS_SECOND`](https://docs.djangoproject.com/en/2.0/ref/settings/#std:setting-SECURE_HSTS_SECONDS)和 [`SECURE_HSTS_INCLUDE_SUBDOMAINS`](https://docs.djangoproject.com/en/2.0/ref/settings/#std:setting-SECURE_HSTS_INCLUDE_SUBDOMAINS) 等选项可以进行配置。
+- 使用 [HTTP Strict Transport Security](https://docs.djangoproject.com/en/2.0/ref/middleware/#http-strict-transport-security) (HSTS) 头来通知浏览器未来与此网站的连接仅使用 HTTPS。与 HTTP 连接重定向至 HTTPS 的配置相结合后，HSTS 可以确保之后的连接强制使用 HTTPS。HSTS 还有 [`SECURE_HSTS_SECOND`](https://docs.djangoproject.com/en/2.0/ref/settings/#std:setting-SECURE_HSTS_SECONDS) 和 [`SECURE_HSTS_INCLUDE_SUBDOMAINS`](https://docs.djangoproject.com/en/2.0/ref/settings/#std:setting-SECURE_HSTS_INCLUDE_SUBDOMAINS) 等选项可以进行配置。
 - 将 [`SESSION_COOKIE_SECURE`](https://docs.djangoproject.com/en/2.0/ref/settings/#std:setting-SESSION_COOKIE_SECURE) 和 [`CSRF_COOKIE_SECURE`](https://docs.djangoproject.com/en/2.0/ref/settings/#std:setting-CSRF_COOKIE_SECURE) 设置为 `True`。这些配置将确保 session 和 csrf 的 cookie 仅使用 HTTPS 连接来发送。
 
 - Host 头校验

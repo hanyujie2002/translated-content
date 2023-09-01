@@ -5,7 +5,7 @@ slug: MDN/Community/MDN_content
 
 {{MDNSidebar}}
 
-MDN Web 文档的问题在[内容仓库的议题](https://github.com/mdn/content/issues)中报告。本文将帮助你根据你的专业知识和空闲时间来找到*最适合解决*的议题，并概述解决这些议题的主要步骤。
+MDN Web 文档的问题在[内容仓库的议题](https://github.com/mdn/content/issues) 中报告。本文将帮助你根据你的专业知识和空闲时间来找到*最适合解决*的议题，并概述解决这些议题的主要步骤。
 
 > **备注：** 我们有很多内容上的错误——非常感谢你在解决这些错误时给予的任何帮助！
 
@@ -21,7 +21,7 @@ MDN Web 文档的问题在[内容仓库的议题](https://github.com/mdn/content
 | [effort: medium](https://github.com/mdn/content/labels/effort%3A%20medium) | 可能需要付出不小的精力的任务。例如，更新页面以反映正式规范中的变更。         |
 | [effort: large](https://github.com/mdn/content/labels/effort%3A%20large)   | 可能需要耗费大量精力的任务，例如撰写新的指南和参考页。                       |
 
-如果你更愿意浏览任务并按技术类别来选择，你还可以在[内容仓库的议题](https://github.com/mdn/content/issues)上找到内容类型的标签。
+如果你更愿意浏览任务并按技术类别来选择，你还可以在[内容仓库的议题](https://github.com/mdn/content/issues) 上找到内容类型的标签。
 
 ## 你能获取什么收益
 

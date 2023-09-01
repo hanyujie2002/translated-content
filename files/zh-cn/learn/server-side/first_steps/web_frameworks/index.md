@@ -224,11 +224,11 @@ Django 遵循“Batteries included”哲学，并且提供了几乎所有大多�
 
 虽然体量很小，Flask 却可以开箱即用地创造出完备网站。它包含一个开发服务器和调试器，并且包含对于 [Jinja2](https://github.com/pallets/jinja) 模板的支持，安全的 cookie, [unit testing](https://en.wikipedia.org/wiki/Unit_testing), 和 [RESTful](https://www.restapitutorial.com/lessons/restfulresourcenaming.html) request dispatching。它有很好的文档和一个活跃的社区。
 
-Flask 已经非常火爆了，部分因为那些需要在小型的、资源受限的系统中提供 web 服务的开发者们。(比如，在[Raspberry Pi](https://www.raspberrypi.org/), [Drone controllers](https://blogtarkin.com/drone-definitions-learning-the-drone-lingo/)等上面运行服务器)。
+Flask 已经非常火爆了，部分因为那些需要在小型的、资源受限的系统中提供 web 服务的开发者们。(比如，在 [Raspberry Pi](https://www.raspberrypi.org/), [Drone controllers](https://blogtarkin.com/drone-definitions-learning-the-drone-lingo/)等上面运行服务器)。
 
 ### Express (Node.js/JavaScript)
 
-[Express](https://expressjs.com/) 针对 [Node.js](https://nodejs.org/en/) 的快速的、unopinioned、灵活的、小型的 web 框架 (node 是用来运行 Javascript 的无浏览器的环境)。它为 web 和移动应用提供强大的系列功能，并且传输有用的 HTTP 工具、方法和[middleware](/zh-CN/docs/Glossary/Middleware).
+[Express](https://expressjs.com/) 针对 [Node.js](https://nodejs.org/en/) 的快速的、unopinioned、灵活的、小型的 web 框架 (node 是用来运行 Javascript 的无浏览器的环境)。它为 web 和移动应用提供强大的系列功能，并且传输有用的 HTTP 工具、方法和 [middleware](/zh-CN/docs/Glossary/Middleware).
 
 Express 非常受欢迎，主要因为它减轻了客户端 Javascript 程序到服务器端开发的迁移，并且部分因为它是资源节约型（底层的 node 环境在单线程中使用轻量级多任务处理，而不是为每个 web 请求提供单独的进程）。
 
@@ -236,7 +236,7 @@ Express 非常受欢迎，主要因为它减轻了客户端 Javascript 程序到
 
 很多非常受欢迎的服务器端编程和全栈框架（同时包括服务器端和客户端框架），包括 [Feathers](https://feathersjs.com/)、[ItemsAPI](https://www.itemsapi.com/)、[KeystoneJS](https://keystonejs.com/)、[Kraken](https://krakenjs.com/)、[LoopBack](https://loopback.io/)、[MEAN](https://mean.io/) 和 [Sails](https://sailsjs.org/)。
 
-大量的 profile company 使用 Express，包括优步、Accenture、IBM 等（[这里](https://expressjs.com/en/resources/companies-using-express.html)是一张列表）。
+大量的 profile company 使用 Express，包括优步、Accenture、IBM 等（[这里](https://expressjs.com/en/resources/companies-using-express.html) 是一张列表）。
 
 ### Ruby on Rails (Ruby)
 

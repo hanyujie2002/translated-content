@@ -42,7 +42,7 @@ slug: Learn/JavaScript/Building_blocks/Events
 - 视频播放、暂停或结束。
 - 发生错误。
 
-你可以从这里（以及从 MDN [事件参考](/zh-CN/docs/Web/Events)文档）中看出，有**相当多**的事件可以被触发。
+你可以从这里（以及从 MDN [事件参考](/zh-CN/docs/Web/Events) 文档）中看出，有**相当多**的事件可以被触发。
 
 为了对一个事件做出反应，你要给它附加一个**事件处理器**。这是一个代码块（通常是你作为程序员创建的一个 JavaScript 函数），在事件发生时运行。当这样一个代码块被定义为响应一个事件而运行时，我们说我们在**注册一个事件处理器**。注意，事件处理器有时候被叫做**事件监听器**——从我们的用意来看这两个名字是相同的，尽管严格地来说这块代码既监听也处理事件。监听器留意事件是否发生，处理器对事件发生做出回应。
 
@@ -728,7 +728,7 @@ container.addEventListener("click", (event) => {
 
 事件不是 JavaScript 独有的——大多数编程语言都有某种事件模型，而模型的工作方式往往与 JavaScript 的方式不同。事实上，网页的 JavaScript 的事件模型与其他环境中使用的 JavaScript 的事件模型也是不同的。
 
-例如，[Node.js](/zh-CN/docs/Learn/Server-side/Express_Nodejs) 是一个非常流行的 JavaScript 运行时，使开发人员能够使用 JavaScript 来构建网络和服务器端应用程序。[Node.js 事件模型](https://nodejs.org/api/events.html)依靠监听器来监听事件，依靠发射器来定期发射事件。听起来没有什么不同，但代码却很不同，利用 `on()` 等函数来注册一个事件监听器，而 `once()` 则是注册一个一次性事件监听器，在运行一次后取消注册。[HTTP 连接事件文档](https://nodejs.org/api/http.html#event-connect)提供了一个很好的例子。
+例如，[Node.js](/zh-CN/docs/Learn/Server-side/Express_Nodejs) 是一个非常流行的 JavaScript 运行时，使开发人员能够使用 JavaScript 来构建网络和服务器端应用程序。[Node.js 事件模型](https://nodejs.org/api/events.html) 依靠监听器来监听事件，依靠发射器来定期发射事件。听起来没有什么不同，但代码却很不同，利用 `on()` 等函数来注册一个事件监听器，而 `once()` 则是注册一个一次性事件监听器，在运行一次后取消注册。[HTTP 连接事件文档](https://nodejs.org/api/http.html#event-connect) 提供了一个很好的例子。
 
 你也可以使用一种叫做 [WebExtensions](/zh-CN/docs/Mozilla/Add-ons/WebExtensions) 的技术编写 JavaScript，建立跨浏览器的附加组件（浏览器功能增强）。其中的事件模型类似于 Web 事件模型，但有点不同——事件监听器的属性是驼峰式的（如 `onMessage` 而不是 `onmessage`），需要与 `addListener` 函数相结合。参见 [`runtime.onMessage`](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onMessage#示例) 页面的示例。
 
@@ -736,7 +736,7 @@ container.addEventListener("click", (event) => {
 
 ## 测试你的技能！
 
-你已经到了本文的结尾，但你能记住最重要的信息吗？在你继续前进之前，要验证你是否记住了这些信息，请前往[技能测试：事件](/zh-CN/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Events)页面进行测试。
+你已经到了本文的结尾，但你能记住最重要的信息吗？在你继续前进之前，要验证你是否记住了这些信息，请前往[技能测试：事件](/zh-CN/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Events) 页面进行测试。
 
 ## 结论
 

@@ -43,7 +43,7 @@ slug: MDN/Writing_guidelines/Howto/Write_an_api_reference
 
 ### 建立你需要撰写或更新的页面列表
 
-API 参考一般会包含以下页面。你可以在我们的[页面类型](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Page_types)文章中找到更多关于每个页面包含的内容、示例和模板的细节。在你开始之前，你应该写下你应该创建的所有页面的清单。
+API 参考一般会包含以下页面。你可以在我们的[页面类型](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Page_types) 文章中找到更多关于每个页面包含的内容、示例和模板的细节。在你开始之前，你应该写下你应该创建的所有页面的清单。
 
 1. 概述页
 2. 接口页
@@ -84,7 +84,7 @@ API 参考一般会包含以下页面。你可以在我们的[页面类型](/zh-
 
 - 我们要为定义在实现该接口的对象原型上的方法（实例方法），以及定义在实际类本身上的方法（静态方法）撰写文档。在极少数情况下，如果它们都存在于同一个接口上，你应该把它们列在页面上的不同部分（静态方法/实例方法）。通常只有实例方法存在，在这种情况下，你可以把这些方法放在“Methods”标题下。
 - 不必为接口的继承属性和方法撰写文档：它们被列在各自的父接口上。不过我们确实暗示了它们的存在。
-- 我们确实为定义在 mixin 中的属性和方法撰写文档。请参阅 [mixins 的贡献指南](/zh-CN/docs/MDN/Writing_guidelines/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file#mixins)了解更多细节。
+- 我们确实为定义在 mixin 中的属性和方法撰写文档。请参阅 [mixins 的贡献指南](/zh-CN/docs/MDN/Writing_guidelines/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file#mixins) 了解更多细节。
 - 如果存在特殊方法，如字符串化方法（`toString()`）和 JSON 化方法（`toJSON()`），也会列出。
 - 如果存在具名的构造函数（如 {{domxref("HTMLImageElement")}} 的 `Image()`），也会列出。
 
@@ -186,7 +186,7 @@ API 参考一般会包含以下页面。你可以在我们的[页面类型](/zh-
 
 ## 创建页面
 
-现在，根据下面的结构创建你需要的页面。我们的 [MDN 内容 README](https://github.com/mdn/content#adding-a-new-document) 包含创建新文件的说明，我们的[页面类型](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Page_types)指南包含进一步的例子和可能有用的页面模板。
+现在，根据下面的结构创建你需要的页面。我们的 [MDN 内容 README](https://github.com/mdn/content#adding-a-new-document) 包含创建新文件的说明，我们的[页面类型](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Page_types) 指南包含进一步的例子和可能有用的页面模板。
 
 ### 概述页的结构
 
@@ -199,7 +199,7 @@ API 着陆页的长度会有很大的不同，这取决于 API 有多大，但�
 3. **接口列表**：这一部分的标题应该是“\[API 名称]接口”，并提供指向构成 API 的每个接口的参考页面的链接，以及每个接口的简短描述。关于创建新页面的更快方法，请参见“用 \\{{domxref}} 宏引用其他 API 功能”一节。
 4. **示例**：这一部分应该展示一两个简单的 API 使用案例。
 5. **标准表格**: 在这一点上，你需要包含一个规范表格——详见“创建一个规范参考表格”部分。
-6. **浏览器兼容性**：现在你需要包含一个浏览器兼容性表格。详见[兼容性表](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables)指南。
+6. **浏览器兼容性**：现在你需要包含一个浏览器兼容性表格。详见[兼容性表](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables) 指南。
 7. **参见**：“参见”部分可以包括在学习这项技术时可能有用的进一步链接，包括 MDN（和外部）的教程、例子、库等。
 
 ### 接口页的结构
@@ -227,9 +227,9 @@ API 着陆页的长度会有很大的不同，这取决于 API 有多大，但�
 
    > **备注：** 只读属性应该使用 \\{{ReadOnlyInline}} 宏，它可以创建一个漂亮的“只读”徽章，与它们的 \\{{domxref}} 链接在同一行（如果需要使用 \\{{experimentalInline}}、\\{{non-standard_Inline}} 和 \\{{deprecatedInline}} 宏，则需要放置在它们之后）。
 
-6. **示例**：包括一个代码清单，以显示 API 的主要功能的典型用法。你不应该列出所有的代码，而应该列出其中一个有趣的子集。对于一个完整的代码清单，你可以参考包含完整示例的 [GitHub](https://github.com/) 仓库，你也可以链接到使用 [GitHub gh-pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) 功能创建的实时示例（当然，只要它只使用客户端代码）。如果该示例是可视化的，你也可以使用 MDN [实时示例](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Live_samples)功能，使其在页面上实时播放。
+6. **示例**：包括一个代码清单，以显示 API 的主要功能的典型用法。你不应该列出所有的代码，而应该列出其中一个有趣的子集。对于一个完整的代码清单，你可以参考包含完整示例的 [GitHub](https://github.com/) 仓库，你也可以链接到使用 [GitHub gh-pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) 功能创建的实时示例（当然，只要它只使用客户端代码）。如果该示例是可视化的，你也可以使用 MDN [实时示例](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Live_samples) 功能，使其在页面上实时播放。
 7. **标准表格**：此时你需要包含一个标准表格——参见“创建规范参考表格”一节以获得更多信息。
-8. **浏览器兼容性**：现在你需要包含一个浏览器兼容性表格——参见[兼容性表格](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables)以获得更多细节。
+8. **浏览器兼容性**：现在你需要包含一个浏览器兼容性表格——参见[兼容性表格](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables) 以获得更多细节。
 9. **Polyfill**：如果合适的话，包括这一部分，提供一个 polyfill 的代码，使 API 即使在没有实现它的浏览器上也能使用。如果不存在或不需要 polyfill，则完全不需要这一部分。
 10. **参见**：“参见”部分是一个可以包含在学习这项技术时可能有用的进一步链接的好地方，包括 MDN（和外部）教程、示例、图书馆等。我们对链接到外部资源有一个宽松的政策，但要注意：
 
@@ -253,7 +253,7 @@ API 着陆页的长度会有很大的不同，这取决于 API 有多大，但�
 
 属性页必须具有如下部分：
 
-1. **标题**：页面的标题必须为 **InterfaceName.propertyName**。接口名称必须以大写字母开头。尽管接口在 JavaScript 中是在对象的原型上实现的，但我们不会像在 [JavaScript 参考](/zh-CN/docs/Web/JavaScript/Reference)中那样，在标题中包括`.prototype.`。
+1. **标题**：页面的标题必须为 **InterfaceName.propertyName**。接口名称必须以大写字母开头。尽管接口在 JavaScript 中是在对象的原型上实现的，但我们不会像在 [JavaScript 参考](/zh-CN/docs/Web/JavaScript/Reference) 中那样，在标题中包括`.prototype.`。
 2. **\\{{APIRef}}**：在每个属性页的第一行中包含 \\{{APIRef}} 宏，将 API 的名称作为参数，例如 \{{APIRef("Web Audio API")}}。这个宏的作用是在界面页面的左侧构建一个参考菜单，包括属性和方法，以及 [GroupData](https://github.com/mdn/content/blob/main/files/jsondata/GroupData.json) 宏中定义的其他快速链接（请人将你的 API 添加到现有的 GroupData 条目中，或者，如果它还没有被列在那里。则创建一个新的）。该目录实际看起来像这张截图一样。
    ![这个截图显示了由 APIRef 宏生成的 OscillatorNode 接口的垂直导航菜单，其中有方法和属性的多个子列表](apiref-links.png)
 3. **标准化状态**：接下来应该添加表示标准化状态的横幅宏（这些横幅宏可以与 \\{{APIRef}} 宏放在同一行）：
@@ -273,9 +273,9 @@ API 着陆页的长度会有很大的不同，这取决于 API 有多大，但�
 
 5. **值**：Value 部分将包含属性值的描述。这应该包含该属性的数据类型，以及它所代表的内容。关于其示例，详见 {{domxref("SpeechRecognition.grammars")}}。
 
-6. **示例**: 包括一个代码清单，以显示有关属性的典型用法。你应该从一个简单的例子开始，说明如何创建该类型的对象以及如何访问该属性。更复杂的例子可以在这样一个例子之后添加。在这些额外的例子中，不要列出所有的代码，你应该列出其中有趣的子集。对于完整的代码列表，你可以参考包含完整例子的 [GitHub](https://github.com/) 仓库，你也可以链接到使用 [GitHub gh-pages 功能](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)创建的实时示例（只要它只使用客户端代码）。如果例子是可视化的，你也可以使用 MDN 的[运行实例](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Live_samples)功能来使它在页面上实时播放。
+6. **示例**: 包括一个代码清单，以显示有关属性的典型用法。你应该从一个简单的例子开始，说明如何创建该类型的对象以及如何访问该属性。更复杂的例子可以在这样一个例子之后添加。在这些额外的例子中，不要列出所有的代码，你应该列出其中有趣的子集。对于完整的代码列表，你可以参考包含完整例子的 [GitHub](https://github.com/) 仓库，你也可以链接到使用 [GitHub gh-pages 功能](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) 创建的实时示例（只要它只使用客户端代码）。如果例子是可视化的，你也可以使用 MDN 的[运行实例](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Live_samples) 功能来使它在页面上实时播放。
 7. **标准表格**：此时你需要包含一个标准表格——参见“创建规范参考表格”一节以获得更多信息。
-8. **浏览器兼容性**：现在你需要包含一个浏览器兼容性表格——参见[兼容性表格](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables)以获得更多细节。
+8. **浏览器兼容性**：现在你需要包含一个浏览器兼容性表格——参见[兼容性表格](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables) 以获得更多细节。
 9. **参见**：“参见”部分是一个可以包含在学习这项技术时可能有用的进一步链接的好地方：比如受此属性变化影响的方法和属性，或者与此相关的事件。在学习这项技术时，可以添加更多有用的链接，包括 MDN（和外部）的教程、示例、库......，尽管考虑将它们添加到接口参考页上可能是有用的。
 
 #### 属性页示例
@@ -291,7 +291,7 @@ API 着陆页的长度会有很大的不同，这取决于 API 有多大，但�
 
 方法页需要包含以下部分：
 
-1. **标题**: 页面的标题必须为 **InterfaceName.method()**（含有一对英文括号），但页面路径名不能包含括号。另外，接口名称必须以大写字母开头。尽管接口在 JavaScript 中是在对象的原型上实现的，但我们不会像在 [JavaScript 参考](/zh-CN/docs/Web/JavaScript/Reference)中那样，在标题中包括 `.prototype.`。
+1. **标题**: 页面的标题必须为 **InterfaceName.method()**（含有一对英文括号），但页面路径名不能包含括号。另外，接口名称必须以大写字母开头。尽管接口在 JavaScript 中是在对象的原型上实现的，但我们不会像在 [JavaScript 参考](/zh-CN/docs/Web/JavaScript/Reference) 中那样，在标题中包括 `.prototype.`。
 2. **\\{{APIRef}}**：在每个方法页的第一行中包含 \\{{APIRef}} 宏，将 API 的名称作为参数，例如 \\{{APIRef("Web Audio API")}}。这个宏的作用是在界面页面的左侧构建一个参考菜单，包括属性和方法，以及 [GroupData](https://github.com/mdn/content/blob/main/files/jsondata/GroupData.json) 宏中定义的其他快速链接（请人将你的 API 添加到现有的 GroupData 条目中，或者，如果它还没有被列在那里。则创建一个新的）。该目录实际看起来像这张截图一样。
    ![这个截图显示了由 APIRef 宏生成的 OscillatorNode 接口的垂直导航菜单，其中有方法和属性的多个子列表](apiref-links.png)
 3. **标准化状态**：接下来应该添加表示标准化状态的横幅宏（这些横幅宏可以与 \\{{APIRef}} 宏放在同一行）：
@@ -318,9 +318,9 @@ API 着陆页的长度会有很大的不同，这取决于 API 有多大，但�
    - “返回值”：本部分内容应该说明该方法的返回值，是一个简单的值（如双精度浮点数或布尔值），还是一个更复杂的值（如另一个接口对象）。在这种情况下，你可以使用 \{{domxref}} 宏来链接到涵盖该接口的 MDN API 页面（如果存在的话）。一个方法可能什么都不返回，在这种情况下，返回值应该写成“\\{{jsxref('undefined')}}”，在实际渲染的页面中看起来会是这样：{{jsxref("undefined")}}。
    - “异常”：本部分内容应该列出在调用该方法时可能引发的不同异常，以及导致这些异常的情况。如果没有异常，这一节应该被省略。
 
-6. **示例**：包括一个代码清单，以显示有关方法的典型用法。不要列出所有的代码，你应该列出一个有趣的子集。对于完整的代码清单，你应该引用包含完整例子的 [GitHub](https://github.com/) 仓库，你也可以链接到使用 [GitHub gh-pages 功能](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)创建的实时示例（只要它只使用客户端代码）。如果例子是可视化的，你也可以使用 MDN 的[运行实例](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Live_samples) 功能来使它在页面中实时播放。
+6. **示例**：包括一个代码清单，以显示有关方法的典型用法。不要列出所有的代码，你应该列出一个有趣的子集。对于完整的代码清单，你应该引用包含完整例子的 [GitHub](https://github.com/) 仓库，你也可以链接到使用 [GitHub gh-pages 功能](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) 创建的实时示例（只要它只使用客户端代码）。如果例子是可视化的，你也可以使用 MDN 的[运行实例](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Live_samples) 功能来使它在页面中实时播放。
 7. **标准表格**：此时你需要包含一个标准表格——参见“创建规范参考表格”一节以获得更多信息。
-8. **浏览器兼容性**：现在你需要包含一个浏览器兼容性表格——参见[兼容性表格](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables)以获得更多细节。
+8. **浏览器兼容性**：现在你需要包含一个浏览器兼容性表格——参见[兼容性表格](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables) 以获得更多细节。
 
 ### 方法页示例
 
@@ -331,4 +331,4 @@ API 着陆页的长度会有很大的不同，这取决于 API 有多大，但�
 
 ## 侧边栏
 
-一旦你创建了你的 API 参考页面，你要在上面插入正确的侧边栏，把这些页面联系在一起。我们的 [API 参考侧边栏](/zh-CN/docs/MDN/Writing_guidelines/Howto/Write_an_API_reference/Sidebars)指南解释了如何操作。
+一旦你创建了你的 API 参考页面，你要在上面插入正确的侧边栏，把这些页面联系在一起。我们的 [API 参考侧边栏](/zh-CN/docs/MDN/Writing_guidelines/Howto/Write_an_API_reference/Sidebars) 指南解释了如何操作。

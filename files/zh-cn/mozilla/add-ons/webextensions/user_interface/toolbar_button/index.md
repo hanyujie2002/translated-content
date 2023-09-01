@@ -42,11 +42,11 @@ browser.browserAction.onClicked.addListener(handleClick);
 
 ## 图标
 
-想了解更多关于如何创建浏览器动作图标信息，请参看[Photon Design System](https://design.firefox.com/photon/index.html) 文档里的 [Iconography](https://design.firefox.com/photon/visuals/iconography.html) 部分。
+想了解更多关于如何创建浏览器动作图标信息，请参看 [Photon Design System](https://design.firefox.com/photon/index.html) 文档里的 [Iconography](https://design.firefox.com/photon/visuals/iconography.html) 部分。
 
 ## 范例
 
 在 Github 上的扩展范例库 [webextensions-examples](https://github.com/mdn/webextensions-examples) 中有两个实现浏览器动作的例子：
 
 - [bookmark-it](https://github.com/mdn/webextensions-examples/blob/main/bookmark-it/)没有使用 popup 实现了浏览器动作。
-- [beastify](https://github.com/mdn/webextensions-examples/tree/main/beastify)使用 popup 实现了浏览器动作。
+- [beastify](https://github.com/mdn/webextensions-examples/tree/main/beastify) 使用 popup 实现了浏览器动作。

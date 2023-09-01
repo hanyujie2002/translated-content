@@ -75,7 +75,7 @@ slug: Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension
 
 后台脚本在一个被称为后台页面的特殊页面的上下文环境中运行。此环境为其提供了全局变量 [`window`](/zh-CN/docs/Web/API/Window) ，也提供了所有的标准 DOM API。
 
-> **警告：** 在 Firefox 浏览器中，后台页面不支持使用 [`alert()`](/zh-CN/docs/Web/API/Window/alert), [`confirm()`](/zh-CN/docs/Web/API/Window/alert)和 [`prompt()`](/zh-CN/docs/Web/API/Window/alert)
+> **警告：** 在 Firefox 浏览器中，后台页面不支持使用 [`alert()`](/zh-CN/docs/Web/API/Window/alert), [`confirm()`](/zh-CN/docs/Web/API/Window/alert) 和 [`prompt()`](/zh-CN/docs/Web/API/Window/alert)
 
 #### WebExtension API
 
@@ -99,13 +99,13 @@ slug: Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension
 
 你的扩展程序可以包含各种用户界面组件，其内容通过 HTML 文件来定义：
 
-- [侧边栏](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface/Sidebars)是一个面板，它被显示在浏览器窗口左侧，就在网页旁边。
-- [弹出窗口](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface/Popups)是一个对话框，可以在用户单击[工具栏按钮](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface/Browser_action)或[地址栏按钮](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface/Page_actions)时显示该对话框。
-- [选项页面](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface/Options_pages)是当用户访问扩展管理器内置的扩展选项页面时，内嵌显示的页面。
+- [侧边栏](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface/Sidebars) 是一个面板，它被显示在浏览器窗口左侧，就在网页旁边。
+- [弹出窗口](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface/Popups) 是一个对话框，可以在用户单击[工具栏按钮](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface/Browser_action) 或[地址栏按钮](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface/Page_actions) 时显示该对话框。
+- [选项页面](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface/Options_pages) 是当用户访问扩展管理器内置的扩展选项页面时，内嵌显示的页面。
 
 对于这些组件，你可以创建一个 HTML 文件，并使用 [manifest.json](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/manifest.json) 中的特定属性指向它。HTML 文件可以引用 CSS 和 JavaScript 文件，就像普通的网页一样。
 
-所有这些都是[扩展页面](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface/Extension_pages)的一种，与普通网页不同的是，你可以在 JavaScript 中像在后台脚本那样，拥有一样的权限去使用 WebExtension API。
+所有这些都是[扩展页面](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface/Extension_pages) 的一种，与普通网页不同的是，你可以在 JavaScript 中像在后台脚本那样，拥有一样的权限去使用 WebExtension API。
 
 ## 扩展页面
 
@@ -127,7 +127,7 @@ slug: Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension
 
 - 执行跨域访问
 - 使用 [WebExtension APIs](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/API) 中的一小部分
-- [通过与后台脚本交换信息](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Content_scripts#communicating_with_background_scripts)的方式，间接地使用所有 WebExtension API
+- [通过与后台脚本交换信息](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Content_scripts#communicating_with_background_scripts) 的方式，间接地使用所有 WebExtension API
 
 内容脚本无法直接访问普通网页中的脚本，但是可以通过 [`window.postMessage()`](/zh-CN/docs/Web/API/Window/postMessage) API 来与之传递信息。
 

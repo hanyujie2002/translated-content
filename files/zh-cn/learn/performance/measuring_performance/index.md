@@ -49,15 +49,15 @@ slug: Learn/Performance/Measuring_performance
 
 [PerformanceEntry](/zh-CN/docs/web/API/PerformanceEntry) 对象是性能时间轴的一部分。性能条目可以通过在应用程序的显式点创建性能 _{{domxref("PerformanceMark","mark")}}_ 或 _{{domxref("PerformanceMeasure","measure")}}_（例如，通过调用 {{domxref("Performance.mark","mark()")}} 方法直接创建。性能条目还可以通过间接方式创建，例如加载资源，如图像。
 
-[PerformanceObserver API](/zh-CN/docs/web/API/PerformanceObserver) 可用于观察性能测量事件，并在浏览器的性能时间轴中记录新的[性能条目](/zh-CN/docs/web/API/PerformanceEntry)时通知你。
+[PerformanceObserver API](/zh-CN/docs/web/API/PerformanceObserver) 可用于观察性能测量事件，并在浏览器的性能时间轴中记录新的[性能条目](/zh-CN/docs/web/API/PerformanceEntry) 时通知你。
 
-虽然本文并没有深入介绍这些 API 的使用，但了解它们的存在是有用的。你还可以参考[导航和计时](/zh-CN/docs/web/Performance/Navigation_and_resource_timings)文章，以获取有关使用性能 web API 的更多示例。
+虽然本文并没有深入介绍这些 API 的使用，但了解它们的存在是有用的。你还可以参考[导航和计时](/zh-CN/docs/web/Performance/Navigation_and_resource_timings) 文章，以获取有关使用性能 web API 的更多示例。
 
 ## 工具和指标
 
 有许多不同的工具可用于帮助你提高性能。这些工具通常可以分为两类：
 
-- 指示或测量性能的工具，如 [PageSpeed Insights](https://pagespeed.web.dev/) 或 Firefox 的[网络监视器](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/index.html)和[性能监视器](https://firefox-source-docs.mozilla.org/devtools-user/performance/index.html)。这些工具向你展示你的 web 应用程序或网站加载有多快或多慢。它们还指出可以改进以优化你的 web 应用程序的领域。
+- 指示或测量性能的工具，如 [PageSpeed Insights](https://pagespeed.web.dev/) 或 Firefox 的[网络监视器](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/index.html) 和[性能监视器](https://firefox-source-docs.mozilla.org/devtools-user/performance/index.html)。这些工具向你展示你的 web 应用程序或网站加载有多快或多慢。它们还指出可以改进以优化你的 web 应用程序的领域。
 - 更新代码以使你的 web 应用程序或网站性能更好的工具。例如，捆绑工具将你的代码打包成单个文件，以减少 HTTP 请求数量，或者缩小器从你的代码中删除所有空白以使文件更小。
 
 在本课程中，我们将讨论这两类工具。除了讨论性能指标，我们还将讨论用于衡量你的网站性能是否在改善的指标。
@@ -78,11 +78,11 @@ slug: Learn/Performance/Measuring_performance
 
 ### 网络工具
 
-大多数浏览器都有可用的工具，你可以使用这些工具来针对已加载的页面进行运行，以确定它们的性能如何。例如，Firefox 的[网络监视器](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/index.html)返回有关从网络下载的所有素材的详细信息，以及显示每个下载所花费的时间的时间图。
+大多数浏览器都有可用的工具，你可以使用这些工具来针对已加载的页面进行运行，以确定它们的性能如何。例如，Firefox 的[网络监视器](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/index.html) 返回有关从网络下载的所有素材的详细信息，以及显示每个下载所花费的时间的时间图。
 
 ![Firefox 网络监视器显示已加载素材列表以及每个素材的加载时间](network-monitor.png)
 
-你还可以使用[性能监视器](https://firefox-source-docs.mozilla.org/devtools-user/performance/index.html)在执行不同操作时测量 web 应用程序或网站用户界面的性能。这表明了可能会减慢你的 web 应用程序或网站的功能。
+你还可以使用[性能监视器](https://firefox-source-docs.mozilla.org/devtools-user/performance/index.html) 在执行不同操作时测量 web 应用程序或网站用户界面的性能。这表明了可能会减慢你的 web 应用程序或网站的功能。
 
 ![开发者工具性能面板显示录制＃1 的瀑布图。](perf-monitor.png)
 

@@ -17,9 +17,9 @@ MDN Web 文档的内容是免费的，并在开源协议下提供。
 
 你复用的内容是在与内容相同的许可协议（CC-BY-SA v2.5 及以上的版本）下发布的。在复用 MDN Web 文档的内容时，你需要确保对属于“Mozilla 贡献者”的原始内容进行署名。包括源文档的超链接（在线内容）或 URL（印刷内容）。以*本*文为例，你可以这样署名：
 
-> 归属于 [Mozilla 贡献者](/zh-CN/docs/MDN/About/contributors.txt)的[署名和版权许可](MDN/Writing_guidelines/Attrib_copyright_license)在[知识共享 署名—相同方式共享 2.5](https://creativecommons.org/licenses/by-sa/2.5/deed.zh) 许可下提供。
+> 归属于 [Mozilla 贡献者](/zh-CN/docs/MDN/About/contributors.txt) 的[署名和版权许可](MDN/Writing_guidelines/Attrib_copyright_license) 在[知识共享 署名—相同方式共享 2.5](https://creativecommons.org/licenses/by-sa/2.5/deed.zh) 许可下提供。
 
-在上述示例中，“Mozilla 贡献者”链接了被引用页面的历史记录。参见[署名的推荐做法](https://wiki.creativecommons.org/wiki/Recommended_practices_for_attribution)以获取更为详细的信息。
+在上述示例中，“Mozilla 贡献者”链接了被引用页面的历史记录。参见[署名的推荐做法](https://wiki.creativecommons.org/wiki/Recommended_practices_for_attribution) 以获取更为详细的信息。
 
 ### 代码示例
 
@@ -53,7 +53,7 @@ Mozilla 基金会的徽标、商标、服务标志，以及网站的外观、视
 
 如果有人想向 MDN 捐赠他们之前在其博客上发布的文章，或者将复杂的参考表格复制到 MDN 上，且这么做是有意义的，则可能有足够的理由重新发布它。对于这些情况，请事先与 MDN 团队讨论你的计划：
 
-- [创建一个 GitHub 议题](https://github.com/mdn/mdn/issues/new/choose)来解释你的意图。
+- [创建一个 GitHub 议题](https://github.com/mdn/mdn/issues/new/choose) 来解释你的意图。
   - 描述你想要复制或重新发布的内容。
   - 提供资源的 URL。
   - 解释为什么你认为这是合适的。
@@ -65,7 +65,7 @@ Mozilla 基金会的徽标、商标、服务标志，以及网站的外观、视
 
 **如果内容是在开放许可下发布的：**
 
-- 请说明下许可的类型，并提供其链接，以便我们可以检查它是否与 [MDN 的许可](https://github.com/mdn/content/blob/main/LICENSE.md)兼容。
+- 请说明下许可的类型，并提供其链接，以便我们可以检查它是否与 [MDN 的许可](https://github.com/mdn/content/blob/main/LICENSE.md) 兼容。
 
 ### 链接到 MDN Web 文档中的文章
 

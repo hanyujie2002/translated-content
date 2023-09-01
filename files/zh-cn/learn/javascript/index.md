@@ -19,7 +19,7 @@ slug: Learn/JavaScript
 
 熟悉 JavaScript 的基本概念之后，你将具备学习更多高级主题的能力，比如这些：
 
-- 深入理解 JavaScript，如 [JavaScript 指南](/zh-CN/docs/Web/JavaScript/Guide)中的内容
+- 深入理解 JavaScript，如 [JavaScript 指南](/zh-CN/docs/Web/JavaScript/Guide) 中的内容
 - [Web APIs](/zh-CN/docs/Web/API)
 
 ## 模块

@@ -230,7 +230,7 @@ textarea.onkeyup = () => {
 
 > **备注：** 在这篇文章中提到的“块”和“内联”，不应该与 [CSS 盒子的类型](/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#块级盒子（block_box）_和_内联盒子（inline_box）)中的同名术语相混淆。尽管它们默认是相关的，但改变 CSS 显示类型并不会改变元素的分类，也不会影响它可以包含和被包含于哪些元素。防止这种混淆也是 HTML5 摒弃这些术语的原因之一。
 
-> **备注：** 你可以查阅包含了块级元素和内联元素列表的参考页面。参见[块级元素](/zh-CN/docs/Glossary/Block-level_content)和[内联元素](/zh-CN/docs/Glossary/Inline-level_content)页面。
+> **备注：** 你可以查阅包含了块级元素和内联元素列表的参考页面。参见[块级元素](/zh-CN/docs/Glossary/Block-level_content) 和[内联元素](/zh-CN/docs/Glossary/Inline-level_content) 页面。
 
 ### 空元素
 
@@ -533,7 +533,7 @@ textarea.onkeyup = () => {
 
 你可以打开浏览器看看这段代码的效果是什么样的，然后改变代码刷新浏览器看看新的结果。最开始的代码是这样的效果：
 
-![一个简单的 HTML 页面，内容为 This is my page](template-screenshot.png)在这个练习中，你可以在电脑上本地编辑代码，如前所述，也可以在下面的样本窗口中编辑（在这种情况下，可编辑的样本窗口只代表 {{htmlelement("body")}} 元素的内容）。通过执行以下任务来磨练你的技能：
+![一个简单的 HTML 页面，内容为 This is my page](template-screenshot.png) 在这个练习中，你可以在电脑上本地编辑代码，如前所述，也可以在下面的样本窗口中编辑（在这种情况下，可编辑的样本窗口只代表 {{htmlelement("body")}} 元素的内容）。通过执行以下任务来磨练你的技能：
 
 - 就在 {{htmlelement("body")}} 元素开始标签下方，为这个文档添加一个主标题。这个主标题应该被包含在 `<h1>` 开始标签和 `</h1>` 结束标签之间。
 - 编辑这个段落以包含一些你感兴趣的文本。

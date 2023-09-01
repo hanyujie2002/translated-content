@@ -22,7 +22,7 @@ slug: Learn/JavaScript/Building_blocks/Image_gallery
 
 ## 起点
 
-[下载压缩包](https://raw.githubusercontent.com/mdn/learning-area/main/javascript/building-blocks/gallery/gallery-start.zip)并在本地解压。
+[下载压缩包](https://raw.githubusercontent.com/mdn/learning-area/main/javascript/building-blocks/gallery/gallery-start.zip) 并在本地解压。
 
 另外，你还可以使用类似 [JSBin](https://jsbin.com/) 或 [Glitch](https://glitch.com/)）这些在线编辑器来完成测验。你可以将 HTML、CSS 和 JavaScript 粘贴到这几个在线编辑器中。如果你使用的在线编辑器没有单独的 JavaScript/CSS 面板，请将它们放入 HTML 页面内联的 `<script>`/`<style>` 元素中。
 

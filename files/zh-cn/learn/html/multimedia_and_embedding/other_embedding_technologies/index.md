@@ -224,9 +224,9 @@ textarea.onkeyup = function () {
   - : 如果设置，`<iframe>`则可以通过[全屏 API](/zh-CN/docs/Web/API/Fullscreen_API) 设置为全屏模式（稍微超出本文的范围）。
 - [`frameborder`](/zh-CN/docs/Web/HTML/Element/iframe#attr-frameborder)
   - : 如果设置为 1，则会告诉浏览器在此框架和其他框架之间绘制边框，这是默认行为。0 删除边框。不推荐这样设置，因为在 [CSS
-    中](/zh-CN/docs/Glossary/CSS)可以更好地实现相同的效果。[`border`](/zh-CN/docs/Web/CSS/border)`: none;`
+    中](/zh-CN/docs/Glossary/CSS) 可以更好地实现相同的效果。[`border`](/zh-CN/docs/Web/CSS/border)`: none;`
 - [`src`](/zh-CN/docs/Web/HTML/Element/iframe#attr-src)
-  - : 该属性与 [`<video>`](/zh-CN/docs/Web/HTML/Element/video) / 元素表示文档中的图像。[`<img>`](/zh-CN/docs/Web/HTML/Element/img)一样包含指向要嵌入文档的
+  - : 该属性与 [`<video>`](/zh-CN/docs/Web/HTML/Element/video) / 元素表示文档中的图像。[`<img>`](/zh-CN/docs/Web/HTML/Element/img) 一样包含指向要嵌入文档的
     URL 路径。
 - [`width`](/zh-CN/docs/Web/HTML/Element/iframe#attr-width) 和 [`height`](/zh-CN/docs/Web/HTML/Element/iframe#attr-height)
   - : 这些属性指定你想要的 iframe 的宽度和高度。
@@ -248,10 +248,10 @@ textarea.onkeyup = function () {
 浏览器制造商和 Web 开发人员了解到网络上的坏人（通常被称为**黑客**，或更准确地说是**破解者**），如果他们试图恶意修改你的网页或欺骗人们进行不想做的事情时常把 iframe
 作为共同的攻击目标（官方术语：**攻击向量**），例如显示用户名和密码等敏感信息。因此，规范工程师和浏览器开发人员已经开发了各种安全机制，使`<iframe>`更加安全，这有些最佳方案值得我们考虑——我们将在下面介绍其中的一些。
 
-> **备注：** [单击劫持](https://en.wikipedia.org/wiki/Clickjacking)是一种常见的 iframe 攻击，黑客将隐藏的 iframe
+> **备注：** [单击劫持](https://en.wikipedia.org/wiki/Clickjacking) 是一种常见的 iframe 攻击，黑客将隐藏的 iframe
 > 嵌入到你的文档中（或将你的文档嵌入到他们自己的恶意网站），并使用它来捕获用户的交互。这是误导用户或窃取敏感数据的常见方式。
 
-一个快速的例子——尝试在浏览器中加载上面的例子——你也可以 [在 Github 上找到它](https://mdn.github.io/learning-area/html/multimedia-and-embedding/other-embedding-technologies/iframe-detail.html)（[参见源代码](https://github.com/mdn/learning-area/blob/gh-pages/html/multimedia-and-embedding/other-embedding-technologies/iframe-detail.html)）。你将不会看到任何内容，但如果你点击[浏览器开发者工具](/zh-CN/docs/Learn/Common_questions/What_are_browser_developer_tools)中的*控制台*，你会看到一条消息，告诉你为什么没有显示内容。在
+一个快速的例子——尝试在浏览器中加载上面的例子——你也可以 [在 Github 上找到它](https://mdn.github.io/learning-area/html/multimedia-and-embedding/other-embedding-technologies/iframe-detail.html)（[参见源代码](https://github.com/mdn/learning-area/blob/gh-pages/html/multimedia-and-embedding/other-embedding-technologies/iframe-detail.html)）。你将不会看到任何内容，但如果你点击[浏览器开发者工具](/zh-CN/docs/Learn/Common_questions/What_are_browser_developer_tools) 中的*控制台*，你会看到一条消息，告诉你为什么没有显示内容。在
 Firefox 中，你会*被告知：“X-Frame-Options 拒绝加载 `https://developer.mozilla.org/zh-CN/docs/Glossary`*。这是因为构建 MDN
 的开发人员已经在网站页面的服务器上设置了一个不允许被嵌入到`<iframe>`的设置（请参阅[配置 CSP 指令](#配置_csp_指令)）这是有必要的——整个
 MDN 页面被嵌入在其他页面中没有多大意义，除非你想要将其嵌入到你的网站上并将其声称为自己的内容，或尝试通过单击劫持来窃取数据，这都是非常糟糕的事情。此外，如果每个人都这样做，所有额外的带宽将花费 Mozilla
@@ -276,7 +276,7 @@ MDN 页面被嵌入在其他页面中没有多大意义，除非你想要将其�
 来为你的父文档提供服务。但是，由于 HTTPS 的第二个好处，_无论成本如何，你绝对不能使用 HTTP 嵌入第三方内容_（在最好的情况下，你的用户的 Web 浏览器会给他们一个可怕的警告）。所有有声望的公司，例如
 Google Maps 或 Youtube，当你嵌入内容时，`<iframe>` 将通过 HTTPS 提供——查看 `<iframe>` `src` 属性内的 URL。
 
-> **备注：** [Github 页面](/zh-CN/docs/Learn/Common_questions/Tools_and_setup/Using_GitHub_pages)允许默认情况下通过 HTTPS
+> **备注：** [Github 页面](/zh-CN/docs/Learn/Common_questions/Tools_and_setup/Using_GitHub_pages) 允许默认情况下通过 HTTPS
 > 提供内容，因此对托管内容很有用。如果你正在使用不同的托管，并且不确定，请向你的托管服务商询问。
 
 #### 始终使用 `sandbox` 属性
@@ -314,14 +314,14 @@ Java 小程序和 Flash，PDF（可在浏览器中显示为一个 PDF 插件）�
 | 嵌入内容的[网址](/zh-CN/docs/Glossary/URL)                 | [`src`](/zh-CN/docs/Web/HTML/Element/embed#src)                                                           | [`data`](/zh-CN/docs/Web/HTML/Element/object#data)                                                          |
 | 嵌入内容的*准确*[媒体类型](/zh-CN/docs/Glossary/MIME_type) | [`type`](/zh-CN/docs/Web/HTML/Element/embed#type)                                                         | [`type`](/zh-CN/docs/Web/HTML/Element/object#type)                                                          |
 | 由插件控制的框的高度和宽度（以 CSS 像素为单位）            | [`height`](/zh-CN/docs/Web/HTML/Element/embed#height) [`width`](/zh-CN/docs/Web/HTML/Element/embed#width) | [`height`](/zh-CN/docs/Web/HTML/Element/object#height) [`width`](/zh-CN/docs/Web/HTML/Element/object#width) |
-| 名称和值，将插件作为参数提供                               | 具有这些名称和值的 ad hoc 属性                                                                            | 单标签[`<param>`](/zh-CN/docs/Web/HTML/Element/param)元素，包含在内`<object>`                               |
+| 名称和值，将插件作为参数提供                               | 具有这些名称和值的 ad hoc 属性                                                                            | 单标签[`<param>`](/zh-CN/docs/Web/HTML/Element/param) 元素，包含在内`<object>`                               |
 | 独立的 HTML 内容作为不可用资源的回退                       | 不支持（`<noembed>`已过时）                                                                               | 包含在元素`<object>`之后`<param>`                                                                           |
 
-> **备注：** `<object>`需要`data`属性，`type`属性或两者。如果你同时使用这两个，你也可以使用该[`typemustmatch`](/zh-CN/docs/Web/HTML/Element/object#attr-typemustmatch)属性（仅在 Firefox
-> 中实现，在本文中）。`typemustmatch`保持嵌入文件不运行，除非`type`属性提供正确的媒体类型。`typemustmatch`因此，当你嵌入来自不同[来源的](/zh-CN/docs/Glossary/Origin)内容（可以防止攻击者通过插件运行任意脚本）时，可以赋予重要的安全优势。
+> **备注：** `<object>`需要`data`属性，`type`属性或两者。如果你同时使用这两个，你也可以使用该[`typemustmatch`](/zh-CN/docs/Web/HTML/Element/object#attr-typemustmatch) 属性（仅在 Firefox
+> 中实现，在本文中）。`typemustmatch`保持嵌入文件不运行，除非`type`属性提供正确的媒体类型。`typemustmatch`因此，当你嵌入来自不同[来源的](/zh-CN/docs/Glossary/Origin) 内容（可以防止攻击者通过插件运行任意脚本）时，可以赋予重要的安全优势。
 
-下面是一个使用该[`<embed>`](/zh-CN/docs/Web/HTML/Element/embed)元素嵌入
-Flash 影片的示例（请参阅此处的[Github](https://mdn.github.io/learning-area/html/multimedia-and-embedding/other-embedding-technologies/embed-flash.html)，并[检查源代码](https://github.com/mdn/learning-area/blob/gh-pages/html/multimedia-and-embedding/other-embedding-technologies/embed-flash.html)）：
+下面是一个使用该[`<embed>`](/zh-CN/docs/Web/HTML/Element/embed) 元素嵌入
+Flash 影片的示例（请参阅此处的 [Github](https://mdn.github.io/learning-area/html/multimedia-and-embedding/other-embedding-technologies/embed-flash.html)，并[检查源代码](https://github.com/mdn/learning-area/blob/gh-pages/html/multimedia-and-embedding/other-embedding-technologies/embed-flash.html)）：
 
 ```html
 <embed
@@ -342,7 +342,7 @@ Flash 影片的示例（请参阅此处的[Github](https://mdn.github.io/learnin
 往往更糟糕，使用嵌入`<object>`元素的`<embed>`元素来覆盖所有的基础（查看一个例子）。甚至有一段时间，Flash 被成功地用作 HTML5
 视频的备用内容，但是这种情况越来越被认为是不必要的。
 
-现在来看一个 `<object>` 将 PDF 嵌入一个页面的例子（参见[实例](https://mdn.github.io/learning-area/html/multimedia-and-embedding/other-embedding-technologies/object-pdf.html)和[源代码](https://github.com/mdn/learning-area/blob/gh-pages/html/multimedia-and-embedding/other-embedding-technologies/object-pdf.html)）：
+现在来看一个 `<object>` 将 PDF 嵌入一个页面的例子（参见[实例](https://mdn.github.io/learning-area/html/multimedia-and-embedding/other-embedding-technologies/object-pdf.html) 和[源代码](https://github.com/mdn/learning-area/blob/gh-pages/html/multimedia-and-embedding/other-embedding-technologies/object-pdf.html)）：
 
 ```html
 <object
@@ -370,15 +370,15 @@ PDF 是纸与数据之间重要的阶梯，但它们[在无障碍上有些问题
 - **避免额外的安全隐患**。即使经过无数次补丁[，](http://www.cvedetails.com/product/6761/Adobe-Flash-Player.html?vendor_id=53) Adobe Flash 也是[非常不安全的](http://www.cvedetails.com/product/6761/Adobe-Flash-Player.html?vendor_id=53)。2015
   年，Facebook 的首席安全官 Alex Stamos 甚至[要求 Adobe 停止 Flash](http://www.theverge.com/2015/7/13/8948459/adobe-flash-insecure-says-facebook-cso)。
 
-那你该怎么办？如果你需要交互性，HTML 和[JavaScript](/zh-CN/docs/Glossary/JavaScript)可以轻松地为你完成工作，而不需要 Java 小程序或过时的 ActiveX /
-BHO 技术。你可以使用 [HTML5 视频](/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content)来满足媒体需求，矢量图形[SVG](/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web)，以及复杂图像和动画[画布](/zh-CN/docs/Web/API/Canvas_API/Tutorial)。[彼得·埃尔斯特（Peter Elst）几年前已经提到](https://plus.google.com/+PeterElst/posts/P5t4pFhptvp)，对于工作 Adobe Flash
-极少是正确的工具，除了专门的游戏和商业应用。对于 ActiveX，即使微软的[Edge](/zh-CN/docs/Glossary/Microsoft_Edge)浏览器也不再支持。
+那你该怎么办？如果你需要交互性，HTML 和 [JavaScript](/zh-CN/docs/Glossary/JavaScript) 可以轻松地为你完成工作，而不需要 Java 小程序或过时的 ActiveX /
+BHO 技术。你可以使用 [HTML5 视频](/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content) 来满足媒体需求，矢量图形 [SVG](/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web)，以及复杂图像和动画[画布](/zh-CN/docs/Web/API/Canvas_API/Tutorial)。[彼得·埃尔斯特（Peter Elst）几年前已经提到](https://plus.google.com/+PeterElst/posts/P5t4pFhptvp)，对于工作 Adobe Flash
+极少是正确的工具，除了专门的游戏和商业应用。对于 ActiveX，即使微软的 [Edge](/zh-CN/docs/Glossary/Microsoft_Edge) 浏览器也不再支持。
 
 ## 总结
 
 在 Web 文档中嵌入其他内容这一主题可以很快变得非常复杂，因此在本文中，我们尝试以一种简单而熟悉的方式来介绍它，这种介绍方式将立即显示出相关性，同时仍暗示了一些涉及更高级功能的技术。刚开始，除了嵌入第三方内容（如地图和视频），你不太可能在网页上使用到嵌入技术。当你变得更有经验时，你可能会开始为他们找到更多的用途。
 
 除了我们在这里讨论的那些外，还有许多涉及嵌入外部内容的技术。我们看到了一些在前面的文章中出现的，如 [`<video>`](/zh-CN/docs/Web/HTML/Element/video)、[`<audio>`](/zh-CN/docs/Web/HTML/Element/audio) 和 [`<img>`](/zh-CN/docs/Web/HTML/Element/img)，但还有其他的有待关注，如 [`<canvas>`](/zh-CN/docs/Web/HTML/Element/canvas) 用于 JavaScript
-生成的 2D 和 3D 图形，[`<svg>`](/zh-CN/docs/Web/SVG/Element/svg) 用于嵌入矢量图形。我们将在此学习模块的下一篇文章中学习[SVG](/zh-CN/docs/Web/SVG)。
+生成的 2D 和 3D 图形，[`<svg>`](/zh-CN/docs/Web/SVG/Element/svg) 用于嵌入矢量图形。我们将在此学习模块的下一篇文章中学习 [SVG](/zh-CN/docs/Web/SVG)。
 
 {{PreviousMenuNext("Learn/HTML/Multimedia_and_embedding/Video_and_audio_content", "Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web", "Learn/HTML/Multimedia_and_embedding")}}

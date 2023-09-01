@@ -78,7 +78,7 @@ slug: Learn/Tools_and_testing/Understanding_client-side_tools/Introducing_comple
 
 ## 工具的三个阶段
 
-正如我们在[第一章](/zh-CN/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Overview)中所讨论的那样，工具链将分为以下阶段：
+正如我们在[第一章](/zh-CN/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Overview) 中所讨论的那样，工具链将分为以下阶段：
 
 - **安全的网络**：使软件开发体验稳定且更高效。我们也可能将其称为开发环境。
 - **编译与构建**：允许我们在开发过程中使用编程语言（例如 JavaScript）的最新特性或其他语言（例如 JSX 或 TypeScript），然后转译我们的代码，以便生产版本仍在各种浏览器上运行，无论是现代的和陈旧的。
@@ -121,7 +121,7 @@ npm 将用于安装我们工具链的后续部分。接下来，我们将安装 
 
 Git 可以通过 git-scm 网站[下载和安装](https://git-scm.com/downloads)——下载适用于你系统的相关安装程序，运行它，并按照屏幕上的提示操作。干就完事了。
 
-你可以以多种不同的方式与 git 进行交互，从使用命令行发出命令，到使用 [git GUI 应用程序](https://git-scm.com/downloads/guis)通过按按钮发出相同的命令，甚至从直接在代码编辑器内部使用，如下面的 Visual Studio Code 示例所示：
+你可以以多种不同的方式与 git 进行交互，从使用命令行发出命令，到使用 [git GUI 应用程序](https://git-scm.com/downloads/guis) 通过按按钮发出相同的命令，甚至从直接在代码编辑器内部使用，如下面的 Visual Studio Code 示例所示：
 
 ![在 VS Code 中显示的 GitHub 集成](vscode-git.png)
 
@@ -163,7 +163,7 @@ prettier --write ./src/index.html
 
 对于 VS Code，一个有用的扩展是 [Esben Petersen 编写的 Prettier Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)，它允许 VSCode 在保存时自动格式化代码。这意味着我们正在开发的项目中的任何文件都会得到合适的格式化，包括 HTML、CSS、JavaScript、JSON、markdown 等。编辑器所需的只是启用“保存时格式化”。
 
-与许多比较新的工具一样，Prettier 带有“合理的默认值”。这意味着你将能够使用 Prettier 而无需配置任何内容（如果[默认值](https://prettier.io/docs/en/configuration.html)满足你的要求）。这使你可以专注于重要的事情：创意工作。
+与许多比较新的工具一样，Prettier 带有“合理的默认值”。这意味着你将能够使用 Prettier 而无需配置任何内容（如果[默认值](https://prettier.io/docs/en/configuration.html) 满足你的要求）。这使你可以专注于重要的事情：创意工作。
 
 ### 代码检查工具
 
@@ -285,7 +285,7 @@ npm install --save-dev eslint prettier babel-eslint
    }
    ```
 
-   使用这些设置，当 Prettier 为你格式化 JavaScript 代码时，它将对所有带引号的值使用单引号，并且不使用尾随逗号（这是 ECMAScript 的新特性，在旧版浏览器中这会导致错误）。你可以在 [Prettier 文档](https://prettier.io/docs/en/configuration.html)中找到更多关于配置 Prettier 的信息。
+   使用这些设置，当 Prettier 为你格式化 JavaScript 代码时，它将对所有带引号的值使用单引号，并且不使用尾随逗号（这是 ECMAScript 的新特性，在旧版浏览器中这会导致错误）。你可以在 [Prettier 文档](https://prettier.io/docs/en/configuration.html) 中找到更多关于配置 Prettier 的信息。
 
 3. 接下来，我们将配置 ESLint——在 `will-it-miss` 目录的根目录中创建另一个名为 `.eslintrc.json` 的文件，并将其设置为以下内容：
 

@@ -74,7 +74,7 @@ function updateName() {
 
 {{ EmbedLiveSample('高层定义', '100%', 80) }}
 
-尝试点击最后一个版本的文本标签，观察会发生什么（也可在 GitHub 上查看这个演示的[源代码](https://github.com/mdn/learning-area/blob/main/javascript/introduction-to-js-1/what-is-js/javascript-label.html)或[在线运行它](https://mdn.github.io/learning-area/javascript/introduction-to-js-1/what-is-js/javascript-label.html)）！
+尝试点击最后一个版本的文本标签，观察会发生什么（也可在 GitHub 上查看这个演示的[源代码](https://github.com/mdn/learning-area/blob/main/javascript/introduction-to-js-1/what-is-js/javascript-label.html) 或[在线运行它](https://mdn.github.io/learning-area/javascript/introduction-to-js-1/what-is-js/javascript-label.html)）！
 
 JavaScript 能做的远不止这些。让我们来仔细探索。
 
@@ -98,7 +98,7 @@ API 通常分为两类。
 **浏览器 API** 内建于 web 浏览器中，它们可以将数据从周边计算机环境中筛选出来，还可以做实用的复杂工作。例如：
 
 - {{domxref("Document_Object_Model","文档对象模型 API","","nocode")}} 能通过创建、移除和修改 HTML，为页面动态应用新样式等手段来操作 HTML 和 CSS。比如当某个页面出现了一个弹窗，或者显示了一些新内容（像上文小演示中看到那样），这就是 DOM 在运行。
-- {{domxref("Geolocation","地理位置 API","","nocode")}} 获取地理信息。这就是为什么[谷歌地图](https://www.google.com/maps)可以找到你的位置，而且标示在地图上。
+- {{domxref("Geolocation","地理位置 API","","nocode")}} 获取地理信息。这就是为什么[谷歌地图](https://www.google.com/maps) 可以找到你的位置，而且标示在地图上。
 - {{domxref("Canvas_API","画布（Canvas）","","nocode")}} 和 {{domxref("WebGL_API","WebGL","","nocode")}} API 可以创建生动的 2D 和 3D 图像。人们正运用这些 web 技术制作令人惊叹的作品。参见 [Chrome Experiments](https://experiments.withgoogle.com/collection/chrome) 以及 [webglsamples](https://webglsamples.org/)。
 - 诸如 {{domxref("HTMLMediaElement")}} 和 {{domxref("WebRTC API", "WebRTC","","nocode")}} 等[影音类 API](/zh-CN/docs/Web/Guide/Audio_and_video_delivery) 让你可以利用多媒体做一些非常有趣的事，比如在网页中直接播放音乐和影片，或用自己的网络摄像头获取录像，然后在其他人的电脑上展示（试用简易版[截图演示](http://chrisdavidmills.github.io/snapshot/)以理解这个概念）。
 
@@ -146,7 +146,7 @@ function updateName() {
 
 这里我们选定一个文本段落（第 1 行)，然后给它附上一个事件监听器（第 3 行），使得在它被点击时，`updateName()` 代码块（5 – 8 行）便会运行。`updateName()` 代码块（这类可以重复使用的代码块称为“函数”）向用户请求一个新名字，然后把这个名字插入到段落中以更新显示。
 
-如果你互换了代码里最初两行的顺序，会导致问题。浏览器[开发者控制台](/zh-CN/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools)将返回一个错误：`TypeError: para is undefined`。这意味着 `para` 对象还不存在，所以我们不能为它增添一个事件监听器。
+如果你互换了代码里最初两行的顺序，会导致问题。浏览器[开发者控制台](/zh-CN/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) 将返回一个错误：`TypeError: para is undefined`。这意味着 `para` 对象还不存在，所以我们不能为它增添一个事件监听器。
 
 > **备注：** 这是一个很常见的错误，在引用对象之前必须确保该对象已经存在。
 
@@ -164,7 +164,7 @@ JavaScript 是轻量级解释型语言。浏览器接受到 JavaScript 代码，
 
 你或许还听说过**服务器端**（server-side）和**客户端**（client-side）代码这两个术语，尤其是在 web 开发时。客户端代码是在用户的电脑上运行的代码，在浏览一个网页时，它的客户端代码就会被下载，然后由浏览器来运行并展示。在本模块中我们讨论的主要是**客户端 JavaScript**。
 
-而服务器端代码在服务器上运行，然后运行结果才由浏览器下载并展示出来。流行的服务器端 web 语言包括：PHP、Python、Ruby、ASP.NET，甚至有 JavaScript！JavaScript 也可用作服务器端语言，比如现在流行的 Node.js 环境，你可以在我们的[动态网页——服务器端编程](/zh-CN/docs/Learn/Server-side)主题中找到更多关于服务器端 JavaScript 的知识。
+而服务器端代码在服务器上运行，然后运行结果才由浏览器下载并展示出来。流行的服务器端 web 语言包括：PHP、Python、Ruby、ASP.NET，甚至有 JavaScript！JavaScript 也可用作服务器端语言，比如现在流行的 Node.js 环境，你可以在我们的[动态网页——服务器端编程](/zh-CN/docs/Learn/Server-side) 主题中找到更多关于服务器端 JavaScript 的知识。
 
 ### 动态代码 vs 静态代码
 
@@ -297,7 +297,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 ```
 
-这是一个事件监听器，它监听浏览器的 `DOMContentLoaded` 事件，其标志了 HTML 文档体完全加载和解析。该代码块中的 JavaScript 在事件被触发后才会运行，因此避免了错误（你将在课程的后面[学习事件](/zh-CN/docs/Learn/JavaScript/Building_blocks/Events)中了解到这些）。
+这是一个事件监听器，它监听浏览器的 `DOMContentLoaded` 事件，其标志了 HTML 文档体完全加载和解析。该代码块中的 JavaScript 在事件被触发后才会运行，因此避免了错误（你将在课程的后面[学习事件](/zh-CN/docs/Learn/JavaScript/Building_blocks/Events) 中了解到这些）。
 
 “外部”示例中使用了 JavaScript 的一项现代技术（`defer` 属性）来解决这一问题，它告知浏览器在遇到 `<script>` 元素时继续下载 HTML 内容。
 

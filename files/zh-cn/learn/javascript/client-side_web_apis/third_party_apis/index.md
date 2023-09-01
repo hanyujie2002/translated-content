@@ -199,7 +199,7 @@ Google 地图的另一个常见用例是在点击其名称或标记时显示有�
    scaleControl: true,
    ```
 
-4. 现在尝试重新加载示例以查看这些属性的效果。你可以在 [MapOptions object reference page](https://developers.google.com/maps/documentation/javascript/3.exp/reference#MapOptions)找到更多属性。
+4. 现在尝试重新加载示例以查看这些属性的效果。你可以在 [MapOptions object reference page](https://developers.google.com/maps/documentation/javascript/3.exp/reference#MapOptions) 找到更多属性。
 
 就是现在 - 看看 [Google Maps APIs documentation](https://developers.google.com/maps/documentation/javascript/)，发现更多乐趣！
 
@@ -434,7 +434,7 @@ function displayResults(json) {
 
 ![](youtube-example.png)
 
-本文不会对该示例做过多的叙述，[源码](https://github.com/mdn/learning-area/tree/main/javascript/apis/third-party-apis/youtube)中有详细的注释。
+本文不会对该示例做过多的叙述，[源码](https://github.com/mdn/learning-area/tree/main/javascript/apis/third-party-apis/youtube) 中有详细的注释。
 
 运行源码需要：
 

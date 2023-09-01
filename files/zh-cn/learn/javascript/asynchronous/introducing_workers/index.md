@@ -215,7 +215,7 @@ worker 要做的第一件事情就是开始监听来自主脚本的消息。这�
 
 `generatePrimes()` 函数与同步版本类似，只不过我们在完成后向主脚本发送一条消息，而不是返回一个值。我们对此使用 {{DOMxRef("dedicatedWorkerGlobalScope.postMessage()", "postMessage()")}} 函数，就像在 worker 中 `addEventListener`是全局函数一样。如我们所见，主脚本正在监听这条消息并且将会在收到消息后更新 DOM。
 
-> **备注：** 要运行此站点，你必须运行一个本地 web 服务器，因为 file:// URLs 不允许加载 workers。参考我们的[设置一个本地测试服务器](/zh-CN/docs/Learn/Common_questions/set_up_a_local_testing_server)的指导。完成后，你应该可以点击 "Generate primes" 并且使你的主页面保持响应。
+> **备注：** 要运行此站点，你必须运行一个本地 web 服务器，因为 file:// URLs 不允许加载 workers。参考我们的[设置一个本地测试服务器](/zh-CN/docs/Learn/Common_questions/set_up_a_local_testing_server) 的指导。完成后，你应该可以点击 "Generate primes" 并且使你的主页面保持响应。
 > 如果你在创建和运行这个样例的过程中有疑问，你可以在 [https://github.com/mdn/learning-area/blob/main/javascript/asynchronous/workers/finished](https://github.com/mdn/learning-area/blob/main/javascript/asynchronous/workers/finished) 查看完成后的版本，并且在 [https://mdn.github.io/learning-area/javascript/asynchronous/workers/finished](https://mdn.github.io/learning-area/javascript/asynchronous/workers/finished) 进行在线尝试。
 
 ## 其他类型的 worker
@@ -225,7 +225,7 @@ worker 要做的第一件事情就是开始监听来自主脚本的消息。这�
 不过，还有其他类型的 worker：
 
 - {{DOMxRef("SharedWorker")}} 可以由运行在不同窗口中的多个不同脚本共享。
-- [_Service worker_](/zh-CN/docs/Web/API/Service_Worker_API) 的行为就像代理服务器，缓存资源以便于 web 应用程序可以在用户离线时工作。他们是[渐进式 Web 应用](/zh-CN/docs/Web/Progressive_web_apps)的关键组件。
+- [_Service worker_](/zh-CN/docs/Web/API/Service_Worker_API) 的行为就像代理服务器，缓存资源以便于 web 应用程序可以在用户离线时工作。他们是[渐进式 Web 应用](/zh-CN/docs/Web/Progressive_web_apps) 的关键组件。
 
 ## 总结
 

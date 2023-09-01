@@ -16,7 +16,7 @@ slug: Mozilla/Firefox/Releases/3
 - [上线与离线事件](/zh-CN/%E4%B8%8A%E7%BA%BF%E4%B8%8E%E7%A6%BB%E7%BA%BF%E4%BA%8B%E4%BB%B6)
   - : Firefox 3 支持 WHATWG 的上线与离线事件，基于这一特性，程序可以检测当前是否有可用的互联网联接以及何时上线或下线。
 - [跨域的 XMLHttpRequest 请求](/zh-CN/%E8%B7%A8%E5%9F%9F%E7%9A%84XMLHttpRequest%E8%AF%B7%E6%B1%82)
-  - : Firefox 3 支持[W3C Access Control](http://www.w3.org/TR/access-control/)工作草案，使你有能够使用[XMLHttpRequests](/zh-CN/XMLHttpRequest)检索和操作其他站点的数据；使你能够创造令人印象深刻的以浏览器为基础的交互式应用（mashups）。
+  - : Firefox 3 支持 [W3C Access Control](http://www.w3.org/TR/access-control/)工作草案，使你有能够使用 [XMLHttpRequests](/zh-CN/XMLHttpRequest) 检索和操作其他站点的数据；使你能够创造令人印象深刻的以浏览器为基础的交互式应用（mashups）。
 - [交错格式样表](/zh-CN/%E4%BA%A4%E9%94%99%E6%A0%BC%E5%BC%8F%E6%A0%B7%E8%A1%A8)
   - : Firefox 3 支持 CSS 层叠式样式表 API.
 - [基于 web 的协议处理](/zh-CN/DOM/window.navigator.registerProtocolHandler)
@@ -40,7 +40,7 @@ slug: Mozilla/Firefox/Releases/3
 - [JavaScript 1.8 的支持](/zh-CN/%E5%AF%B9_JavaScript_1.8)
   - : Firefox 3 提供了 JavaScript 1.8 标准的支持。
 - [EXSLT 支持](/zh-CN/EXSLT)
-  - : Firefox 3 提供了对 [EXSLT](/zh-CN/EXSLT)（ [XSLT](/zh-CN/XSLT)的扩展）一个基本子集个支持。
+  - : Firefox 3 提供了对 [EXSLT](/zh-CN/EXSLT)（ [XSLT](/zh-CN/XSLT) 的扩展）一个基本子集个支持。
 - [Firefox 3 中 SVG 的改进](/zh-CN/Firefox_3%E4%B8%ADSVG%E7%9A%84%E6%94%B9%E8%BF%9B)
   - : Firefox 3 对 SVG 的支持有了长足的改进：支持二十余个新透镜、一些新元素、一些新属性以及一些其他改进。
 - [对 PNG 动画的支持](/zh-CN/%E5%AF%B9PNG%E5%8A%A8%E7%94%BB%E7%9A%84%E6%94%AF%E6%8C%81)
@@ -121,8 +121,8 @@ slug: Mozilla/Firefox/Releases/3
 #### 安全和隐私
 
 - **一键网站信息。** 想知道更多关于你所访问网站的信息？点击该网站的图标，在地址栏中看看是谁拥有它。信息更易理解。
-- **恶意软件防护。**如果你访问了一个已知的安装病毒，间谍软件，木马，或其他危险软件（也称为恶意软件）的网站 Firefox 3 会警告你。你可以[点这里](https://www.mozilla.com/firefox/its-an-attack.html)看看警告是怎样的。
-- **伪造网站保护加强。** 现在，当你访问的网站被怀疑是伪造时，会出现一个特殊的网页。[点击这里](https://www.mozilla.com/firefox/its-a-trap.html)看看是什么样子。
+- **恶意软件防护。**如果你访问了一个已知的安装病毒，间谍软件，木马，或其他危险软件（也称为恶意软件）的网站 Firefox 3 会警告你。你可以[点这里](https://www.mozilla.com/firefox/its-an-attack.html) 看看警告是怎样的。
+- **伪造网站保护加强。** 现在，当你访问的网站被怀疑是伪造时，会出现一个特殊的网页。[点击这里](https://www.mozilla.com/firefox/its-a-trap.html) 看看是什么样子。
 
 - **更容易理解的 SSL 错误**。遇到无效的 SSL 证书时会包含清楚的错误描述，使其更易于理解是哪里发生了问题。
 - **过期附件组件防护。** 现在 Firefox 3 的自动检查插件和插件版本并禁用过时的，不安全的版本。

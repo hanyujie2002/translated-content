@@ -161,7 +161,7 @@ checkGuess();
 
 在按下 <kbd>Return</kbd>/<kbd>Enter</kbd> 之后，你应该会看到一个告警窗口，显示 `I am a placeholder`；我们在代码中定义了一个函数，当我们调用它时，其都会创建一个告警窗口。
 
-> **备注：** [后续课程](/zh-CN/docs/Learn/JavaScript/Building_blocks/Functions)将讲解更多有关函数的知识。
+> **备注：** [后续课程](/zh-CN/docs/Learn/JavaScript/Building_blocks/Functions) 将讲解更多有关函数的知识。
 
 ### 运算符（Operator）
 
@@ -405,7 +405,7 @@ for (const fruit of fruits) {
 
 发生了什么？控制台中打印出了字符串 `'apples'、'bananas'、'cherries'`。
 
-这正是循环所为。`const fruits = ['apples', 'bananas', 'cherries'];` 这一行创建了一个数组。我们在本章稍后的[完整的数组指南](/zh-CN/docs/Learn/JavaScript/First_steps/Arrays)中会作深入探究。就目前而言，数组是元素（本例中为字符串）的集合。
+这正是循环所为。`const fruits = ['apples', 'bananas', 'cherries'];` 这一行创建了一个数组。我们在本章稍后的[完整的数组指南](/zh-CN/docs/Learn/JavaScript/First_steps/Arrays) 中会作深入探究。就目前而言，数组是元素（本例中为字符串）的集合。
 
 `for...of` 循环为你提供了一种获取数组中的每一个元素的方法，并在元素的基础上运行 JavaScript 代码。`for (const fruit of fruits)` 这一行的意思是：
 
@@ -497,6 +497,6 @@ guessField.focus();
 
 ## 大功告成
 
-这个示例已经构建完毕，做得好！来尝试运行一下最终的代码，或者[看看我们的最终版本](https://mdn.github.io/learning-area/javascript/introduction-to-js-1/first-splash/number-guessing-game.html)。如果你的版本无法正常工作，请对照[源代码](https://github.com/mdn/learning-area/blob/main/javascript/introduction-to-js-1/first-splash/number-guessing-game.html)进行检查。
+这个示例已经构建完毕，做得好！来尝试运行一下最终的代码，或者[看看我们的最终版本](https://mdn.github.io/learning-area/javascript/introduction-to-js-1/first-splash/number-guessing-game.html)。如果你的版本无法正常工作，请对照[源代码](https://github.com/mdn/learning-area/blob/main/javascript/introduction-to-js-1/first-splash/number-guessing-game.html) 进行检查。
 
 {{PreviousMenuNext("Learn/JavaScript/First_steps/What_is_JavaScript", "Learn/JavaScript/First_steps/What_went_wrong", "Learn/JavaScript/First_steps")}}

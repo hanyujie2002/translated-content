@@ -11,7 +11,7 @@ slug: Learn/Performance
 
 ## 学习途径
 
-虽然了解 HTML、CSS 和 Javascript 是实现许多网页性能提升建议的必要条件，但了解如何构建应用却不是理解和衡量网页性能的必要先决条件。然而，我们建议你在学习本模块之前，至少通过学习我们的 [web 入门](/zh-CN/docs/Learn/Getting_started_with_the_web)模块，获得一个网络开发的基本概念。
+虽然了解 HTML、CSS 和 Javascript 是实现许多网页性能提升建议的必要条件，但了解如何构建应用却不是理解和衡量网页性能的必要先决条件。然而，我们建议你在学习本模块之前，至少通过学习我们的 [web 入门](/zh-CN/docs/Learn/Getting_started_with_the_web) 模块，获得一个网络开发的基本概念。
 
 更深入进行以下主题也很有必要，这些模块包括：
 
@@ -19,7 +19,7 @@ slug: Learn/Performance
 - [CSS 初步](/zh-CN/docs/Learn/CSS/First_steps)
 - [JavaScript 初步](/zh-CN/docs/Learn/JavaScript/First_steps)
 
-一旦你完成了这个模块的学习，你可能会对深入研究网络性能感到兴奋——你可以在我们的 [MDN 网络主要性能部分](/zh-CN/docs/Web/Performance)找到很多进一步的教学内容，包括性能 API 的概述、测试和分析工具，以及性能瓶颈问题。
+一旦你完成了这个模块的学习，你可能会对深入研究网络性能感到兴奋——你可以在我们的 [MDN 网络主要性能部分](/zh-CN/docs/Web/Performance) 找到很多进一步的教学内容，包括性能 API 的概述、测试和分析工具，以及性能瓶颈问题。
 
 ## 指南
 
@@ -55,6 +55,6 @@ slug: Learn/Performance
 - [Web 性能资源](/zh-CN/docs/Learn/Performance/Web_Performance_Basics)
   - : 除了 HTML、CSS、JavaScript 和媒体文件等前端组件外，还有一些可以使应用程序变慢的功能和可以使应用程序在主观和客观上变快的功能。有许多与网络性能有关的 API、开发者工具、最佳实践和不良实践。在这里，我们将介绍许多这些功能的基本水平，并提供更深入的链接，以提高每个主题的性能。
 - [响应式图片](/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
-  - : 在这篇文章中，我们将了解响应式图像的概念，并看看 HTML 提供了哪些工具来帮助实现它们。响应式图像是在屏幕尺寸、分辨率和其他类似特征差别很大的设备上能很好地工作的图像。这有助于提高不同设备的性能。响应式图像只是[响应式设计](/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design)的一部分，这是你未来要学习的一个 CSS 主题。
+  - : 在这篇文章中，我们将了解响应式图像的概念，并看看 HTML 提供了哪些工具来帮助实现它们。响应式图像是在屏幕尺寸、分辨率和其他类似特征差别很大的设备上能很好地工作的图像。这有助于提高不同设备的性能。响应式图像只是[响应式设计](/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design) 的一部分，这是你未来要学习的一个 CSS 主题。
 - [MDN 上主要的 web 性能页面](/zh-CN/docs/Web/Performance)
   - : 我们主要的网络性能部分。在这里你会发现更多关于网络性能的细节，包括性能 API 的概述，测试和分析工具，以及性能瓶颈的问题。

@@ -63,10 +63,10 @@ slug: Learn/Server-side/Django/Tutorial_local_library_website
 
 在学习本系列教程时，我们会提供合适的代码片段，你可以粘贴复制，但是有些代码我们希望你能自己扩展（在提示下）。
 
-如果你卡在某个地方，你可以在[Github](https://github.com/mdn/django-locallibrary-tutorial)里找到网站的完整代码。I
+如果你卡在某个地方，你可以在 [Github](https://github.com/mdn/django-locallibrary-tutorial) 里找到网站的完整代码。I
 
 ## 总结
 
-现在你对本地图书馆网站有了一些了解并知道你会学到什么。是时候创建我们例子会用到的[网站框架](/zh-CN/docs/Learn/Server-side/Django/skeleton_website)了。
+现在你对本地图书馆网站有了一些了解并知道你会学到什么。是时候创建我们例子会用到的[网站框架](/zh-CN/docs/Learn/Server-side/Django/skeleton_website) 了。
 
 {{PreviousMenuNext("Learn/Server-side/Django/development_environment", "Learn/Server-side/Django/skeleton_website", "Learn/Server-side/Django")}}

@@ -113,7 +113,7 @@ cd beastify
 
 工具栏按钮也需要一个图标，并且我们的 manifest.json 承诺我们会为该工具栏在 "icons/beasts-32.png" 提供一个图标。
 
-将一个图标命名为为 "beasts-32.png"并保存到"icons"文件夹。你可以使用例子中的[图片](https://github.com/mdn/webextensions-examples/blob/main/beastify/icons/beasts-32.png)，它是取自 [IconBeast Lite 图标集](http://www.iconbeast.com/free)并按其[许可协议](http://www.iconbeast.com/faq/)授权使用。
+将一个图标命名为为 "beasts-32.png"并保存到"icons"文件夹。你可以使用例子中的[图片](https://github.com/mdn/webextensions-examples/blob/main/beastify/icons/beasts-32.png)，它是取自 [IconBeast Lite 图标集](http://www.iconbeast.com/free) 并按其[许可协议](http://www.iconbeast.com/faq/)授权使用。
 
 如果你没有弹出窗，用户点击的事件会直接分派到你的插件中。如果你制作了弹出窗，用户点击会直接打开这个弹出窗，而不会被分派给插件。本例中我们需要弹出窗，因此我们现在开始写它。
 
@@ -162,7 +162,7 @@ HTML 文件就像这样：
 </html>
 ```
 
-我们有一个 ID 为 `"popup-content"` 的[\<div>](/zh-CN/docs/Web/HTML/Element/div)元素包含了每个动物选择。我们还有另外一个`<div>` 元素，它的 ID 为 `"error-content"` ，class 为`"hidden"`。我们将会使用它以防初始化弹窗的时候出问题。
+我们有一个 ID 为 `"popup-content"` 的[\<div>](/zh-CN/docs/Web/HTML/Element/div) 元素包含了每个动物选择。我们还有另外一个`<div>` 元素，它的 ID 为 `"error-content"` ，class 为`"hidden"`。我们将会使用它以防初始化弹窗的时候出问题。
 
 注意我们引入了 CSS 和 JS 文件，就像网页一样。
 
@@ -313,7 +313,7 @@ browser.tabs
 
 从 96 行开始。只要弹出窗加载完，popup scrpit 就会使用 [`browser.tabs.executeScript()`](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/API/tabs/executeScript) API 在活跃标签页执行 content script。如果执行 content scrpit 成功，content script 会在页面中一直保持，直到标签被关闭或者用户导航到其他页面。
 
-`browser.tabs.executeScript()`调用失败的常见原因是你不能在所有页面执行 content scripts。例如，你不能在特权浏览器页面执行，像 about:debugging，你也不能在[addons.mozilla.org](https://addons.mozilla.org/)域执行。如果调用失败，`reportExecuteScriptError()`会隐藏`"popup-content"` `<div>`，并展示`"error-content"` `<div>`, 然后打印一个错误到[控制台](/zh-CN/Add-ons/WebExtensions/Debugging)。
+`browser.tabs.executeScript()`调用失败的常见原因是你不能在所有页面执行 content scripts。例如，你不能在特权浏览器页面执行，像 about:debugging，你也不能在 [addons.mozilla.org](https://addons.mozilla.org/)域执行。如果调用失败，`reportExecuteScriptError()`会隐藏`"popup-content"` `<div>`，并展示`"error-content"` `<div>`, 然后打印一个错误到[控制台](/zh-CN/Add-ons/WebExtensions/Debugging)。
 
 如果成功执行 content script，我们会调用 `listenForClicks()`。这个监听了弹窗上的点击事件。
 
@@ -396,7 +396,7 @@ content script 做的第一件事是检查全局变量 `window.hasRun`：如果�
 
 最后，我们要加入包含动物们的图像。
 
-创建"beasts"文件夹，之后将图片放入并命名。你可以从 [GitHub 仓库](https://github.com/mdn/webextensions-examples/tree/main/beastify/beasts)或这里下载图片：
+创建"beasts"文件夹，之后将图片放入并命名。你可以从 [GitHub 仓库](https://github.com/mdn/webextensions-examples/tree/main/beastify/beasts) 或这里下载图片：
 
 ![一只棕色青蛙。](frog.jpg)
 

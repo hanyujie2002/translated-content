@@ -17,9 +17,9 @@ slug: Learn/HTML
 
 ## 须知
 
-在开始这个主题的学习之前，你至少要基本熟悉使用电脑和被动地使用网络（即单纯地查看内容）。你应该设置好一个基础的工作环境，详细参照[安装基础软件](/zh-CN/docs/Learn/Getting_started_with_the_web/Installing_basic_software)，并且理解如何新建和管理文件，详细参照[文件处理](/zh-CN/docs/Learn/Getting_started_with_the_web/Dealing_with_files)——这两者都在 [web 入门](/zh-CN/docs/Learn/Getting_started_with_the_web)的零基础模块里。
+在开始这个主题的学习之前，你至少要基本熟悉使用电脑和被动地使用网络（即单纯地查看内容）。你应该设置好一个基础的工作环境，详细参照[安装基础软件](/zh-CN/docs/Learn/Getting_started_with_the_web/Installing_basic_software)，并且理解如何新建和管理文件，详细参照[文件处理](/zh-CN/docs/Learn/Getting_started_with_the_web/Dealing_with_files)——这两者都在 [web 入门](/zh-CN/docs/Learn/Getting_started_with_the_web) 的零基础模块里。
 
-在尝试学习这个主题之前，建议先完成 [web 入门](/zh-CN/docs/Learn/Getting_started_with_the_web)主题，不过这并不是必要的。[HTML 基础](/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics)里大多数的文章在 [HTML 介绍](/zh-CN/docs/Learn/HTML/Introduction_to_HTML)中也有涉及，不过要详细得多。
+在尝试学习这个主题之前，建议先完成 [web 入门](/zh-CN/docs/Learn/Getting_started_with_the_web) 主题，不过这并不是必要的。[HTML 基础](/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics) 里大多数的文章在 [HTML 介绍](/zh-CN/docs/Learn/HTML/Introduction_to_HTML) 中也有涉及，不过要详细得多。
 
 在学习了 HTML 之后，你就可以继续学习其他进阶主题了，例如：
 
@@ -39,7 +39,7 @@ slug: Learn/HTML
 
 ## 解决常见的 HTML 问题
 
-[使用 HTML 解决常见问题](/zh-CN/docs/Learn/HTML/Howto)提供了一系列在创建网页过程中可能遇到的常见问题的解决方案：处理标题，添加图片或视频，强调内容，创建一个基础表单等等。
+[使用 HTML 解决常见问题](/zh-CN/docs/Learn/HTML/Howto) 提供了一系列在创建网页过程中可能遇到的常见问题的解决方案：处理标题，添加图片或视频，强调内容，创建一个基础表单等等。
 
 ## 参见
 

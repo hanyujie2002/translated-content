@@ -43,7 +43,7 @@ web 开发者们一直以来想在 Web 中使用音频和视频，自 21 世纪�
 
 我们不会教你如何制作音频和视频，因为那需要完全不同的技术。我们已经为你的试验提供了一些视频和音频的文件（[示例音频和视频文件以及示例代码的链接](https://github.com/mdn/learning-area/tree/main/html/multimedia-and-embedding/video-and-audio-content)），以防止你自己没有。
 
-> **备注：** 在你开始之前，你应当了解一些 {{glossary("OVP","OVPs")}} (在线视频提供商) 例如 [YouTube](https://www.youtube.com/) 、[Dailymotion](http://www.dailymotion.com) 、[Vimeo](https://vimeo.com/)、[Bilibili](https://www.bilibili.com)等，以及在线音频提供商例如 [Soundcloud](https://soundcloud.com/)。这些公司提供方便、简单的方式来支持视频，所以你不必担心庞大的带宽消耗。OVPS 甚至提供现成的代码用于为你的 web 网页嵌入视频/音频。如果你使用这样的服务，你便可以避免在这篇文章中我们将讨论的一些难题。在下一篇文章中，我们将会再讨论这样的服务。
+> **备注：** 在你开始之前，你应当了解一些 {{glossary("OVP","OVPs")}} (在线视频提供商) 例如 [YouTube](https://www.youtube.com/) 、[Dailymotion](http://www.dailymotion.com) 、[Vimeo](https://vimeo.com/)、[Bilibili](https://www.bilibili.com) 等，以及在线音频提供商例如 [Soundcloud](https://soundcloud.com/)。这些公司提供方便、简单的方式来支持视频，所以你不必担心庞大的带宽消耗。OVPS 甚至提供现成的代码用于为你的 web 网页嵌入视频/音频。如果你使用这样的服务，你便可以避免在这篇文章中我们将讨论的一些难题。在下一篇文章中，我们将会再讨论这样的服务。
 
 ### \<video> 元素
 
@@ -70,7 +70,7 @@ web 开发者们一直以来想在 Web 中使用音频和视频，自 21 世纪�
 
 ![A simple video player showing a video of a small white rabbit](simple-video.png)
 
-你可以点击[这里](https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/simple-video.html)查看网页，或者点击[这里](https://github.com/mdn/learning-area/blob/main/html/multimedia-and-embedding/video-and-audio-content/simple-video.html)查看源代码。
+你可以点击[这里](https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/simple-video.html) 查看网页，或者点击[这里](https://github.com/mdn/learning-area/blob/main/html/multimedia-and-embedding/video-and-audio-content/simple-video.html) 查看源代码。
 
 ### 使用多个播放源以提高兼容性
 
@@ -84,7 +84,7 @@ web 开发者们一直以来想在 Web 中使用音频和视频，自 21 世纪�
 
 ![Diagram conceptualizing the contents of a media file at the track level.](containersandtracks.png)
 
-为了编解码器（codec）编码媒体，容器中的音频和视频轨道以适合的格式保存。音频轨道和视频轨道使用不同的格式。每个音频轨道都使用[音频编解码器](/zh-CN/docs/Web/Media/Formats/Audio_codecs)进行编码，而视频轨道则使用（你可能已经猜到了）[视频编解码器](/zh-CN/docs/Web/Media/Formats/Video_codecs)进行编码。如前所述，不同的浏览器支持不同的视频和音频格式，以及不同的容器格式（如 MP3、MP4 和 WebM，这些格式又可以包含不同类型的视频和音频）。
+为了编解码器（codec）编码媒体，容器中的音频和视频轨道以适合的格式保存。音频轨道和视频轨道使用不同的格式。每个音频轨道都使用[音频编解码器](/zh-CN/docs/Web/Media/Formats/Audio_codecs) 进行编码，而视频轨道则使用（你可能已经猜到了）[视频编解码器](/zh-CN/docs/Web/Media/Formats/Video_codecs) 进行编码。如前所述，不同的浏览器支持不同的视频和音频格式，以及不同的容器格式（如 MP3、MP4 和 WebM，这些格式又可以包含不同类型的视频和音频）。
 
 例如：
 
@@ -106,11 +106,11 @@ web 开发者们一直以来想在 Web 中使用音频和视频，自 21 世纪�
 
 浏览器并不全支持相同的 codecs，所以你得使用几个不同格式的文件来兼容不同的浏览器。如果你使用的格式都得不到浏览器的支持，那么媒体文件将不会播放。
 
-要使你的媒体文件在不同平台，不同设备的浏览器上都可观看，这需要多种编码器组合使用，但是这是一种非常麻烦的事，所以可以参考[选择合适的容器](/zh-CN/docs/Web/Media/Formats/Containers#choosing_the_right_container)来选择最适合的容器格式，同样地，参考[选择视频编解码器](/zh-CN/docs/Web/Media/Formats/Video_codecs#选择视频编解码器)和[选择音频编解码器](/zh-CN/docs/Web/Media/Formats/Audio_codecs#选择音频编解码器)选择编码格式
+要使你的媒体文件在不同平台，不同设备的浏览器上都可观看，这需要多种编码器组合使用，但是这是一种非常麻烦的事，所以可以参考[选择合适的容器](/zh-CN/docs/Web/Media/Formats/Containers#choosing_the_right_container) 来选择最适合的容器格式，同样地，参考[选择视频编解码器](/zh-CN/docs/Web/Media/Formats/Video_codecs#选择视频编解码器)和[选择音频编解码器](/zh-CN/docs/Web/Media/Formats/Audio_codecs#选择音频编解码器)选择编码格式
 
 需要记住的另一件事：同一款浏览器，移动版与桌面版支持的格式可能会有不同。最重要的是，它们都可以减轻媒体播放的处理负担（对于所有媒体或仅针对其内部无法处理的特定类型）。这意味着设备的媒体支持还部分取决于用户安装了什么软件。
 
-我们该怎么做呢？请看如下例子（你可以点击这里[查看](https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/multiple-video-formats.html)网页，或者点击这里[查看](https://github.com/mdn/learning-area/blob/gh-pages/html/multimedia-and-embedding/video-and-audio-content/multiple-video-formats.html)源代码）：
+我们该怎么做呢？请看如下例子（你可以点击这里[查看](https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/multiple-video-formats.html) 网页，或者点击这里[查看](https://github.com/mdn/learning-area/blob/gh-pages/html/multimedia-and-embedding/video-and-audio-content/multiple-video-formats.html) 源代码）：
 
 ```html
 <video controls>
@@ -173,7 +173,7 @@ web 开发者们一直以来想在 Web 中使用音频和视频，自 21 世纪�
     - `"auto"` ：页面加载后缓存媒体文件
     - `"metadata"` ：仅缓冲文件的元数据
 
-你可以点击[这里](https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/extra-video-features.html)查看以上的例子，也可以点击[这里](https://github.com/mdn/learning-area/blob/gh-pages/html/multimedia-and-embedding/video-and-audio-content/extra-video-features.html)查看源代码。注意我们并没有使用 autoplay 属性在这个版本的例子中 — 如果当页面一加载就开始播放视频的话，就不会看到 poster 属性的效果了。
+你可以点击[这里](https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/extra-video-features.html) 查看以上的例子，也可以点击[这里](https://github.com/mdn/learning-area/blob/gh-pages/html/multimedia-and-embedding/video-and-audio-content/extra-video-features.html) 查看源代码。注意我们并没有使用 autoplay 属性在这个版本的例子中 — 如果当页面一加载就开始播放视频的话，就不会看到 poster 属性的效果了。
 
 ### \<audio> 标签
 
@@ -191,7 +191,7 @@ web 开发者们一直以来想在 Web 中使用音频和视频，自 21 世纪�
 
 ![A simple audio player with a play button, timer, volume control, and progress bar](audio-player.png)
 
-> **备注：** 你可以点击这里[查看](http://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/multiple-audio-formats.html)以上例子，或者点击[这里](https://github.com/mdn/learning-area/blob/gh-pages/html/multimedia-and-embedding/video-and-audio-content/multiple-audio-formats.html)查看源代码。
+> **备注：** 你可以点击这里[查看](http://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/multiple-audio-formats.html) 以上例子，或者点击[这里](https://github.com/mdn/learning-area/blob/gh-pages/html/multimedia-and-embedding/video-and-audio-content/multiple-audio-formats.html) 查看源代码。
 
 音频播放器所占用的空间比视频播放器要小，由于它没有视觉部件 — 你只需要显示出能控制音频播放的控件。一些与 HTML5 `<video>` 的差异如下：
 
@@ -278,7 +278,7 @@ WEBVTT
 
 ![Video player with stand controls such as play, stop, volume, and captions on and off. The video playing shows a scene of a man holding a spear-like weapon, and a caption reads "Esta hoja tiene pasado oscuro."](video-player-with-captions.png)
 
-如果你想了解更多细节，你可以阅读 [Adding captions and subtitles to HTML5 video](/zh-CN/Apps/Build/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video)。在 Github 上你可以找到与本文相关的样例，他们由 Ian Devlin 编写，点击[这里](https://iandevlin.github.io/mdn/video-player-with-captions/)可以查看该样例，或者点击[这里](https://github.com/iandevlin/iandevlin.github.io/tree/master/mdn/video-player-with-captions)查看源代码。这个样例使用了 JavaScript 代码，它使得用户可以选择不同的字幕。注意，若想要显示字幕，你需要点击 "CC" 按钮，并且选择一种语言 — English, Deutsch, 或 Español。
+如果你想了解更多细节，你可以阅读 [Adding captions and subtitles to HTML5 video](/zh-CN/Apps/Build/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video)。在 Github 上你可以找到与本文相关的样例，他们由 Ian Devlin 编写，点击[这里](https://iandevlin.github.io/mdn/video-player-with-captions/)可以查看该样例，或者点击[这里](https://github.com/iandevlin/iandevlin.github.io/tree/master/mdn/video-player-with-captions) 查看源代码。这个样例使用了 JavaScript 代码，它使得用户可以选择不同的字幕。注意，若想要显示字幕，你需要点击 "CC" 按钮，并且选择一种语言 — English, Deutsch, 或 Español。
 
 > **备注：** 文本轨道会使你的网站更容易被搜索引擎抓取到（{{glossary("SEO")}}），由于搜索引擎的文本抓取能力非常强大，使用文本轨道甚至可以让搜索引擎通过视频的内容直接链接。
 

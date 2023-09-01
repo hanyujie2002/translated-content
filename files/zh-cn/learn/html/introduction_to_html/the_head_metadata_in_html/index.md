@@ -46,7 +46,7 @@ HTML 头部包含 HTML {{htmlelement("head")}} 元素的内容，与 {{htmleleme
 </head>
 ```
 
-然而，大型页面的头部会相当大。可以试着到一些喜欢的网站上，使用[开发者工具](/zh-CN/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools)查看网页的头部内容。我们在这里的目的不是向你展示如何使用所有可能放在头部的东西，而是教你如何熟悉使用你想要包括在头部的主要元素。让我们开始吧。
+然而，大型页面的头部会相当大。可以试着到一些喜欢的网站上，使用[开发者工具](/zh-CN/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) 查看网页的头部内容。我们在这里的目的不是向你展示如何使用所有可能放在头部的东西，而是教你如何熟悉使用你想要包括在头部的主要元素。让我们开始吧。
 
 ## 添加标题
 
@@ -57,7 +57,7 @@ HTML 头部包含 HTML {{htmlelement("head")}} 元素的内容，与 {{htmleleme
 
 ### 主动学习：一个简单的示例
 
-1. 为了开始这个练习，我们希望你到我们的 GitHub 库中下载一份 [title-example.html 网页](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/the-html-head/title-example.html)副本。要做到这一点，你可以选择下面两种操作之一：
+1. 为了开始这个练习，我们希望你到我们的 GitHub 库中下载一份 [title-example.html 网页](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/the-html-head/title-example.html) 副本。要做到这一点，你可以选择下面两种操作之一：
 
    1. 使用你的代码编辑器，从页面中拷贝粘贴代码到一个新的文本文件中，然后将其保存到一个适当的地方。
    2. 按下 GitHub 页面中的“Raw”按钮（可能会在浏览器新标签中显示源代码），从浏览器的菜单中选择 _另存为..._，然后选择一个地方来保存这个文件。
@@ -269,7 +269,7 @@ Twitter 还拥有自己的类型的专有元数据协议（称为 [Twitter Cards
 
 ## 为文档设定主语言
 
-最后，值得一提的是可以（而且有必要）为站点设定语言，这个可以通过添加 [lang 属性](/zh-CN/docs/Web/HTML/Global_attributes/lang)到 HTML 开始的标签中来实现（就像 [meta-example.html](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/the-html-head/meta-example.html) 那样），如下所示：
+最后，值得一提的是可以（而且有必要）为站点设定语言，这个可以通过添加 [lang 属性](/zh-CN/docs/Web/HTML/Global_attributes/lang) 到 HTML 开始的标签中来实现（就像 [meta-example.html](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/the-html-head/meta-example.html) 那样），如下所示：
 
 ```html
 <html lang="zh-CN">

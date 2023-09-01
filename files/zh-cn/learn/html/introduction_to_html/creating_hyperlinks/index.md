@@ -106,7 +106,7 @@ img {
 
 ### 主动学习：创建你自己的示例链接
 
-使用本地代码编辑器和我们的[入门模板](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/getting-started/index.html)来创建一个 HTML 文档。
+使用本地代码编辑器和我们的[入门模板](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/getting-started/index.html) 来创建一个 HTML 文档。
 
 - 在 HTML 内，尝试添加一个或者多个段落或其他你知道类型的内容。
 - 将某些内容转换为链接。
@@ -118,7 +118,7 @@ img {
 
 统一资源定位符（Uniform Resource Locator，URL）是一个定义了在网络上的位置的一个文本字符串。例如，Mozilla 的简体中文主页位于 `https://www.mozilla.org/zh-CN/`。
 
-URL 使用路径查找文件。路径指定文件系统中你感兴趣的文件所在的位置。看一下一个简单的目录结构的例子（参见[创建超链接](https://github.com/mdn/learning-area/tree/main/html/introduction-to-html/creating-hyperlinks)目录）。
+URL 使用路径查找文件。路径指定文件系统中你感兴趣的文件所在的位置。看一下一个简单的目录结构的例子（参见[创建超链接](https://github.com/mdn/learning-area/tree/main/html/introduction-to-html/creating-hyperlinks) 目录）。
 
 ![一个简单的目录结构。父目录称为 create-hyperlinks，包含两个文件，分别称为 index.html 和 contacts.html，以及两个目录，称为 projects 和 pdf，分别包含 index.html 和 project-brief.pdf 文件](simple-directory.png)
 
@@ -322,6 +322,6 @@ URL 使用路径查找文件。路径指定文件系统中你感兴趣的文件�
 
 ## 小结
 
-这就是链接！在课程的后期，当你开始研究链接的样式时，会回顾链接部分。接下来是 HTML，我们将回顾文本语义，并查看一些你会发现有用的更高级/不寻常的功能，[文本格式进阶](/zh-CN/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting)是你的下一站。
+这就是链接！在课程的后期，当你开始研究链接的样式时，会回顾链接部分。接下来是 HTML，我们将回顾文本语义，并查看一些你会发现有用的更高级/不寻常的功能，[文本格式进阶](/zh-CN/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting) 是你的下一站。
 
 {{PreviousMenuNext("Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals", "Learn/HTML/Introduction_to_HTML/Advanced_text_formatting", "Learn/HTML/Introduction_to_HTML")}}

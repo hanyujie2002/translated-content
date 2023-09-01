@@ -12,30 +12,30 @@ slug: Mozilla/Add-ons/WebExtensions
 ## 核心资源
 
 - 指南
-  - : 无论你是刚开始学习还是在寻找更加高级的建议，你可以从我们大量的[教程和指南中](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/What_are_WebExtensions)学习扩展是如何工作的以及如何使用 WebExtensions API。
+  - : 无论你是刚开始学习还是在寻找更加高级的建议，你可以从我们大量的[教程和指南中](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/What_are_WebExtensions) 学习扩展是如何工作的以及如何使用 WebExtensions API。
 - 参考资料
-  - : 获取全面的关于方法，属性，类型，事件等 [WebExtensions APIs](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs) 的细节部分以及关于 [manifest 键列表](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/manifest.json)的全部细节。
+  - : 获取全面的关于方法，属性，类型，事件等 [WebExtensions APIs](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs) 的细节部分以及关于 [manifest 键列表](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/manifest.json) 的全部细节。
 - Firefox 工作流
   - : 了解如何为 Firefox 构建、发布扩展：在[扩展工作坊](https://extensionworkshop.com/)了解开发者工具，发布和移植的基本原理。
 
-> **备注：** 如果你有任何的想法、问题或者是需要帮助，可以在[社区论坛](https://discourse.mozilla.org/c/add-ons)和在 [Matrix](https://wiki.mozilla.org/Matrix) 上的[附加组件](https://matrix.to/#/!CuzZVoCbeoDHsxMCVJ:mozilla.org?via=mozilla.org&via=matrix.org&via=humanoids.be)房间联系到我们。
+> **备注：** 如果你有任何的想法、问题或者是需要帮助，可以在[社区论坛](https://discourse.mozilla.org/c/add-ons) 和在 [Matrix](https://wiki.mozilla.org/Matrix) 上的[附加组件](https://matrix.to/#/!CuzZVoCbeoDHsxMCVJ:mozilla.org?via=mozilla.org&via=matrix.org&via=humanoids.be) 房间联系到我们。
 
 ## 开始
 
-在构建[你的第一个扩展](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)之前，先去了解下[扩展都可以做些什么](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/What_are_WebExtensions)。学习[扩展剖析](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension)章节，对[扩展开发、发布工作流和 Firefox 风格](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Firefox_workflow_overview)有一个大致的了解。在[扩展示例](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Examples)中
+在构建[你的第一个扩展](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension) 之前，先去了解下[扩展都可以做些什么](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/What_are_WebExtensions)。学习[扩展剖析](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension) 章节，对[扩展开发、发布工作流和 Firefox 风格](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Firefox_workflow_overview) 有一个大致的了解。在[扩展示例](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Examples) 中
 你会有一个全面的选择来进行更深入的探索，这些示例你都是可以正常运行在 Firefox 中的。
 
 ## 概念
 
-从 [JavaScript API 概览](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/API)开始，到[内容脚本](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Content_scripts),[模式匹配](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Match_patterns),[使用文件](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Working_with_files),[国际化](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Internationalization),[内容安全策略](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Content_Security_Policy)以及更加高阶的主题，例如[原生通信](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Native_messaging),[使用开发者工具 API](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools),[原生应用清单](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Native_manifests)获取详尽的信息来加深对扩展的概念理解。
+从 [JavaScript API 概览](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/API) 开始，到[内容脚本](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Content_scripts),[模式匹配](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Match_patterns),[使用文件](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Working_with_files),[国际化](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Internationalization),[内容安全策略](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Content_Security_Policy) 以及更加高阶的主题，例如[原生通信](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Native_messaging),[使用开发者工具 API](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools),[原生应用清单](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Native_manifests) 获取详尽的信息来加深对扩展的概念理解。
 
 ## 用户界面
 
-利用这些示例代码来了解你可以在扩展中使用的所有[用户界面](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface)组件。
+利用这些示例代码来了解你可以在扩展中使用的所有[用户界面](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/user_interface) 组件。
 
 ## 如何做
 
-你将会找到大量的教程来开始，根据你经常使用的范例，例如[使用 Tabs API](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Working_with_the_Tabs_API),[在工具栏上增加一个按钮儿](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Add_a_button_to_the_toolbar)到更加高阶的主题，例如[拦截 HTTP 请求](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Intercept_HTTP_requests)，[语境认同](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Work_with_contextual_identities)，
+你将会找到大量的教程来开始，根据你经常使用的范例，例如[使用 Tabs API](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Working_with_the_Tabs_API),[在工具栏上增加一个按钮儿](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Add_a_button_to_the_toolbar) 到更加高阶的主题，例如[拦截 HTTP 请求](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Intercept_HTTP_requests)，[语境认同](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Work_with_contextual_identities)，
 
 ## Firefox 工作流
 
@@ -54,4 +54,4 @@ slug: Mozilla/Add-ons/WebExtensions
 
 ### Manifest 键列表
 
-你可以从这里获取[键列表](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/manifest.json)详尽的细节，包括它们所有的属性和设置。以及关于每个键与主流浏览器的[兼容性](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Browser_compatibility_for_manifest.json)的详尽细节。
+你可以从这里获取[键列表](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/manifest.json) 详尽的细节，包括它们所有的属性和设置。以及关于每个键与主流浏览器的[兼容性](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Browser_compatibility_for_manifest.json) 的详尽细节。

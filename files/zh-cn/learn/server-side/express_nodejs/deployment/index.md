@@ -29,7 +29,7 @@ slug: Learn/Server-side/Express_Nodejs/deployment
 
 一旦你的站点完成（或完成“足够”以开始公共测试），你将需要将其托管在比你的个人开发计算机，更公开和可访问的地方。
 
-到目前为止，你一直在[开发环境](/zh-CN/docs/Learn/Server-side/Express_Nodejs/development_environment)中工作，使用 Express / Node 作为 Web 服务器，将你的站点共享到本地浏览器/网络，并使用（不安全的）开发设置运行你的网站，以显示调试和其他私人信息。在你可以在外部托管网站之前，你首先必须：
+到目前为止，你一直在[开发环境](/zh-CN/docs/Learn/Server-side/Express_Nodejs/development_environment) 中工作，使用 Express / Node 作为 Web 服务器，将你的站点共享到本地浏览器/网络，并使用（不安全的）开发设置运行你的网站，以显示调试和其他私人信息。在你可以在外部托管网站之前，你首先必须：
 
 - 选择托管 Express 应用程序的环境。
 - 对项目设置进行一些更改。
@@ -59,7 +59,7 @@ slug: Learn/Server-side/Express_Nodejs/deployment
 
 一些开发人员选择 IaaS，相对于 PaaS，IaaS 提供更高灵活性，而其他开发人员偏好 PaaS 的降低维护开销，和更轻松的扩展性。当你在一开始使用时，在 PaaS 系统上设置你的网站，要容易得多，因此我们将在本教程中使用 PaaS。
 
-> **备注：** 如果你选择 Node/Express 友好的托管服务提供商，他们应该提供，有关如何使用 Web 服务器，应用程序服务器，反向代理等不同配置，来设置 Express 网站的说明。例如，在[数字海洋 node 社区文档](https://www.digitalocean.com/community/tutorials?q=node)中，有许多各种配置的手把手指南。
+> **备注：** 如果你选择 Node/Express 友好的托管服务提供商，他们应该提供，有关如何使用 Web 服务器，应用程序服务器，反向代理等不同配置，来设置 Express 网站的说明。例如，在[数字海洋 node 社区文档](https://www.digitalocean.com/community/tutorials?q=node) 中，有许多各种配置的手把手指南。
 
 ## 选择一个主机供应商
 
@@ -134,7 +134,7 @@ set DEBUG=author,book
 export DEBUG="author,book"
 ```
 
-> **备注：** 调用`debug`可以替换你以前使用`console.log()`或`console.error()`执行的日志记录。通过调试模块[debug](https://www.npmjs.com/package/debug)进行日志记录，替换代码中的所有`console.log()`调用。通过设置 DEBUG 变量，并在其中记录对日志记录的影响，在开发环境中，打开和关闭日志记录。
+> **备注：** 调用`debug`可以替换你以前使用`console.log()`或`console.error()`执行的日志记录。通过调试模块 [debug](https://www.npmjs.com/package/debug) 进行日志记录，替换代码中的所有`console.log()`调用。通过设置 DEBUG 变量，并在其中记录对日志记录的影响，在开发环境中，打开和关闭日志记录。
 
 如果你需要记录网站活动，可以使用 Winston 或 Bunyan 等日志库。有关此主题的更多信息，请参阅：[生产最佳实践：性能和可靠性](https://expressjs.com/en/advanced/best-practice-performance.html)。
 
@@ -195,11 +195,11 @@ app.use(helmet());
 ...
 ```
 
-> **备注：** 上面的命令，添加了对大多数站点有意义的可用标头子集。你可以按照[npm](https://www.npmjs.com/package/helmet)上的说明，根据需要添加/禁用特定标头。
+> **备注：** 上面的命令，添加了对大多数站点有意义的可用标头子集。你可以按照 [npm](https://www.npmjs.com/package/helmet) 上的说明，根据需要添加/禁用特定标头。
 
 ## 例子：在 Heroku 上安装一个本地图书馆
 
-本节提供了如何在[Heroku PaaS cloud](http://heroku.com)云上安装 LocalLibrary 的实际演示。
+本节提供了如何在 [Heroku PaaS cloud](http://heroku.com) 云上安装 LocalLibrary 的实际演示。
 
 ### 为什么选择 Heroku?
 
@@ -214,7 +214,7 @@ Heroku 是运行时间最长，且最受欢迎的基于云的 PaaS 服务之一�
   - Heroku 只提供短期存储，因此用户上传的文件无法安全地存储在 Heroku 本身。
   - 如果半小时内没有请求，免费套餐将使不活动的网络应用程序进入睡眠。然后，该网站可能需要几秒钟才能被唤醒。
   - 免费套餐将你网站运行的时间，限制为每月一定的小时数（不包括网站“睡着”的时间）。这对于低使用/演示站点来说很好，但如果需要 100％的正常运行时间，则不适用。
-  - [Heroku 官方文档](https://devcenter.heroku.com/articles/limits)中列出的其他限制。
+  - [Heroku 官方文档](https://devcenter.heroku.com/articles/limits) 中列出的其他限制。
 
 - 大多数情况下它只是可以工作，如果你最终喜欢它，并希望升级，那么扩展你的应用程序非常容易。
 
@@ -240,7 +240,7 @@ Heroku 与 **git** 源代码版本控制系统紧密集成，使用它来上传/
 
 > **备注：** 如果你习惯于遵循良好的软件开发实践，那么你可能已经在使用 git 或其他一些 SCM 系统。如果你已有 git 存储库，则可以跳过此步骤。
 
-有很多方法可以使用 git，但最简单的方法之一，是首先在[GitHub](https://github.com/)上建立一个帐户，在那里创建存储库，然后在本地同步它：
+有很多方法可以使用 git，但最简单的方法之一，是首先在 [GitHub](https://github.com/)上建立一个帐户，在那里创建存储库，然后在本地同步它：
 
 1. 访问 <https://github.com/> 并创建一个帐户。
 2. 登录后，单击顶部工具栏中的 **+** 号链接，然后选择新建存储库**New repository**。
@@ -257,7 +257,7 @@ Heroku 与 **git** 源代码版本控制系统紧密集成，使用它来上传/
 
 现在创建了存储库（“repo”），我们将要在本地计算机上克隆它：
 
-1. 为你的本地计算机安装 git（你可以在[此处](https://git-scm.com/downloads)找到不同平台的版本）。
+1. 为你的本地计算机安装 git（你可以在[此处](https://git-scm.com/downloads) 找到不同平台的版本）。
 2. 打开命令提示符/终端，并使用你在上面复制的 URL，克隆 clone 存储库：
 
    ```bash
@@ -370,7 +370,7 @@ var mongoDB =
 npm install
 ```
 
-现在运行该站点（请参阅[测试路由](/zh-CN/docs/Learn/Server-side/Express_Nodejs/routes#Testing_the_routes)的相关命令），并检查该站点，是否仍按预期运行。
+现在运行该站点（请参阅[测试路由](/zh-CN/docs/Learn/Server-side/Express_Nodejs/routes#Testing_the_routes) 的相关命令），并检查该站点，是否仍按预期运行。
 
 #### 将更改保存到 Github
 
@@ -473,7 +473,7 @@ heroku ps   #Display dyno status
 
 ## 总结
 
-本教程介绍在生产环境中，如何配置 Express 应用。是 Express 系列教程的最后一个。我们希望你觉得这些教程有用。你可以在[Github 上取得完整的源码](https://github.com/mdn/express-locallibrary-tutorial)。
+本教程介绍在生产环境中，如何配置 Express 应用。是 Express 系列教程的最后一个。我们希望你觉得这些教程有用。你可以在 [Github 上取得完整的源码](https://github.com/mdn/express-locallibrary-tutorial)。
 
 ## 相关链接
 

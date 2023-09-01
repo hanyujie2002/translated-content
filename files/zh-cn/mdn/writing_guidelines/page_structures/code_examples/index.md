@@ -14,7 +14,7 @@ slug: MDN/Writing_guidelines/Page_structures/Code_examples
 在 MDN 上有四种可用的代码示例：
 
 - 静态示例——纯代码块，可能含有静态的代码运行结果的屏幕截图。
-- 交互示例——用于创建[在线交互示例](https://github.com/mdn/interactive-examples)的系统，允许你随时更改代码，以查看效果，并轻松复制运行结果。
+- 交互示例——用于创建[在线交互示例](https://github.com/mdn/interactive-examples) 的系统，允许你随时更改代码，以查看效果，并轻松复制运行结果。
 - 传统的 MDN“运行实例”——一个宏，接受普通代码块作为参数，将它们动态地放入文档中的 {{htmlelement("iframe")}} 元素内，并将其嵌入页面，以显示代码的实时运行效果。
 - GitHub“在线实例”——一个宏，接受 [MDN 组织](https://github.com/mdn/) GitHub 仓库的文档路径作为参数，将其放入文档中的 {{htmlelement("iframe")}} 元素内，并将其嵌入页面，以显示代码的实时运行效果。
 
@@ -76,7 +76,7 @@ console.log(test);
 
 ## 传统运行实例
 
-传统运行实例使用 [`EmbedLiveSample`](https://github.com/mdn/yari/blob/main/kumascript/macros/EmbedLiveSample.ejs) 宏插入页面。一个 \\{{EmbedLiveSample}} 调用将动态抓取本页面的所有代码块，并放置在同一个文档，然后插入至页面的 {{htmlelement("iframe")}} 元素中。请查阅[运行实例指引](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Live_samples)以了解更多信息。
+传统运行实例使用 [`EmbedLiveSample`](https://github.com/mdn/yari/blob/main/kumascript/macros/EmbedLiveSample.ejs) 宏插入页面。一个 \\{{EmbedLiveSample}} 调用将动态抓取本页面的所有代码块，并放置在同一个文档，然后插入至页面的 {{htmlelement("iframe")}} 元素中。请查阅[运行实例指引](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Live_samples) 以了解更多信息。
 
 ### 格式化运行实例
 
@@ -184,5 +184,5 @@ p.fancy {
 
 ### GitHub 在线实例指引
 
-- 显然，你需要先把一个合适的代码示例放置到 [MDN GitHub 组织](https://github.com/mdn/)上，这需要使用 Git 来完成。如果你不熟悉 Git，请查看[如何使用 GitHub Pages？](/zh-CN/docs/Learn/Common_questions/Tools_and_setup/Using_GitHub_pages)文章，以及[准备添加数据](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables#为添加数据做好准备)以了解更进一步的用途。
+- 显然，你需要先把一个合适的代码示例放置到 [MDN GitHub 组织](https://github.com/mdn/)上，这需要使用 Git 来完成。如果你不熟悉 Git，请查看[如何使用 GitHub Pages？](/zh-CN/docs/Learn/Common_questions/Tools_and_setup/Using_GitHub_pages) 文章，以及[准备添加数据](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables#为添加数据做好准备)以了解更进一步的用途。
 - 你的代码样本需要适合展示你所要展示的内容——它应该包含一个简单的例子，能很好地完成一件事，里面不应该有攻击性的内容，并且应该遵循 MDN [代码示例指南](/zh-CN/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide)。

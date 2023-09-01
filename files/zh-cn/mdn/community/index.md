@@ -65,7 +65,7 @@ slug: MDN/Community
 
 ## 联系我们
 
-你可以使用[联系渠道](/zh-CN/docs/MDN/Community/Communication_channels)与 MDN Web 文档团队和社区取得联系。
+你可以使用[联系渠道](/zh-CN/docs/MDN/Community/Communication_channels) 与 MDN Web 文档团队和社区取得联系。
 
 > 如果你正在学习 web 开发并遇到了代码编写的问题，你可以在我们[活跃的论坛](/zh-CN/docs/MDN/Community/Communication_channels#论坛)中提问以寻求帮助。
 

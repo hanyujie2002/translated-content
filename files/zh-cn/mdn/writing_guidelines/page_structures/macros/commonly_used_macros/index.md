@@ -5,7 +5,7 @@ slug: MDN/Writing_guidelines/Page_structures/Macros/Commonly_used_macros
 
 {{MDNSidebar}}
 
-本页列举了一些 MDN 中的常用宏命令。对于使用这些宏的入门信息，请阅读[使用宏](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Macros)这篇文章。
+本页列举了一些 MDN 中的常用宏命令。对于使用这些宏的入门信息，请阅读[使用宏](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Macros) 这篇文章。
 
 还有一些不常用或只在特定上下文中使用的，以及一些弃用的宏的信息，参见[其他宏](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Macros/Other)。
 
@@ -17,7 +17,7 @@ MDN 提供了许多链接宏，用于简化参考页、术语表条目和其他�
 
 ### 链接到术语库
 
-[`Glossary`](https://github.com/mdn/yari/blob/main/kumascript/macros/Glossary.ejs) 宏可用于创建指向 MDN [术语表](/zh-CN/docs/Glossary)内一个具体词条的链接。调用这个宏时，有一个必需的参数和一个可选参数：
+[`Glossary`](https://github.com/mdn/yari/blob/main/kumascript/macros/Glossary.ejs) 宏可用于创建指向 MDN [术语表](/zh-CN/docs/Glossary) 内一个具体词条的链接。调用这个宏时，有一个必需的参数和一个可选参数：
 
 1. 术语的名字（比如“HTML”）：`\{{Glossary("HTML")}}` 会生成 {{Glossary("HTML")}}。
 2. 可选参数：使用参数中的文本内容，替代术语的名字显示在页面中：`\{{Glossary("CSS", "层叠样式表")}}` 会生成{{Glossary("CSS", "层叠样式表")}}。
@@ -112,7 +112,7 @@ MDN 提供了许多链接宏，用于简化参考页、术语表条目和其他�
 ### 运行实例
 
 - [`EmbedLiveSample`](https://github.com/mdn/yari/blob/main/kumascript/macros/EmbedLiveSample.ejs) 可以在当前页面中嵌入一个代码示例的实际展示效果（使用方法参见[运行实例](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Live_samples)）。
-- [`LiveSampleLink`](https://github.com/mdn/yari/blob/main/kumascript/macros/LiveSampleLink.ejs) 创建指向包含页面上代码示例输出的页面的链接，如[运行实例](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Live_samples)中所述。
+- [`LiveSampleLink`](https://github.com/mdn/yari/blob/main/kumascript/macros/LiveSampleLink.ejs) 创建指向包含页面上代码示例输出的页面的链接，如[运行实例](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Live_samples) 中所述。
 - [`EmbedGHLiveSample`](https://github.com/mdn/yari/blob/main/kumascript/macros/EmbedGHLiveSample.ejs) 提供了一种新的运行实例编写和使用方式，你可以在 [Github 在线实例](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Code_examples#github_在线实例)中了解更多信息。
 
 ## 侧边栏生成
@@ -154,7 +154,7 @@ MDN 提供了许多链接宏，用于简化参考页、术语表条目和其他�
 
 #### 实验性
 
-[`experimental_inline`](https://github.com/mdn/yari/blob/main/kumascript/macros/experimental_inline.ejs) 插入一个行内标记，表示当前 API 尚未被广泛地实现，并且以后可能会发生变化。有关**实验性**定义的更多信息，请参阅[实验性、已弃用和过时](/zh-CN/docs/MDN/Writing_guidelines/Experimental_deprecated_obsolete)文档。
+[`experimental_inline`](https://github.com/mdn/yari/blob/main/kumascript/macros/experimental_inline.ejs) 插入一个行内标记，表示当前 API 尚未被广泛地实现，并且以后可能会发生变化。有关**实验性**定义的更多信息，请参阅[实验性、已弃用和过时](/zh-CN/docs/MDN/Writing_guidelines/Experimental_deprecated_obsolete) 文档。
 
 ##### 语法
 
@@ -168,7 +168,7 @@ MDN 提供了许多链接宏，用于简化参考页、术语表条目和其他�
 
 #### 已弃用
 
-[`deprecated_inline`](https://github.com/mdn/yari/blob/main/kumascript/macros/Deprecated_Inline.ejs) 会插入一个行内的已弃用标记（{{Deprecated_Inline}}）以不鼓励使用官方已弃用（或已删除）的 API。有关**已弃用**定义的更多信息，请参阅[实验性、已弃用和过时](/zh-CN/docs/MDN/Writing_guidelines/Experimental_deprecated_obsolete)文档。
+[`deprecated_inline`](https://github.com/mdn/yari/blob/main/kumascript/macros/Deprecated_Inline.ejs) 会插入一个行内的已弃用标记（{{Deprecated_Inline}}）以不鼓励使用官方已弃用（或已删除）的 API。有关**已弃用**定义的更多信息，请参阅[实验性、已弃用和过时](/zh-CN/docs/MDN/Writing_guidelines/Experimental_deprecated_obsolete) 文档。
 
 ##### 语法
 

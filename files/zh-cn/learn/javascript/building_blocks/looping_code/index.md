@@ -359,7 +359,7 @@ btn.addEventListener("click", function () {
 
 5. 在`(contacts.length-1)` 迭代后，如果联系人姓名与输入的搜索不符，则段落文本设置为“未找到联系人”，循环继续迭代。
 
-> **备注：** 你可以[在 GitHub 上找到这个例子](https://github.com/mdn/learning-area/blob/main/javascript/building-blocks/loops/contact-search.html)或[在线运行](http://mdn.github.io/learning-area/javascript/building-blocks/loops/contact-search.html)。
+> **备注：** 你可以[在 GitHub 上找到这个例子](https://github.com/mdn/learning-area/blob/main/javascript/building-blocks/loops/contact-search.html) 或[在线运行](http://mdn.github.io/learning-area/javascript/building-blocks/loops/contact-search.html)。
 
 ## 使用 continue 跳过迭代
 
@@ -467,7 +467,7 @@ while (i < cats.length) {
 
 > **备注：** This still works just the same as expected — have a look at it [running live on GitHub](http://mdn.github.io/learning-area/javascript/building-blocks/loops/while.html) (also view the [full source code](https://github.com/mdn/learning-area/blob/main/javascript/building-blocks/loops/while.html)).
 
-[do...while](/zh-CN/docs/Web/JavaScript/Reference/Statements/do...while)循环非常类似但在 while 后提供了终止条件：
+[do...while](/zh-CN/docs/Web/JavaScript/Reference/Statements/do...while) 循环非常类似但在 while 后提供了终止条件：
 
 ```plain
 initializer
@@ -498,7 +498,7 @@ do {
 } while (i < cats.length);
 ```
 
-> **备注：** 再一次，它正如我们期望的那样工作 — 看一看它在[Github 在线运行](http://mdn.github.io/learning-area/javascript/building-blocks/loops/do-while.html) (或者查看[完整源代码](https://github.com/mdn/learning-area/blob/main/javascript/building-blocks/loops/do-while.html)).
+> **备注：** 再一次，它正如我们期望的那样工作 — 看一看它在 [Github 在线运行](http://mdn.github.io/learning-area/javascript/building-blocks/loops/do-while.html) (或者查看[完整源代码](https://github.com/mdn/learning-area/blob/main/javascript/building-blocks/loops/do-while.html)).
 
 > **警告：** 使用 while 和 do...while — 所有循环都一样 — 你必须保证初始变量是迭代的，那么它才会逐渐地达到退出条件。不然，它将会永远循环下去，要么浏览器会强制终止它，要么它自己会崩溃。这称为无限循环。
 
@@ -692,7 +692,7 @@ do {
 
 本文向你展示了背后的基本概念，以及 JavaScript 中循环代码时可用的不同选项。你现在应该明白为什么循环是一个处理重复代码的好机制，并且在你自己的例子中使用它们！
 
-如果你有什么不明白的地方，可以再通读一遍，或者[联系我们](/zh-CN/Learn#Contact_us)寻求帮助。
+如果你有什么不明白的地方，可以再通读一遍，或者[联系我们](/zh-CN/Learn#Contact_us) 寻求帮助。
 
 ## 相关链接
 

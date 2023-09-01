@@ -358,7 +358,7 @@ exports.watch = watch;
 
 #### 开始使用 LambdaTest
 
-1. 首先，[在 LambdaTest 上免费注册](https://accounts.lambdatest.com/register)一个账号。
+1. 首先，[在 LambdaTest 上免费注册](https://accounts.lambdatest.com/register) 一个账号。
 2. 登录账号。在验证邮箱后，这应该是自动的。
 
 > **备注：** 与其他基于云的跨浏览器测试服务提供商不同，LambdaTest 提供了一个免费账户，你可以终身使用这个平台。高级计划和免费计划之间的唯一区别在于消费的数量。对于通过其 Selenium 网格进行的自动化测试，LambdaTest 提供每月 60 分钟的免费测试。
@@ -390,7 +390,7 @@ exports.watch = watch;
 
 #### 基础：手动测试
 
-[Sauce Labs 仪表板](https://saucelabs.com/beta/dashboard/manual)上有很多可用的选项。现在，请确保你是在 _Manual Tests_ 标签上。
+[Sauce Labs 仪表板](https://saucelabs.com/beta/dashboard/manual) 上有很多可用的选项。现在，请确保你是在 _Manual Tests_ 标签上。
 
 1. 点击 _Start a new manual session_。
 2. 在下一个屏幕中，输入你要测试的页面的 URL（例如使用 <https://mdn.github.io/learning-area/javascript/building-blocks/events/show-video-box-fixed.html>），然后通过不同的按钮和列表选择你要测试的浏览器/操作系统组合。有很多选择，你会看到！！![选择 sauce manual session](sauce-manual-session.png)
@@ -454,7 +454,7 @@ Sauce Labs 有一个 [restful API](https://docs.saucelabs.com/dev/api/)，允许
    });
    ```
 
-4. 你需要在指定的地方填写你的 Sauce Labs 用户名和 API 密钥。这些可以从你的[用户设置](https://app.saucelabs.com/user-settings)页面检索到。现在填写这些。
+4. 你需要在指定的地方填写你的 Sauce Labs 用户名和 API 密钥。这些可以从你的[用户设置](https://app.saucelabs.com/user-settings) 页面检索到。现在填写这些。
 5. 确定所有文件已经保存，然后运行你的文件：
 
    ```bash
@@ -553,7 +553,7 @@ BrowserStack 也有一个 [restful API](https://www.browserstack.com/docs/automa
    getPlanDetails();
    ```
 
-3. 你需要在指定的地方填写你的 BrowserStack 用户名和 API 密钥。这些可以从你的 [BrowserStack 自动化仪表板](https://www.browserstack.com/automate)上获取。现在就把这些填上。
+3. 你需要在指定的地方填写你的 BrowserStack 用户名和 API 密钥。这些可以从你的 [BrowserStack 自动化仪表板](https://www.browserstack.com/automate) 上获取。现在就把这些填上。
 4. 确定所有文件已经保存，然后运行你的文件：
 
    ```bash
@@ -696,7 +696,7 @@ function getSessionDetails(session) {
 
 #### 基础：手动测试
 
-[TestingBot 仪表板](https://testingbot.com/members)列出了你可以选择的各种选项。现在，请确保你是在 _Live Web Testing_ 标签页上。
+[TestingBot 仪表板](https://testingbot.com/members) 列出了你可以选择的各种选项。现在，请确保你是在 _Live Web Testing_ 标签页上。
 
 1. 输入你要进行测试的 URL。
 2. 在网格中选择选择你要测试的浏览器/操作系统组合。
@@ -743,7 +743,7 @@ TestingBot 有几个 API 客户端，你可以用来与 API 互动，包括 Node
    });
    ```
 
-4. 你需要在指定的地方填写你的 TestingBot 密钥和 Secret。你可以在 [TestingBot 仪表板](https://testingbot.com/members/user/edit)中找到这些。
+4. 你需要在指定的地方填写你的 TestingBot 密钥和 Secret。你可以在 [TestingBot 仪表板](https://testingbot.com/members/user/edit) 中找到这些。
 5. 确定所有文件已经保存，然后运行你的文件：
 
    ```bash

@@ -96,7 +96,7 @@ Django 支持四个主要数据库（PostgreSQL，MySQL，Oracle 和 SQLite）�
 
 ## 安装 Python 3
 
-为了使用 Django，你需要在你的操作系统中安装 Python。如果你使用 Python3，那么你同样需要[Python 包管理工具](https://pypi.python.org/pypi) — _pip3_ — 用来管理 (安装，更新和删除) 被 Django 和其他 Python 应用程序使用的 Python 软件包／库。
+为了使用 Django，你需要在你的操作系统中安装 Python。如果你使用 Python3，那么你同样需要 [Python 包管理工具](https://pypi.python.org/pypi) — _pip3_ — 用来管理 (安装，更新和删除) 被 Django 和其他 Python 应用程序使用的 Python 软件包／库。
 
 本节简要介绍了如何检查有哪些版本的 Python，并根据需要安装适用于 **Ubuntu Linux 16.04,macOS, and Windows 10**的新版本。
 
@@ -126,7 +126,7 @@ python3 -V
  -bash: python3: command not found
 ```
 
-你可以轻松地从[python.org](https://www.python.org/) 安装 Python 3（以及 pip3 工具）:
+你可以轻松地从 [python.org](https://www.python.org/) 安装 Python 3（以及 pip3 工具）:
 
 1. 下载所需的安装程序：
 
@@ -150,7 +150,7 @@ pip3 list
 
 ### Windows 10
 
-windows 默认不包含 Python, 但你可以从[python.org](https://www.python.org/) 轻松地安装它（以及 pip3 工具）：
+windows 默认不包含 Python, 但你可以从 [python.org](https://www.python.org/) 轻松地安装它（以及 pip3 工具）：
 
 1. 下载所需版本：
 
@@ -177,13 +177,13 @@ pip3 list
 
 ## 在 Python 虚拟环境中使用 Django
 
-我们使用[virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/index.html)（Linux 及 macOS）和 [virtualenvwrapper-win](https://pypi.python.org/pypi/virtualenvwrapper-win)（WIndows）来创建 Python 虚拟环境，而它们又使用了[virtualenv](/zh-CN/docs/Python/Virtualenv)。封装工具创建了一个一致的接口来管理各个平台上的接口。
+我们使用 [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/index.html)（Linux 及 macOS）和 [virtualenvwrapper-win](https://pypi.python.org/pypi/virtualenvwrapper-win)（WIndows）来创建 Python 虚拟环境，而它们又使用了 [virtualenv](/zh-CN/docs/Python/Virtualenv)。封装工具创建了一个一致的接口来管理各个平台上的接口。
 
 ### 安装虚拟环境软件
 
 #### Ubuntu 虚拟环境设置
 
-安装了 Python 和 pip 之后，你就可以安装 virtualenvwrapper（包括了 virtualenv）。可以在[这里](http://virtualenvwrapper.readthedocs.io/en/latest/install.html)找到正式的安装指南，或按照以下指导操作。
+安装了 Python 和 pip 之后，你就可以安装 virtualenvwrapper（包括了 virtualenv）。可以在[这里](http://virtualenvwrapper.readthedocs.io/en/latest/install.html) 找到正式的安装指南，或按照以下指导操作。
 
 使用 pip3 安装该工具：
 
@@ -226,7 +226,7 @@ virtualenvwrapper.user_scripts creating /home/ubuntu/.virtualenvs/get_env_detail
 
 #### macOS 虚拟环境设置
 
-在 macOS 上设置*virtualenvwrapper* 几乎和在 Ubuntu 上是一样的（你同样可以按照以下指导操作，或在[这里](https://virtualenvwrapper.readthedocs.io/en/latest/install.html)找到正式的安装指南）。
+在 macOS 上设置*virtualenvwrapper* 几乎和在 Ubuntu 上是一样的（你同样可以按照以下指导操作，或在[这里](https://virtualenvwrapper.readthedocs.io/en/latest/install.html) 找到正式的安装指南）。
 
 使用*pip*安装*virtualenvwrapper*(并绑定*virtualenv*)，如下所示。
 

@@ -27,9 +27,9 @@ slug: MDN/Community/Pull_requests
 
 在你开始为 MDN Web 文档做出贡献之前，请阅读以下建议和指南。
 
-**拉取请求必须解决或部分解决现有的议题**。我们之所以有此限制，是为了避免你开始任何其他人可能已经在做的任务。在你想要贡献的 [MDN 仓库](https://github.com/orgs/mdn/repositories)中搜索议题和拉取请求，并确认你想要开始的工作尚未有其他人正在进行。当寻求为 MDN 项目做出贡献时，你会发现自己处于以下情况之一：
+**拉取请求必须解决或部分解决现有的议题**。我们之所以有此限制，是为了避免你开始任何其他人可能已经在做的任务。在你想要贡献的 [MDN 仓库](https://github.com/orgs/mdn/repositories) 中搜索议题和拉取请求，并确认你想要开始的工作尚未有其他人正在进行。当寻求为 MDN 项目做出贡献时，你会发现自己处于以下情况之一：
 
-- **如果你希望为该项目做出贡献**，你可以在任意 [MDN GitHub 仓库](https://github.com/orgs/mdn/repositories)的“议题（Issues）”（例如 [`mdn/content` 仓库的议题](https://github.com/mdn/content/issues)）下以及我们[公开的 GitHub 项目看板](https://github.com/orgs/mdn/projects)中找到任务。请确保议题未被分配给其他人，并且没有人已经为该任务创建拉取请求。标记为 `good first issue` 的议题是一个很好的起点。
+- **如果你希望为该项目做出贡献**，你可以在任意 [MDN GitHub 仓库](https://github.com/orgs/mdn/repositories) 的“议题（Issues）”（例如 [`mdn/content` 仓库的议题](https://github.com/mdn/content/issues)）下以及我们[公开的 GitHub 项目看板](https://github.com/orgs/mdn/projects) 中找到任务。请确保议题未被分配给其他人，并且没有人已经为该任务创建拉取请求。标记为 `good first issue` 的议题是一个很好的起点。
 - **如果你在 MDN 上发现了问题**，你应该首先创建一个议题。**在开始工作之前，议题需要维护者的回复**，以便你知道拉取请求所解决的问题是有效的，并且你的拉取请求将被接受。有关议题的更多信息，请参阅我们的 [GitHub 议题的社区页面](https://github.com/mdn/mdn/issues/new?labels=proposal%2Cneeds+triage&template=content-or-feature-suggestion.yml&title=Enter+your+proposal+here)。
 - **如果你想提议新内容或新特性**，请通过 [GitHub 议题模板](https://github.com/mdn/mdn/issues/new/choose)“New content or feature suggestion”提交提议。
 
@@ -89,7 +89,7 @@ MDN Web 文档团队使用审查员（reviewer）和受理人（assignee）来�
 - **平衡请求负载**，如果你的工作量已满，而没有时间进行审查。通知 `@core-yari-content` 团队，并询问是否有其他人可以接手。
 - **不要在“依赖”未合并的情况下合并**拉取请求。
 
-如果除了小的拼写错误和其他小问题之外，拉取请求看起来不错，你可能需要直接修复问题。如果拉取请求[已设置为允许更改](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/working-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork)，你就可以这样做。建议使用[带有建议的评论](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request#adding-comments-to-a-pull-request)来修复小问题，因为它们可以一次性批量提交。
+如果除了小的拼写错误和其他小问题之外，拉取请求看起来不错，你可能需要直接修复问题。如果拉取请求[已设置为允许更改](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/working-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork)，你就可以这样做。建议使用[带有建议的评论](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request#adding-comments-to-a-pull-request) 来修复小问题，因为它们可以一次性批量提交。
 
 提交评论时，你有三个选项：**批准**（approve）、**评论**（comment）或**请求更改**（request changes）。下面的部分将解释每个选项应在何时使用。
 
@@ -139,5 +139,5 @@ reviewer: @jpmedley
 我们鼓励审查员阅读以下文章，以帮助完成常见任务：
 
 - [关闭的艺术](https://blog.jessfraz.com/post/the-art-of-closing/)解释了如何关闭未完成或被拒绝的拉取请求
-- [善意和代码审查：改进我们提供反馈的方式](https://product.voxmedia.com/2018/8/21/17549400/kindness-and-code-reviews-improving-the-way-we-give-feedback)给出了提供反馈的有用提示
-- [审查员的代码审阅指南](https://phauer.com/2018/code-review-guidelines/#code-reviews-guidelines-for-the-reviewer)提供了友好和不友好的反馈示例
+- [善意和代码审查：改进我们提供反馈的方式](https://product.voxmedia.com/2018/8/21/17549400/kindness-and-code-reviews-improving-the-way-we-give-feedback) 给出了提供反馈的有用提示
+- [审查员的代码审阅指南](https://phauer.com/2018/code-review-guidelines/#code-reviews-guidelines-for-the-reviewer) 提供了友好和不友好的反馈示例

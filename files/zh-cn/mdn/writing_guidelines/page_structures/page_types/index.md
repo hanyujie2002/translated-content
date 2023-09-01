@@ -115,7 +115,7 @@ MDN 有三个大类的页面类型，尽管有些页面类型属于多个类别�
 
 ## CSS 模块着陆页
 
-每个 **[CSS](/zh-CN/docs/Web/CSS) 模块**都代表一种 CSS 规范，为 CSS 中的某些功能和实现提供支持。例如，[CSS 基础框盒模型](/zh-CN/docs/Web/CSS/CSS_box_model)模块代表了描述 margin 和 padding 属性的[规范](/zh-CN/docs/Web/CSS/CSS_box_model#规范)，通过这些属性，你可以在 CSS 盒内和周围创建间距。
+每个 **[CSS](/zh-CN/docs/Web/CSS) 模块**都代表一种 CSS 规范，为 CSS 中的某些功能和实现提供支持。例如，[CSS 基础框盒模型](/zh-CN/docs/Web/CSS/CSS_box_model) 模块代表了描述 margin 和 padding 属性的[规范](/zh-CN/docs/Web/CSS/CSS_box_model#规范)，通过这些属性，你可以在 CSS 盒内和周围创建间距。
 
 **CSS 模块着陆页**概述了模块提供的功能，并列出了模块提供的所有属性、数据类型、CSS 函数等。在可能的情况下，CSS 模块着陆页还会通过互动示例快速演示使用模块中的属性可以实现哪些功能。模块着陆页主要用作*导航*页面，但同时也是模块的概览*参考*页面。
 

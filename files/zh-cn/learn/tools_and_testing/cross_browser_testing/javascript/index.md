@@ -44,7 +44,7 @@ slug: Learn/Tools_and_testing/Cross_browser_testing/JavaScript
 
 ## 修复一般的 JavaScript 问题
 
-正如我们在关于 HTML/CSS 的[前一篇文章](/zh-CN/docs/Learn/Tools_and_testing/Cross_browser_testing/HTML_and_CSS#首先：解决一般问题)中所说，你应该先确保你的代码能够正常工作，然后再去集中解决跨浏览器问题。如果你还不熟悉[如何查找 JavaScript 代码的错误](/zh-CN/docs/Learn/JavaScript/First_steps/What_went_wrong)的基本内容，你应该在继续学习之前学习这篇文章。有一些常见的 JavaScript 问题是你要注意的，比如说：
+正如我们在关于 HTML/CSS 的[前一篇文章](/zh-CN/docs/Learn/Tools_and_testing/Cross_browser_testing/HTML_and_CSS#首先：解决一般问题)中所说，你应该先确保你的代码能够正常工作，然后再去集中解决跨浏览器问题。如果你还不熟悉[如何查找 JavaScript 代码的错误](/zh-CN/docs/Learn/JavaScript/First_steps/What_went_wrong) 的基本内容，你应该在继续学习之前学习这篇文章。有一些常见的 JavaScript 问题是你要注意的，比如说：
 
 - 基本的语法和逻辑问题（再次重申，请参阅[如何查找 JavaScript 代码的错误](/zh-CN/docs/Learn/JavaScript/First_steps/What_went_wrong)）。
 - 确保变量等被定义在正确的范围内，并且你不会遇到在不同地方声明的项目之间的冲突（见[函数作用域和冲突](/zh-CN/docs/Learn/JavaScript/Building_blocks/Functions#函数作用域和冲突)）。
@@ -79,7 +79,7 @@ slug: Learn/Tools_and_testing/Cross_browser_testing/JavaScript
 4. 你可以在列表最顶部看到 **lint**。首先使用 _Install_ 按钮安装这个软件包，因为其他 linter 都依赖它工作。然后安装 **linter-jshint** 插件。
 5. 在软件包安装完成后，试着加载一个 JavaScript 文件：你会看到任何问题都在行号旁边用绿色（警告）和红色（错误）的圆圈突出显示，底部的一个单独面板提供了行号、错误信息，有时还提供了建议值或其他修复方法。
 
-![JSHint 程序的屏幕截图。狭窄的左边面板是一个文件浏览器或树形。右边的面板有两个部分。顶部有一个标签，打开一个彩色编码和行数的 JavaScript 文件。最下面是错误和警告。错误是红色的，而警告是橙色的。如果某一行有错误或警告，在行号旁边会有一个红色或橙色的点。](jshint-linter.png)其他流行的编辑器也有类似的 linting 包可用。例如，见 [JSHint 安装页面](https://jshint.com/install/)的“文本编辑器和 IDE 的插件”部分。
+![JSHint 程序的屏幕截图。狭窄的左边面板是一个文件浏览器或树形。右边的面板有两个部分。顶部有一个标签，打开一个彩色编码和行数的 JavaScript 文件。最下面是错误和警告。错误是红色的，而警告是橙色的。如果某一行有错误或警告，在行号旁边会有一个红色或橙色的点。](jshint-linter.png) 其他流行的编辑器也有类似的 linting 包可用。例如，见 [JSHint 安装页面](https://jshint.com/install/)的“文本编辑器和 IDE 的插件”部分。
 
 #### 其他方式
 
@@ -95,7 +95,7 @@ npm install -g jshint
 
 ![命令行输入了 jshint filename.js。响应是一个行号的列表和对发现的错误的描述。](js-hint-commandline.png)
 
-你也可以将这些工具与任务运行器/构建工具一起使用，如 [Gulp](https://gulpjs.com/) 或 [Webpack](https://webpack.github.io/)，以便在开发过程中自动对你的 JavaScript 进行 lint。（见后面文章中的[使用任务运行器来自动测试工具](/zh-CN/docs/Learn/Tools_and_testing/Cross_browser_testing/Automated_testing#使用任务运行器作为自动化测试工具)。）关于 ESLint 选项，请参见 [ESLint 集成](https://eslint.org/docs/user-guide/integrations)；Grunt 开箱即支持 JSHint，并且还有其他可用的集成，例如[JSHint loader for Webpack](https://github.com/webpack-contrib/jshint-loader)。
+你也可以将这些工具与任务运行器/构建工具一起使用，如 [Gulp](https://gulpjs.com/) 或 [Webpack](https://webpack.github.io/)，以便在开发过程中自动对你的 JavaScript 进行 lint。（见后面文章中的[使用任务运行器来自动测试工具](/zh-CN/docs/Learn/Tools_and_testing/Cross_browser_testing/Automated_testing#使用任务运行器作为自动化测试工具)。）关于 ESLint 选项，请参见 [ESLint 集成](https://eslint.org/docs/user-guide/integrations)；Grunt 开箱即支持 JSHint，并且还有其他可用的集成，例如 [JSHint loader for Webpack](https://github.com/webpack-contrib/jshint-loader)。
 
 > **备注：** ESLint 需要比 JSHint 更多的安装和配置过程，但是它也很强大。
 
@@ -200,16 +200,16 @@ request.onload = function () {
 
 我们希望你能自己尝试解决这个问题。有两点提示，你可以[明确告诉 XMLHttpRequest 对象返回 JSON 格式](/zh-CN/docs/Web/API/XMLHttpRequest/responseType)，或者在响应到达后[将返回的文本转换成 JSON](/zh-CN/docs/Learn/JavaScript/Objects/JSON#对象和文本间的转换)。如果你被卡住了，请参考我们的 [fixed-ajax.html](https://github.com/mdn/learning-area/blob/main/tools-testing/cross-browser-testing/javascript/fixed-ajax.html) 示例。
 
-> **备注：** 调试器标签页还有很多我们没有讨论过的其他有用的功能，例如条件断点和观察表达式。关于更多信息，请参见[调试器](https://firefox-source-docs.mozilla.org/devtools-user/debugger/index.html)页面。
+> **备注：** 调试器标签页还有很多我们没有讨论过的其他有用的功能，例如条件断点和观察表达式。关于更多信息，请参见[调试器](https://firefox-source-docs.mozilla.org/devtools-user/debugger/index.html) 页面。
 
 ### 性能问题
 
 随着你的应用程序变得越来越复杂，你开始使用更多的 JavaScript，并可能会遇到性能问题，特别是在较慢的设备上查看应用程序时。性能是一个宽泛的话题，我们没有时间在这里详细介绍它。以下是一些快速提示：
 
 - 为了避免加载超过你需要的 JavaScript，请使用 [Browserify](https://browserify.org/) 这样的解决方案将你的脚本捆绑成一个文件。一般来说，减少 HTTP 请求的数量对性能非常有利。
-- 在你将文件加载到你的生产服务器之前，通过最小化使你的文件变得更小。最小化将所有的代码压缩到一个巨大的单行中，使其占用的文件大小大大减少。这很难看，但当它完成后，你不需要阅读它！这最好使用像 [Uglify](https://github.com/mishoo/UglifyJS) 这样的最小化工具来完成（也有一个在线版本，见[JSCompress.com](https://jscompress.com/)）。
+- 在你将文件加载到你的生产服务器之前，通过最小化使你的文件变得更小。最小化将所有的代码压缩到一个巨大的单行中，使其占用的文件大小大大减少。这很难看，但当它完成后，你不需要阅读它！这最好使用像 [Uglify](https://github.com/mishoo/UglifyJS) 这样的最小化工具来完成（也有一个在线版本，见 [JSCompress.com](https://jscompress.com/)）。
 - 当使用 API 时，确保在不使用 API 特性时将其关闭；一些 API 调用可能非常耗费处理能力。例如，当显示一个视频流时，确保在你看不到它时将其关闭。当使用重复的地理定位调用跟踪设备的位置时，确保在用户停止使用时将其关闭。
-- 对于性能来说，动画的成本确实很高。很多 JavaScript 库提供了由 JavaScript 编程的动画功能，但通过像 [CSS 动画](/zh-CN/docs/Web/CSS/CSS_animations)这样的本地浏览器功能（或新生的 [Web 动画 API](/zh-CN/docs/Web/API/Web_Animations_API)）做动画要比 JavaScript 更具成本效益。阅读 Brian Birtles 的 [Animating like you just don't care with Element.animate](https://hacks.mozilla.org/2016/08/animating-like-you-just-dont-care-with-element-animate/)，了解一些关于动画为何开销大的真正有用的理论，关于如何提高动画性能的提示，以及关于 Web 动画 API 的信息。
+- 对于性能来说，动画的成本确实很高。很多 JavaScript 库提供了由 JavaScript 编程的动画功能，但通过像 [CSS 动画](/zh-CN/docs/Web/CSS/CSS_animations) 这样的本地浏览器功能（或新生的 [Web 动画 API](/zh-CN/docs/Web/API/Web_Animations_API)）做动画要比 JavaScript 更具成本效益。阅读 Brian Birtles 的 [Animating like you just don't care with Element.animate](https://hacks.mozilla.org/2016/08/animating-like-you-just-dont-care-with-element-animate/)，了解一些关于动画为何开销大的真正有用的理论，关于如何提高动画性能的提示，以及关于 Web 动画 API 的信息。
 
 > **备注：** Addy Osmani 的 [Writing Fast, Memory-Efficient JavaScript](https://www.smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript/) 包含了大量的细节和一些提升 JavaScript 性能的优秀技巧。
 
@@ -224,16 +224,16 @@ request.onload = function () {
 
 ### 使用现代 JavaScript/API 特性
 
-在[上一篇文章](/zh-CN/docs/Learn/Tools_and_testing/Cross_browser_testing/HTML_and_CSS#older_browsers_not_supporting_modern_features)中，我们描述了一些处理 HTML 和 CSS 错误和不被识别的特性的方法，这是由于语言的特性决定的。然而，JavaScript 并不像 HTML 和 CSS 那样宽松。如果 JavaScript 引擎遇到错误或不被识别的语法，更多的情况下它会出现错误。
+在[上一篇文章](/zh-CN/docs/Learn/Tools_and_testing/Cross_browser_testing/HTML_and_CSS#older_browsers_not_supporting_modern_features) 中，我们描述了一些处理 HTML 和 CSS 错误和不被识别的特性的方法，这是由于语言的特性决定的。然而，JavaScript 并不像 HTML 和 CSS 那样宽松。如果 JavaScript 引擎遇到错误或不被识别的语法，更多的情况下它会出现错误。
 
 在最近版本的规范中定义了许多现代 JavaScript 语言特性，这些特性在旧的浏览器中无法使用。其中有些是语法糖（基本上是用一种更简单、更漂亮的方式来写你已经可以用现有的功能来做的事情），有些则提供了有趣的新可能性。
 
 比如说：
 
-- [Promises](/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise)是一个伟大的新功能，用于执行异步操作，并确保这些操作在依赖其结果的代码被用于其他用途之前完成。举个例子，[Fetch API](/zh-CN/docs/Web/API/fetch)（相当于现代的 [XMLHTTPRequest](/zh-CN/docs/Web/API/XMLHttpRequest)）使用 promise 来获取网络上的资源，并确保在使用这些资源之前已经返回响应（例如在 {{htmlelement("img")}} 元素内显示图片）。除了 IE 以外，所有现代浏览器中都支持这种特性。
-- [箭头函数](/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions)为编写[匿名函数](/zh-CN/docs/Learn/JavaScript/Building_blocks/Functions#匿名函数)提供了一个更短、更方便的语法。关于一个快速的例子，请看 [arrow-function.html](https://mdn.github.io/learning-area/tools-testing/cross-browser-testing/javascript/arrow-function.html)（也请看[源代码](https://github.com/mdn/learning-area/blob/main/tools-testing/cross-browser-testing/javascript/arrow-function.html)）。除了 IE 以外，所有现代浏览器都支持这种特性。
+- [Promises](/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise) 是一个伟大的新功能，用于执行异步操作，并确保这些操作在依赖其结果的代码被用于其他用途之前完成。举个例子，[Fetch API](/zh-CN/docs/Web/API/fetch)（相当于现代的 [XMLHTTPRequest](/zh-CN/docs/Web/API/XMLHttpRequest)）使用 promise 来获取网络上的资源，并确保在使用这些资源之前已经返回响应（例如在 {{htmlelement("img")}} 元素内显示图片）。除了 IE 以外，所有现代浏览器中都支持这种特性。
+- [箭头函数](/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions) 为编写[匿名函数](/zh-CN/docs/Learn/JavaScript/Building_blocks/Functions#匿名函数)提供了一个更短、更方便的语法。关于一个快速的例子，请看 [arrow-function.html](https://mdn.github.io/learning-area/tools-testing/cross-browser-testing/javascript/arrow-function.html)（也请看[源代码](https://github.com/mdn/learning-area/blob/main/tools-testing/cross-browser-testing/javascript/arrow-function.html)）。除了 IE 以外，所有现代浏览器都支持这种特性。
 - 在你的 JavaScript 代码的顶部声明[严格模式](/zh-CN/docs/Web/JavaScript/Reference/Strict_mode)，会使它在解析时有更严格的规则，这意味着会有更多的警告和错误被抛出，一些本来可以接受的东西也会被禁止。可以说，使用严格模式是一个好主意，因为它能使代码更好、更有效率。所有现代浏览器都支持严格模式。
-- [类型化数组](/zh-CN/docs/Web/JavaScript/Typed_arrays)允许 JavaScript 代码访问和处理原始二进制数据，这在浏览器 API 开始处理原始视频和音频数据流时是必要的。它可以在 IE10 及以上版本以及所有现代浏览器中使用。
+- [类型化数组](/zh-CN/docs/Web/JavaScript/Typed_arrays) 允许 JavaScript 代码访问和处理原始二进制数据，这在浏览器 API 开始处理原始视频和音频数据流时是必要的。它可以在 IE10 及以上版本以及所有现代浏览器中使用。
 
 还有许多新的 API 出现在最近的浏览器版本中，而这些 API 在旧版本的浏览器中无法使用，例如：
 
@@ -279,7 +279,7 @@ JavaScript 库往往有几个主要的种类（有些库包含其中的一个以
 - 实用程序库：提供一堆功能，使平凡的任务更容易管理，不那么枯燥。例如，[jQuery](https://jquery.com/) 提供了自己的全功能选择器和 DOM 操作库，允许在 JavaScript 中进行 CSS 选择器类型的元素选择，并更容易建立 DOM。现在我们有了现代的特性，如 {{domxref("Document.querySelector()")}}、{{domxref("Document.querySelectorAll()")}}、{{domxref("Node")}} 方法，在各浏览器中可用，这就不那么重要了，但在旧的浏览器需要支持时，它仍然有用。
 - 方便性库：让困难的事情更容易做。例如，直接使用 [WebGL API](/zh-CN/docs/Web/API/WebGL_API) 很复杂且很有挑战性，而 [Three.js](https://threejs.org/) 库（和其他类似的库）是建立在 WebGL 之上的，为创建普通 3D 对象、照明、纹理等提供了更容易的 API。[Service Worker API](/zh-CN/docs/Web/API/Service_Worker_API) 的使用也非常复杂，所以代码库已经开始出现，以使常见的 Service Worker 用例更容易实现（参见 [Service Worker 指导书](https://github.com/mdn/serviceworker-cookbook)，以获得一些有用的代码示例）。
 - 效果库：这些库的设计是为了让你能够轻松地在你的网站上添加特殊效果。在“DHTML”是一个流行的流行语的时候，这是很有用的，实现一个效果需要很多复杂的 JavaScript，但现在的浏览器有很多内置的 CSS 功能和 API，可以更容易地实现效果。
-- UI 库：提供实现复杂的 UI 功能的方法，否则这些功能的实现和跨浏览器的工作会很困难，例如 [Foundation](https://get.foundation/)、[Bootstrap](https://getbootstrap.com/) 和[Material-UI](https://mui.com/)（后者是一套用于 React 框架的组件）。这些往往被用作整个网站布局的基础；仅仅为了一个 UI 功能而把它们放入其中往往是很困难的。
+- UI 库：提供实现复杂的 UI 功能的方法，否则这些功能的实现和跨浏览器的工作会很困难，例如 [Foundation](https://get.foundation/)、[Bootstrap](https://getbootstrap.com/) 和 [Material-UI](https://mui.com/)（后者是一套用于 React 框架的组件）。这些往往被用作整个网站布局的基础；仅仅为了一个 UI 功能而把它们放入其中往往是很困难的。
 - 标准化库：给你一个简单的语法，让你轻松完成一个任务，而不必担心跨浏览器的差异。该库将在后台操作适当的 API，所以无论什么浏览器，该功能都可以使用（理论上）。例如， [LocalForage](https://github.com/localForage/localForage) 是一个用于客户端数据存储的库，它为存储和检索数据提供了一个简单的语法。在后台，它使用浏览器可用的最好的 API 来存储数据，无论是 [IndexedDB](/zh-CN/docs/Web/API/IndexedDB_API)、[Web Storage](/zh-CN/docs/Web/API/Web_Storage_API)，甚至是 Web SQL（现在已经废弃了，但在基于 Chromium 的浏览器安全上下文中仍然支持）。
 
 在选择使用一个库时，要确保它能在你想支持的一系列浏览器中工作，并对你的实现进行彻底的测试。还要确保这个库是受欢迎的，得到良好的支持，并且不可能在下周就被淘汰。与其他开发者交谈，了解他们的建议，看看该库在 GitHub（或其他存放它的地方）上有多少活动和贡献者，等等。

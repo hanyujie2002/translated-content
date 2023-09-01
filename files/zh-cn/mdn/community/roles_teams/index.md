@@ -7,7 +7,7 @@ slug: MDN/Community/Roles_teams
 
 MDN Web 文档的成功和发展在很大程度上归功于我们的贡献者社区。还有致力于整个项目健康、发展和维护的正式、非正式员工，以及合作伙伴。还有一些人投入了一部分时间来协助完成 MDN Web 文档的日常工作，他们是我们[特邀专家计划](#特邀专家计划)的一部分。为了管理所有的团队，我们依赖于 GitHub 组织中的角色和团队。
 
-在[这里可以查看](https://github.com/orgs/mdn/people)组织的成员清单。
+在[这里可以查看](https://github.com/orgs/mdn/people) 组织的成员清单。
 
 ## 团队
 
@@ -42,7 +42,7 @@ MDN Web 文档的成功和发展在很大程度上归功于我们的贡献者社
 
 ### 加入团队意味着什么
 
-我们使用 [GitHub 团队](https://docs.github.com/zh/organizations/organizing-members-into-teams/about-teams)功能来管理团队。这意味着，当你被加入到团队中时，你已经传达了更密切地参与项目的意图。这也意味着你有一些额外的责任和权利：
+我们使用 [GitHub 团队](https://docs.github.com/zh/organizations/organizing-members-into-teams/about-teams) 功能来管理团队。这意味着，当你被加入到团队中时，你已经传达了更密切地参与项目的意图。这也意味着你有一些额外的责任和权利：
 
 1. 团队中的成员通常会被添加到上述相关领域的 [CODEOWNERS](https://github.com/mdn/content/blob/main/.github/CODEOWNERS) 文件中（注：对于本地化团队，则[在此处](https://github.com/mdn/translated-content/blob/main/.github/CODEOWNERS)）。
 2. 基于 CODEOWNERS 文件，当拉取请求（PR）涉及到你职责范围内的文件时，GitHub [负载均衡算法](https://docs.github.com/zh/organizations/organizing-members-into-teams/managing-code-review-settings-for-your-team#routing-algorithms) 会自动将拉取请求分配给你。
@@ -62,7 +62,7 @@ MDN Web 文档的成功和发展在很大程度上归功于我们的贡献者社
 
 ## 杰出贡献者
 
-我们每个月都会选出一位对 MDN Web 文档作出卓越贡献的[杰出贡献者（spotlight contributor）](https://github.com/mdn/mdn-contributor-spotlight)。他们的贡献可以是拉取请求、在 GitHub 讨论或学习社区帮助社区成员，或提供 GitHub 议题、拉取请求的反馈。要提名杰出贡献者，请使用[杰出贡献者模板](https://github.com/mdn/mdn/issues/new/choose)提交一个带有他们所贡献内容的详细信息的 GitHub 议题。
+我们每个月都会选出一位对 MDN Web 文档作出卓越贡献的[杰出贡献者（spotlight contributor）](https://github.com/mdn/mdn-contributor-spotlight)。他们的贡献可以是拉取请求、在 GitHub 讨论或学习社区帮助社区成员，或提供 GitHub 议题、拉取请求的反馈。要提名杰出贡献者，请使用[杰出贡献者模板](https://github.com/mdn/mdn/issues/new/choose) 提交一个带有他们所贡献内容的详细信息的 GitHub 议题。
 
 ## 特邀专家计划
 

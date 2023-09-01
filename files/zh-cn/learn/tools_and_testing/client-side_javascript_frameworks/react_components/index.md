@@ -191,7 +191,7 @@ export default function Todo(props) {
 
 ### 请给我一些 `id`
 
-我们的 `<Todo />` 组件给每个任务的 `id` 属性都设为 `todo-0` 了。这是个不好的 HTML 写法，因为 [`id` 属性](/zh-CN/docs/Web/HTML/Global_attributes/id)必须是不同的（它们被 CSS、JavaScript 等用作文档片段的唯一标识符）。这意味着我们需要给每一个 `Todo` 组件一个不同 `id` prop。
+我们的 `<Todo />` 组件给每个任务的 `id` 属性都设为 `todo-0` 了。这是个不好的 HTML 写法，因为 [`id` 属性](/zh-CN/docs/Web/HTML/Global_attributes/id) 必须是不同的（它们被 CSS、JavaScript 等用作文档片段的唯一标识符）。这意味着我们需要给每一个 `Todo` 组件一个不同 `id` prop。
 
 为了遵循最初的规则，让我们给每个 `<Todo />` 组件实例一个 `todo-i` 格式的 ID，其中数字 `i` 每次增加一。
 

@@ -66,7 +66,7 @@ myFunction();
 const myNumber = 0;
 ```
 
-但是在[对象](/zh-CN/docs/Learn/JavaScript/Objects)中，需要小心地使用正确的语法标签。你需要使用花括号来包裹一个对象，冒号来分隔成员名称和值，并用逗号来分隔每个成员，例如：
+但是在[对象](/zh-CN/docs/Learn/JavaScript/Objects) 中，需要小心地使用正确的语法标签。你需要使用花括号来包裹一个对象，冒号来分隔成员名称和值，并用逗号来分隔每个成员，例如：
 
 ```js
 const myObject = {
@@ -140,7 +140,7 @@ const myObject = {
 - [怎么在 JavaScript 控制台打印值？](/zh-CN/docs/Learn/Tools_and_testing/Cross_browser_testing/JavaScript#console_相关_api)
 - [怎么使用断点和其他 JavaScript 调试工具？](/zh-CN/docs/Learn/Tools_and_testing/Cross_browser_testing/JavaScript#using_the_javascript_debugger)
 
-有关 JavaScript 调试的更多内容，请查阅[处理 JavaScript 常见问题](/zh-CN/docs/Learn/Tools_and_testing/Cross_browser_testing/JavaScript)页面，也可以查看[其他常见错误](/zh-CN/docs/Learn/JavaScript/First_steps/What_went_wrong#其他常见错误)的描述。
+有关 JavaScript 调试的更多内容，请查阅[处理 JavaScript 常见问题](/zh-CN/docs/Learn/Tools_and_testing/Cross_browser_testing/JavaScript) 页面，也可以查看[其他常见错误](/zh-CN/docs/Learn/JavaScript/First_steps/What_went_wrong#其他常见错误)的描述。
 
 ### 在代码中作出判断
 

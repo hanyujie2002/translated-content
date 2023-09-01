@@ -79,11 +79,11 @@ Firefox 还支持 `chrome.*` 命名空间中的 callbacks 风格的 API，这主
 
 这四个主要浏览器提供的 API 函数的实现差异可分为三大类：
 
-- **缺乏对整个功能的支持。**例如，在撰写本文时，Edge 没有提供对[隐私](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/API/privacy#Browser_compatibility)功能的支持。
+- **缺乏对整个功能的支持。**例如，在撰写本文时，Edge 没有提供对[隐私](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/API/privacy#Browser_compatibility) 功能的支持。
 - **缺乏对某些特性的支持。**例如，在撰写本文时，Firefox 不支持 `onButtonClicked`，而只支持 `onShown`。
 - **专有功能，支持特定于浏览器的特性。**例如，在撰写本文时，容器是一个特定于 firefox 的特性，由 `contextualidentity` 函数支持。
 
-你可以在 [Mozilla Developer Network 浏览器对 JavaScript API 页面的支持](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs)上找到 4 个主要浏览器对扩展 API 的支持细节，以及 Firefox for Android 对扩展 API 的支持细节。浏览器兼容性信息也包含在每个函数及其方法、类型和事件的 Mozilla Developer Network [JavaScript APIs](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/API) 参考页面中。
+你可以在 [Mozilla Developer Network 浏览器对 JavaScript API 页面的支持](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs) 上找到 4 个主要浏览器对扩展 API 的支持细节，以及 Firefox for Android 对扩展 API 的支持细节。浏览器兼容性信息也包含在每个函数及其方法、类型和事件的 Mozilla Developer Network [JavaScript APIs](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/API) 参考页面中。
 
 #### 处理 API 差异
 

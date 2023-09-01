@@ -23,7 +23,7 @@ slug: Mozilla/Add-ons
 
 ### 扩展工坊
 
-[Firefox 扩展工坊](https://extensionworkshop.com)可以帮助你为 Firefox 开发扩展，并为你的用户提供简单而强大的方式来定制他们的浏览体验。你会找到：
+[Firefox 扩展工坊](https://extensionworkshop.com) 可以帮助你为 Firefox 开发扩展，并为你的用户提供简单而强大的方式来定制他们的浏览体验。你会找到：
 
 - [Firefox 扩展特征概述](https://extensionworkshop.com/#about)
 - [开发和测试工具及其流程](https://extensionworkshop.com/documentation/develop/)
@@ -39,9 +39,9 @@ slug: Mozilla/Add-ons
 
 ### 迁移现有扩展
 
-如果你正在维护一个旧式扩展，比如 XUL overlay、bootstrapped，或者基于 Add-on SDK 的扩展，我们建议你将其移植到 WebExtension APIs。这里有一些[Firefox 扩展工坊中的移植资源](https://extensionworkshop.com/documentation/develop/porting-a-legacy-firefox-extension/)。
+如果你正在维护一个旧式扩展，比如 XUL overlay、bootstrapped，或者基于 Add-on SDK 的扩展，我们建议你将其移植到 WebExtension APIs。这里有一些 [Firefox 扩展工坊中的移植资源](https://extensionworkshop.com/documentation/develop/porting-a-legacy-firefox-extension/)。
 
-有关过渡支持的更多内容，请访问我们的[wiki 页面](https://wiki.mozilla.org/Add-ons/developer/communication)。
+有关过渡支持的更多内容，请访问我们的 [wiki 页面](https://wiki.mozilla.org/Add-ons/developer/communication)。
 
 ## 发布附加组件
 
@@ -60,4 +60,4 @@ slug: Mozilla/Add-ons
 
 ## 联系我们
 
-查看[联系我们](/zh-CN/docs/Mozilla/Add-ons/Contact_us)页面，了解有关如何获得帮助、时刻关注关于附加组件的最新消息以及向我们提供反馈的详细信息。
+查看[联系我们](/zh-CN/docs/Mozilla/Add-ons/Contact_us) 页面，了解有关如何获得帮助、时刻关注关于附加组件的最新消息以及向我们提供反馈的详细信息。

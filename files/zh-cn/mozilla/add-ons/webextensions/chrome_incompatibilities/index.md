@@ -64,7 +64,7 @@ setCookie.then(logCookie, logError);
 
 页面 [JavaScript API 的浏览器支持情况](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs) 包含了介绍受 Firefox 任意程度支持的 API 的兼容性表格。若对 API 的支持存在须要注意的事项，并标有星号“\*”，且在 API 的参考页面会介绍注意事项。
 
-这些表格由 [在 GitHub 上以 JSON 文件存储的兼容性数据](https://github.com/mdn/browser-compat-data)生成。
+这些表格由 [在 GitHub 上以 JSON 文件存储的兼容性数据](https://github.com/mdn/browser-compat-data) 生成。
 
 本节剩余部分介绍了表格未涵盖的兼容性问题。
 
@@ -116,7 +116,7 @@ Firefox 以不同方式进行实现。它使用一个随机的 UUID，在每个 
 
 #### Manifest "key" 属性
 
-对于解包了的扩展，Chrome 允许将 ["key" 属性](https://developer.chrome.com/extensions/manifest/key)添加到 manifest，以确保在不同机器上的扩展 ID 不变。这主要在使用 web_accessible_resources 时有用。鉴于 Firefox 为 web_accessible_resources 使用随机的 UUID，此属性不受支持。
+对于解包了的扩展，Chrome 允许将 ["key" 属性](https://developer.chrome.com/extensions/manifest/key) 添加到 manifest，以确保在不同机器上的扩展 ID 不变。这主要在使用 web_accessible_resources 时有用。鉴于 Firefox 为 web_accessible_resources 使用随机的 UUID，此属性不受支持。
 
 #### Content script requests happen in the context of extension, not content page
 

@@ -30,7 +30,7 @@ Matrix 聊天室是 Discord 服务器的替代品。
 
 ## GitHub 讨论
 
-MDN Web 文档的 [GitHub 讨论](https://github.com/orgs/mdn/discussions)是一个寻找任何有关项目[公告](https://github.com/orgs/mdn/discussions/categories/announcements)的地方。
+MDN Web 文档的 [GitHub 讨论](https://github.com/orgs/mdn/discussions) 是一个寻找任何有关项目[公告](https://github.com/orgs/mdn/discussions/categories/announcements) 的地方。
 
 使用 GitHub 讨论来发布你的问题和建议。在开始一个话题时，请选择适当的[讨论类别](https://github.com/mdn/mdn-community#github-discussions)。你得到回答的问题可能对其他人在未来寻找类似信息时非常有用。
 
@@ -40,7 +40,7 @@ MDN Web 文档的 [GitHub 讨论](https://github.com/orgs/mdn/discussions)是一
 
 ## 论坛
 
-你可以使用下面列出的论坛来探讨代码问题。你也可以在这里寻求你在 [MDN 学习区](/zh-CN/docs/Learn)中的测验进度的反馈。
+你可以使用下面列出的论坛来探讨代码问题。你也可以在这里寻求你在 [MDN 学习区](/zh-CN/docs/Learn) 中的测验进度的反馈。
 
 - [MDN 讨论论坛](https://discourse.mozilla.org/c/mdn/236)
 - [MDN 讨论论坛——学习专区](https://discourse.mozilla.org/c/mdn/learn/250)

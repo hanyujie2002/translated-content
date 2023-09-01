@@ -7,7 +7,7 @@ slug: Learn/Server-side/Express_Nodejs/Displaying_data/Template_primer
 
 ## Express 模板选择
 
-Express 可以与许多不同的[模板渲染引擎](https://expressjs.com/en/guide/using-template-engines.html)一起使用。在本教程中，我们使用[Pug](https://pugjs.org/api/getting-started.html)（以前称为 Jade）作为模板。这是最流行的 Node 模板语言，并且官方将自身描述为“用于编写 HTML，语法干净且空格敏感，受 [Haml](http://haml.info/)影响很大”。
+Express 可以与许多不同的[模板渲染引擎](https://expressjs.com/en/guide/using-template-engines.html) 一起使用。在本教程中，我们使用 [Pug](https://pugjs.org/api/getting-started.html)（以前称为 Jade）作为模板。这是最流行的 Node 模板语言，并且官方将自身描述为“用于编写 HTML，语法干净且空格敏感，受 [Haml](http://haml.info/)影响很大”。
 
 不同的模板语言使用不同的方法，来定义布局和标记数据的占位符 — 一些使用 HTML 来定义布局，而另一些则使用可以编译为 HTML 的不同标记格式。Pug 是第二种类型；它使用 HTML 的表示形式，其中任何行中的第一个单词，通常表示 HTML 元素，后续行中的缩进，用于表示嵌套在这些元素中的任何内容。结果是一个页面定义直接转换为 HTML，但可以说更简洁，更容易阅读。
 
@@ -15,7 +15,7 @@ Express 可以与许多不同的[模板渲染引擎](https://expressjs.com/en/gu
 
 ## 模板组态
 
-在我们[创建骨架网站](/zh-CN/docs/Learn/Server-side/Express_Nodejs/skeleton_website)时，LocalLibrary 配置为使用 [Pug](https://pugjs.org/api/getting-started.html)。你应该看到 Pug 模块作为依赖项，包含在网站的 **package.json**文件中，以及 **app.js**文件中的以下配置设置。设置告诉我们，使用 Pug 作为视图引擎，Express 应该在 **/views**子目录中搜索模板。
+在我们[创建骨架网站](/zh-CN/docs/Learn/Server-side/Express_Nodejs/skeleton_website) 时，LocalLibrary 配置为使用 [Pug](https://pugjs.org/api/getting-started.html)。你应该看到 Pug 模块作为依赖项，包含在网站的 **package.json**文件中，以及 **app.js**文件中的以下配置设置。设置告诉我们，使用 Pug 作为视图引擎，Express 应该在 **/views**子目录中搜索模板。
 
 ```js
 // View engine setup.
@@ -124,13 +124,13 @@ ul
     li= val
 ```
 
-语法还支持注释（可以在输出中呈现 - 或者不是 - 可自行选择），支持 mixins 创建可重用的代码块，case 语句和许多其他功能。有关更多详细信息，请参阅[Pug](https://pugjs.org/api/getting-started.html)文档。
+语法还支持注释（可以在输出中呈现 - 或者不是 - 可自行选择），支持 mixins 创建可重用的代码块，case 语句和许多其他功能。有关更多详细信息，请参阅 [Pug](https://pugjs.org/api/getting-started.html) 文档。
 
 ## 扩展模板
 
 在一个站点中，通常所有页面都有一个共同的结构，包括页首，页脚，导航等的标准 HTML 标记。比起强迫开发人员在每个页面中复制这个“样板”的做法，Pug 允许你声明一个基本模板，然后扩展它，只替换每个特定页面不同的地方。
 
-例如，在我们的[骨架项目](/zh-CN/docs/Learn/Server-side/Express_Nodejs/skeleton_website)中，创建的基本模板 **layout.pug**，如下所示：
+例如，在我们的[骨架项目](/zh-CN/docs/Learn/Server-side/Express_Nodejs/skeleton_website) 中，创建的基本模板 **layout.pug**，如下所示：
 
 ```pug
 doctype html

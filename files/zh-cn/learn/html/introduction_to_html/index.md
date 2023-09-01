@@ -9,7 +9,7 @@ slug: Learn/HTML/Introduction_to_HTML
 
 ## 前言
 
-尽管你无需事先拥有任何 HTML 相关知识以学习该模块，你仍至少需要熟悉一些使用电脑的基础知识，并会被动地使用网络（也就是看着它，浏览内容）。你需要配置基础的开发环境（详细说明请参见[安装基本软件](/zh-CN/docs/Learn/Getting_started_with_the_web/Installing_basic_software)页面），并且懂得如何创建和管理文件（在[处理文件](/zh-CN/docs/Learn/Getting_started_with_the_web/Dealing_with_files)页面中有详细说明） —— 它们都是我们纯新手 [Web 开发入门](/zh-CN/docs/Learn/Getting_started_with_the_web)模块的一部分。
+尽管你无需事先拥有任何 HTML 相关知识以学习该模块，你仍至少需要熟悉一些使用电脑的基础知识，并会被动地使用网络（也就是看着它，浏览内容）。你需要配置基础的开发环境（详细说明请参见[安装基本软件](/zh-CN/docs/Learn/Getting_started_with_the_web/Installing_basic_software) 页面），并且懂得如何创建和管理文件（在[处理文件](/zh-CN/docs/Learn/Getting_started_with_the_web/Dealing_with_files) 页面中有详细说明） —— 它们都是我们纯新手 [Web 开发入门](/zh-CN/docs/Learn/Getting_started_with_the_web) 模块的一部分。
 
 > **备注：** 如果你正在一台你不能创建文件的设备上作业，那么你需要在在线编程工具上运行（大多数）代码示例，如 [JSBin](http://jsbin.com/) 或 [Glitch](https://glitch.com/) 等。
 
@@ -26,7 +26,7 @@ slug: Learn/HTML/Introduction_to_HTML
 - [创建超链接](/zh-CN/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks)
   - : 超链接真的很重要——它们是“web”的意义所在。本文展示了创建超链接所需的语法，并讨论了创建超链接的最佳做法。
 - [高级文本排版](/zh-CN/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting)
-  - : HTML 中还有许多没有在 [HTML 文本处理基础](/zh-CN/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals)页面中提到的其他元素可以用于排版文本。这里的元素不太为人所知，但了解这些元素仍然很有用。在这篇文章里，你将学习如何标记引文、描述列表、计算机代码和其他类似的文本、下标和上标、联系信息等。
+  - : HTML 中还有许多没有在 [HTML 文本处理基础](/zh-CN/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals) 页面中提到的其他元素可以用于排版文本。这里的元素不太为人所知，但了解这些元素仍然很有用。在这篇文章里，你将学习如何标记引文、描述列表、计算机代码和其他类似的文本、下标和上标、联系信息等。
 - [文档和网站结构](/zh-CN/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
   - : 除了定义页面的个别部分（例如“段落”或“图像”）外，HTML 也被用于定义网站的区域（例如“标题”、“导航菜单”和“主要内容”）。本文将探讨如何规划一个基本的网站结构，以及如何编写 HTML 来表示这个结构。
 - [调试 HTML](/zh-CN/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML)

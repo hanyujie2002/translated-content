@@ -11,7 +11,7 @@ slug: Mozilla/Add-ons/WebExtensions/Internationalization
 
 ## 剖析一个国际化的 WebExtension
 
-一个国际化的 WebExtension 与其他 WebExtension 一样可以包含各类功能，如[后台脚本](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#后台脚本)、[内容脚本](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Content_scripts)等，但它也有些额外的部分，从而允许它适应不同的语言区域。目录树大致如下：
+一个国际化的 WebExtension 与其他 WebExtension 一样可以包含各类功能，如[后台脚本](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#后台脚本)、[内容脚本](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Content_scripts) 等，但它也有些额外的部分，从而允许它适应不同的语言区域。目录树大致如下：
 
 - webextension-根目录/
 
@@ -47,13 +47,13 @@ slug: Mozilla/Add-ons/WebExtensions/Internationalization
 
 ## 在 \_locales 中提供本地化的字符串
 
-你可以使用[Language subtag lookup page](https://r12a.github.io/app-subtags/)上的查找工具查询语言子标签。请注意，你需要搜索语言的英语名称。
+你可以使用 [Language subtag lookup page](https://r12a.github.io/app-subtags/)上的查找工具查询语言子标签。请注意，你需要搜索语言的英语名称。
 
 每个 i18n 系统都需要你提供想支持的各语言区域的已翻译字符串。在 WebExtensions 中，这些字符串放在一个名为 `_locales` 的目录中，`_locales` 目录则位于扩展的根目录。每个语言区域都有一个名叫 `messages.json` 的文件，其中包含相应的字符串（在 WebExtension 中称作“消息”），这个文件放在 `_locales` 的子目录下，子目录以对应语言区域的语言子标签来命名。
 
 注意，如果子标签包含一个基本语言和一个区域变种，那么语言与变种之间通常会以连字号隔开，例如 "en-US"。但作为 `_locales` 的子目录，**它必须采用下划线来分隔**，如 "en_US"。
 
-因此[在我们这个示例应用](https://github.com/mdn/webextensions-examples/tree/main/notify-link-clicks-i18n/_locales)中，我们有如下几个目录："en"（英语）、"de"（德语）、"nl"（荷兰语）以及 "ja"（日语）。每个目录都包含一个 `messages.json` 文件。
+因此[在我们这个示例应用](https://github.com/mdn/webextensions-examples/tree/main/notify-link-clicks-i18n/_locales) 中，我们有如下几个目录："en"（英语）、"de"（德语）、"nl"（荷兰语）以及 "ja"（日语）。每个目录都包含一个 `messages.json` 文件。
 
 现在我们来看其中一个文件（[\_locales/en/messages.json](https://github.com/mdn/webextensions-examples/blob/main/notify-link-clicks-i18n/_locales/en/messages.json)）的结构：
 
@@ -150,7 +150,7 @@ header {
 - {{WebExtAPIRef("i18n.getAcceptLanguages()")}} 和 {{WebExtAPIRef("i18n.getUILanguage()")}} 这两个方法可以在你需要根据语言区域自定义用户界面时使用 — 或许你希望根据用户想要的语言在首选项列表更高层显示首选项，或只显示和特定语言有关的文化信息，又或是按浏览器语言显示格式化过的日期。
 - {{WebExtAPIRef("i18n.detectLanguage()")}} 这个方法可以用来检测用户提交内容的语言，并将其正确格式化。
 
-在我们的 [notify-link-clicks-i18n](https://github.com/mdn/webextensions-examples/tree/main/notify-link-clicks-i18n) 示例中，[后台脚本](https://github.com/mdn/webextensions-examples/blob/main/notify-link-clicks-i18n/background-script.js)包含下列代码：
+在我们的 [notify-link-clicks-i18n](https://github.com/mdn/webextensions-examples/tree/main/notify-link-clicks-i18n) 示例中，[后台脚本](https://github.com/mdn/webextensions-examples/blob/main/notify-link-clicks-i18n/background-script.js) 包含下列代码：
 
 ```js
 var title = browser.i18n.getMessage("notificationTitle");
@@ -380,7 +380,7 @@ padding-left: 1.5em;
 
 ## 测试你的 WebExtension
 
-从 Firefox 45 开始，你可以临时安装磁盘上的 WebExtensions — 另见[从磁盘加载。](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Packaging_and_installation#loading_from_disk)按上述步骤操作，然后尝试我们的 [notify-link-clicks-i18n](https://github.com/mdn/webextensions-examples/tree/main/notify-link-clicks-i18n) WebExtension。访问你喜欢的任何网站，然后点一下链接，查看是否有通知出现来显示所点击的链接网址。
+从 Firefox 45 开始，你可以临时安装磁盘上的 WebExtensions — 另见[从磁盘加载。](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Packaging_and_installation#loading_from_disk) 按上述步骤操作，然后尝试我们的 [notify-link-clicks-i18n](https://github.com/mdn/webextensions-examples/tree/main/notify-link-clicks-i18n) WebExtension。访问你喜欢的任何网站，然后点一下链接，查看是否有通知出现来显示所点击的链接网址。
 
 接下来，将 Firefox 的语言区域更改为你想测试的扩展支持的某个语言区域。
 

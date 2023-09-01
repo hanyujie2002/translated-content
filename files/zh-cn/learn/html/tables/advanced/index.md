@@ -67,7 +67,7 @@ slug: Learn/HTML/Tables/Advanced
 - `<tfoot>` 元素需要包住表格中作为表脚的部分。一般是最后一行，往往是对前面所有行的总结，比如，你可以按照预想的方式将`<tfoot>`放在表格的底部，或者就放在 `<thead>` 的下面。(浏览器仍将它呈现在表格的底部)
 - `<tbody>` 元素需要包住表格内容中不在表头或表尾的其他部分。它可以出现在表头的下方，或者有时出现在表脚下方，这取决于你如何安排它。
 
-> **备注：** `<tbody>` 总是包含在每个表中，如果你没有在代码中指定它，那就是隐式的。可以来验证一下，打开一个你之前没有包含 `<tbody>` 的例子，然后在你的[浏览器开发者工具](/zh-CN/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools)中观察你的代码，你会看到浏览器为你添加了这个标签。你也许会想问，为什么你应该在所有表中都需要这个元素，因为它可以让你更好地控制表格结构和样式。
+> **备注：** `<tbody>` 总是包含在每个表中，如果你没有在代码中指定它，那就是隐式的。可以来验证一下，打开一个你之前没有包含 `<tbody>` 的例子，然后在你的[浏览器开发者工具](/zh-CN/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) 中观察你的代码，你会看到浏览器为你添加了这个标签。你也许会想问，为什么你应该在所有表中都需要这个元素，因为它可以让你更好地控制表格结构和样式。
 
 ### 动手练习：添加表格结构
 
@@ -92,7 +92,7 @@ slug: Learn/HTML/Tables/Advanced
 
 7. 先保存，再刷新，然后观察一下结果。如果没有 `<tbody>` 和 `<tfoot>` 元素，你也许会写更加复杂的选择器或规则来应用同样的样式。
 
-> **备注：** 我们并不期望你现在就能完全理解 CSS。在你阅读我们的 CSS 模块时，你会学到更多这方面的知识（[CSS 介绍](/zh-CN/docs/Learn/CSS/First_steps)是一个好的起点；文章[样式化表格](/zh-CN/docs/Learn/CSS/Building_blocks/Styling_tables)也专门讲述了如何对表格添加样式）。
+> **备注：** 我们并不期望你现在就能完全理解 CSS。在你阅读我们的 CSS 模块时，你会学到更多这方面的知识（[CSS 介绍](/zh-CN/docs/Learn/CSS/First_steps) 是一个好的起点；文章[样式化表格](/zh-CN/docs/Learn/CSS/Building_blocks/Styling_tables) 也专门讲述了如何对表格添加样式）。
 
 你完成的表格应该如下所示：
 
@@ -417,7 +417,7 @@ th {
 
 ## 总结
 
-关于 HTML 表格你还可以学习其他一些东西，但是我们目前已经把大部分你需要知道的内容都告诉你了。接下来，你可以在 [HTML 表格测评](/zh-CN/docs/Learn/HTML/Tables/Structuring_planet_data)中测试自己的水平了，祝你玩得开心！
+关于 HTML 表格你还可以学习其他一些东西，但是我们目前已经把大部分你需要知道的内容都告诉你了。接下来，你可以在 [HTML 表格测评](/zh-CN/docs/Learn/HTML/Tables/Structuring_planet_data) 中测试自己的水平了，祝你玩得开心！
 
 如果你已经在学习 CSS，并且在评估中表现良好，你就可以继续学习 HTML 表格的样式，参见[样式化表格](/zh-CN/docs/Learn/CSS/Building_blocks/Styling_tables)。
 

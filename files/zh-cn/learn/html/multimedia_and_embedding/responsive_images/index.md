@@ -5,7 +5,7 @@ slug: Learn/HTML/Multimedia_and_embedding/Responsive_images
 
 {{LearnSidebar}}{{PreviousMenuNext("Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web", "Learn/HTML/Multimedia_and_embedding/Mozilla_splash_page", "Learn/HTML/Multimedia_and_embedding")}}
 
-在这篇文章中我们将学习关于响应式图片——在不同的屏幕尺寸、分辨率或具有其他类似特性的设备上都呈现良好的图片——并且探究 HTML 提供了什么工具来帮助实现它们，这有助于提升（网页在）不同设备上的性能。响应式图片仅是[响应式设计](/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design)的一部分，我们在 CSS 模块中将学到更多关于这一主题的知识。
+在这篇文章中我们将学习关于响应式图片——在不同的屏幕尺寸、分辨率或具有其他类似特性的设备上都呈现良好的图片——并且探究 HTML 提供了什么工具来帮助实现它们，这有助于提升（网页在）不同设备上的性能。响应式图片仅是[响应式设计](/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design) 的一部分，我们在 CSS 模块中将学到更多关于这一主题的知识。
 
 <table class="learn-box standard-table">
   <tbody>
@@ -31,7 +31,7 @@ slug: Learn/HTML/Multimedia_and_embedding/Responsive_images
 
 ![Our example site as viewed on a wide screen - here the first image works ok, as it is big enough to see the detail in the center.](picture-element-wide.png)
 
-这个网页在宽屏设备上表现良好，例如笔记本电脑或台式机（你可以[查看在线演示](https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/not-responsive.html)并且在 GitHub 上查看[源代码](https://github.com/mdn/learning-area/blob/main/html/multimedia-and-embedding/responsive-images/not-responsive.html)）。我们不会在这节课中详细讨论它的 CSS，只说以下几个要点：
+这个网页在宽屏设备上表现良好，例如笔记本电脑或台式机（你可以[查看在线演示](https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/not-responsive.html) 并且在 GitHub 上查看[源代码](https://github.com/mdn/learning-area/blob/main/html/multimedia-and-embedding/responsive-images/not-responsive.html)）。我们不会在这节课中详细讨论它的 CSS，只说以下几个要点：
 
 - 正文内容设置了 1200 像素的最大宽度——在大于该宽度的视口中，正文会保持 1200 像素，并将其本身置于可用空间的中间；在小于该宽度的视口中，正文的宽度是视口宽度的 100%。
 - 头部图片已经被设置为，无论头部宽度如何变化，它的中心始终处于头部的中间，这样如果网站显示在窄屏上，图片中心的重要细节（里面的人）仍然可以看到，而两边超出的部分就消失了。图片的高度是 200px。
@@ -43,7 +43,7 @@ slug: Learn/HTML/Multimedia_and_embedding/Responsive_images
 
 一个改进的方法是，当网站在狭窄的屏幕上观看时，显示一张只含重要细节的裁剪版本的图片，在像平板电脑这样的中等宽度的屏幕设备上显示时，显示另一张裁剪的图片。但为各种布局提供不同版本的裁剪图片，会产生众所周知的**美术设计问题**。
 
-此外，如果是在小屏手机屏幕上显示网页，那么没有必要在网页上嵌入这样大的图片，反过来说，一张小的[位图](/zh-CN/docs/Glossary/Raster_image)，如果它的显示尺寸大于原始尺寸，看起来就会有颗粒感（位图有固定数量的像素宽，固定数量的像素高，与[矢量图](/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web)外观相同，但本质不同）。这被称之为**分辨率切换问题**。
+此外，如果是在小屏手机屏幕上显示网页，那么没有必要在网页上嵌入这样大的图片，反过来说，一张小的[位图](/zh-CN/docs/Glossary/Raster_image)，如果它的显示尺寸大于原始尺寸，看起来就会有颗粒感（位图有固定数量的像素宽，固定数量的像素高，与[矢量图](/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web) 外观相同，但本质不同）。这被称之为**分辨率切换问题**。
 
 换言之，没有必要把一张大图显示在比它的实际尺寸小得多的屏幕上，这样做会浪费带宽——当可以在设备上使用小图像时，手机用户尤其不愿意因为下载用于桌面的大图像而浪费带宽。理想的情况是用户浏览器有不同分辨率的图片可用，这样可以根据不同设备的屏幕大小载入合适分辨率的图片。
 
@@ -84,7 +84,7 @@ slug: Learn/HTML/Multimedia_and_embedding/Responsive_images
 
 1. 一个**文件名**（`elva-fairy-480w.jpg`）
 2. 一个空格
-3. **图片的固有宽度**（以像素为单位）（480w）。注意，这里使用宽度描述符 `w`，而非你可能期望的 `px`。图片的[固有宽度](/zh-CN/docs/Glossary/Intrinsic_Size)是它的真实大小，可以通过检查你电脑上的图片文件找到（例如，在 Mac 上，你可以在 Finder 上选择这个图片，然后按
+3. **图片的固有宽度**（以像素为单位）（480w）。注意，这里使用宽度描述符 `w`，而非你可能期望的 `px`。图片的[固有宽度](/zh-CN/docs/Glossary/Intrinsic_Size) 是它的真实大小，可以通过检查你电脑上的图片文件找到（例如，在 Mac 上，你可以在 Finder 上选择这个图片，然后按
 
    <kbd>Cmd</kbd>
 
@@ -96,7 +96,7 @@ slug: Learn/HTML/Multimedia_and_embedding/Responsive_images
 
 **`sizes`** 定义了一组媒体条件（例如屏幕宽度）并且指明当某些媒体条件为真时，什么样的图片尺寸是最佳选择——这就是我们之前提到的提示。上面的示例中，在每个逗号之前，我们写：
 
-1. 一个**媒体条件**（`(max-width:600px)`）——你会在 [CSS 主题](/zh-CN/docs/Learn/CSS)中学到更多相关的知识，这里我们说一个媒体条件描述了一种屏幕可能处于的状态。上面示例中，我们说“当视口的宽度小于等于 600px 时”。
+1. 一个**媒体条件**（`(max-width:600px)`）——你会在 [CSS 主题](/zh-CN/docs/Learn/CSS) 中学到更多相关的知识，这里我们说一个媒体条件描述了一种屏幕可能处于的状态。上面示例中，我们说“当视口的宽度小于等于 600px 时”。
 2. 一个空格
 3. 当媒体条件为真时，图像将填充的**槽的宽度**（`480px`）
 
@@ -111,7 +111,7 @@ slug: Learn/HTML/Multimedia_and_embedding/Responsive_images
 
 就是这样！所以在这里，如果支持浏览器以 480px 的视口来加载页面，那么 `(max-width: 600px)` 的媒体条件为真，因此 `480px` 的槽会被选择，继而将加载 `elva-fairy-480w.jpg`，因为它的固有宽度（`480w`）最接近于槽宽度。800px 的照片大小为 128KB 而 480px 版本仅有 63KB 大小——节省了 65KB。现在想象一下，如果这是一个有很多图片的页面，使用这种技术会节省移动端用户的大量带宽。
 
-> **备注：** 在桌面端浏览器测试上面的示例时，如果你把浏览器设到最小宽度，却没有加载更小的图片，请检查一下此时的视口是什么（你可以打开浏览器的 JavaScript 控制台，输入 `document.querySelector('html').clientWidth` 来获得近似视口宽度）。不同的浏览器设置了窗口可以缩小到的最小宽度，它可能比你想的更宽一点。使用移动端浏览器测试时，可以使用类似 Firefox 的 `about:debugging` 页这样的工具，使用桌面端开发者工具检查在移动端加载的页面。你可以在 Firefox 开发者工具中的 [Network 标签](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/index.html)中查看加载了哪张图片。
+> **备注：** 在桌面端浏览器测试上面的示例时，如果你把浏览器设到最小宽度，却没有加载更小的图片，请检查一下此时的视口是什么（你可以打开浏览器的 JavaScript 控制台，输入 `document.querySelector('html').clientWidth` 来获得近似视口宽度）。不同的浏览器设置了窗口可以缩小到的最小宽度，它可能比你想的更宽一点。使用移动端浏览器测试时，可以使用类似 Firefox 的 `about:debugging` 页这样的工具，使用桌面端开发者工具检查在移动端加载的页面。你可以在 Firefox 开发者工具中的 [Network 标签](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/index.html) 中查看加载了哪张图片。
 
 不支持这些特性的旧版本浏览器，会忽略这些属性，它们直接越过并按常规加载 [`src`](/zh-CN/docs/Web/HTML/Element/img#src) 属性引用的图像文件。
 
@@ -211,7 +211,7 @@ img {
 - **美术设计**：当你想为不同布局提供不同剪裁的图片——比如在桌面布局上显示完整的、横向图片，而在手机布局上显示一张剪裁过的、突出重点的纵向图片，可以用 {{htmlelement("picture")}} 元素来实现。
 - **分辨率切换**：当你想要为窄屏提供更小的图片时，因为小屏幕不需要像桌面端显示那么大的图片；以及你想为高/低分辨率屏幕提供不同分辨率的图片时，都可以通过[矢量图](/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web)（SVG 图片）、[`srcset`](/zh-CN/docs/Web/HTML/Element/img#srcset) 以及 [`sizes`](/zh-CN/docs/Web/HTML/Element/img#sizes) 属性来实现。
 
-此时整个[多媒体与嵌入](/zh-CN/docs/Learn/HTML/Multimedia_and_embedding)模块接近尾声！在继续下一个模块之前，你现在唯一要做的就是进行一次[多媒体与嵌入的测试](/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Mozilla_splash_page)，看看你学得怎样。希望你玩得开心！
+此时整个[多媒体与嵌入](/zh-CN/docs/Learn/HTML/Multimedia_and_embedding) 模块接近尾声！在继续下一个模块之前，你现在唯一要做的就是进行一次[多媒体与嵌入的测试](/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Mozilla_splash_page)，看看你学得怎样。希望你玩得开心！
 
 ## 参见
 

@@ -9,13 +9,13 @@ slug: Mozilla/Firefox/Releases/21
 
 ### HTML
 
-- 实现了{{HTMLElement("style")}}元素上的[`scoped`](/zh-CN/docs/Web/HTML/Element/style#scoped)属性。拥有该属性的{{HTMLElement("style")}}元素可以通过在 Firefox 20 中实现的 CSS 伪类{{cssxref(":scope")}}选择器选择到.([Firefox bug 508725](https://bugzil.la/508725)).
+- 实现了{{HTMLElement("style")}}元素上的[`scoped`](/zh-CN/docs/Web/HTML/Element/style#scoped) 属性。拥有该属性的{{HTMLElement("style")}}元素可以通过在 Firefox 20 中实现的 CSS 伪类{{cssxref(":scope")}}选择器选择到.([Firefox bug 508725](https://bugzil.la/508725)).
 - 实现了新的{{HTMLElement("main")}}元素 ([Firefox bug 820508](https://bugzil.la/820508)).
 
 ### JavaScript
 
 - [E4X](/zh-CN/docs/E4X),一个古老的 JavaScript 扩展 (ECMA-357),已经被删除。因为一直以来，只有 Gecko 支持它.([Firefox bug 788293](https://bugzil.la/788293)).
-- [parseInt](/zh-CN/docs/JavaScript/Reference/Global_Objects/parseInt)不再将以"0"开头的字符串作为 8 进制数字来解析 ([Firefox bug 786135](https://bugzil.la/786135)).
+- [parseInt](/zh-CN/docs/JavaScript/Reference/Global_Objects/parseInt) 不再将以"0"开头的字符串作为 8 进制数字来解析 ([Firefox bug 786135](https://bugzil.la/786135)).
 
 ### CSS
 
@@ -31,7 +31,7 @@ slug: Mozilla/Firefox/Releases/21
 - Some new keyCodes for volume control are supported ([Firefox bug 674739](https://bugzil.la/674739)).
 - Some new keyCodes for ancient keyboard layout such as AS/400 are now supported on Windows and Linux ([Firefox bug 833719](https://bugzil.la/833719)).
 - Various keyCode values for OEM sepecific keys on Windows are now supported again ([Firefox bug 833719](https://bugzil.la/833719)).
-- 实现了[`window.crypto.getRandomValues`](/zh-CN/docs/Web/API/Crypto/getRandomValues)函数 ([Firefox bug 440046](https://bugzil.la/440046))。
+- 实现了[`window.crypto.getRandomValues`](/zh-CN/docs/Web/API/Crypto/getRandomValues) 函数 ([Firefox bug 440046](https://bugzil.la/440046))。
 
 ### SVG
 

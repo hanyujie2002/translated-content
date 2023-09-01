@@ -39,7 +39,7 @@ Vue 是一个现代 JavaScript 框架提供了有用的设施渐进增强——�
 
 除了允许你逐步将 Vue 集成到你的应用程序中，Vue 还提供了一种渐进的方式编写标记。像大多数框架，Vue 通过组件允许你创建可重用块标记。大多数时候，Vue 组件是使用一个特殊的 HTML 模板的语法写的。当你需要比 HTML 语法允许的更多的控制时，你可以编写 JSX 或纯 JavaScript 函数来定义组件。
 
-在学习本教程的过程中，你可能希望在其他选项卡中打开 [Vue 指南](https://cn.vuejs.org/guide/introduction.html)和 [API 文档](https://cn.vuejs.org/api/)，这样，如果你想了解更多信息，可以参考它们。要想对 Vue 和许多其他框架进行比较（但可能存在偏差），请参阅 [Vue 文档：对比其他框架](https://v2.cn.vuejs.org/v2/guide/comparison.html)。
+在学习本教程的过程中，你可能希望在其他选项卡中打开 [Vue 指南](https://cn.vuejs.org/guide/introduction.html) 和 [API 文档](https://cn.vuejs.org/api/)，这样，如果你想了解更多信息，可以参考它们。要想对 Vue 和许多其他框架进行比较（但可能存在偏差），请参阅 [Vue 文档：对比其他框架](https://v2.cn.vuejs.org/v2/guide/comparison.html)。
 
 ## 安装 Vue
 

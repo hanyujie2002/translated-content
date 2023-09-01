@@ -60,7 +60,7 @@ slug: MDN/Community/Open_source_etiquette
 
 想清楚你在项目中要做什么。比如，我们会有一个在[贡献者任务面板](https://github.com/orgs/mdn/projects/25/views/1)上记录的一些议题（issue）列表，根据任务的种类分开显示。
 
-你也可以通过创建[拉取请求](/zh-CN/docs/MDN/Community/Pull_requests)来修复在阅读 MDN 文章时一眼扫到的问题。
+你也可以通过创建[拉取请求](/zh-CN/docs/MDN/Community/Pull_requests) 来修复在阅读 MDN 文章时一眼扫到的问题。
 
 MDN 上的很多工作围绕于文档及示例代码的编写，不过，通过这些方式也可以作出贡献：
 

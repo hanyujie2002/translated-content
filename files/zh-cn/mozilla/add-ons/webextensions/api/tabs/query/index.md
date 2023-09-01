@@ -30,7 +30,7 @@ let querying = browser.tabs.query(queryObj)
     - `autoDiscardable` {{optional_inline}}
       - : `boolean`。浏览器是否可以自动丢弃该标签页。默认值为 `true`。若设置为 `false`，则浏览器将不会自动丢弃该标签页。但是，标签页仍可使用 {{WebExtAPIRef("tabs.discard")}} 来丢弃。
     - `cookieStoreId` {{optional_inline}}
-      - : `string` 或 `string` 数组。使用它来返回 `tab.cookieStoreId` 与指定的任何 `cookieStoreId` 字符串相匹配的标签页。此选项仅在附加组件具有 `"cookies"` [权限](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions)时才可用。
+      - : `string` 或 `string` 数组。使用它来返回 `tab.cookieStoreId` 与指定的任何 `cookieStoreId` 字符串相匹配的标签页。此选项仅在附加组件具有 `"cookies"` [权限](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions) 时才可用。
     - `currentWindow` {{optional_inline}}
       - : `boolean`。标签页是否在当前窗口中。
     - `discarded` {{optional_inline}}
@@ -52,7 +52,7 @@ let querying = browser.tabs.query(queryObj)
     - `title` {{optional_inline}}
       - : `string`。将页面标题与模式进行匹配。需要“tabs”权限或匹配标签的[主机权限](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions#主机权限)。
     - `url` {{optional_inline}}
-      - : `string` 或 `string` 数组。将标签页与一个或多个[匹配模式](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Match_patterns)进行匹配。请注意，不会匹配片段标识符。需要“tabs”权限或匹配标签的[主机权限](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions#主机权限)。
+      - : `string` 或 `string` 数组。将标签页与一个或多个[匹配模式](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Match_patterns) 进行匹配。请注意，不会匹配片段标识符。需要“tabs”权限或匹配标签的[主机权限](/zh-CN/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions#主机权限)。
     - `windowId` {{optional_inline}}
       - : `integer`。父窗口的 ID，或 {{WebExtAPIRef('windows.WINDOW_ID_CURRENT')}}（用于当前窗口）。
     - `windowType` {{optional_inline}}

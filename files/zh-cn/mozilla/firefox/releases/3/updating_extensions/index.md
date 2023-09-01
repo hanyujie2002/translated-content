@@ -7,7 +7,7 @@ slug: Mozilla/Firefox/Releases/3/Updating_extensions
 
 英文原文取自于 [http://developer.mozilla.org/en/docs/Extensions](/zh-CN/docs/Extensions) 这篇文章将对于那些想把他们的扩展在 Firefox 3 中正常运行的开发者提供一些有用的信息。
 
-在进入主题之前，首先要提示一下：如果你的扩展所需要的唯一改变只是安装文件中的`maxVersion`信息，并且你的扩展所在的主机是[addons.mozilla.org](https://addons.mozilla.org)，事实上你不需要上传你的新的版本的扩展！只需要在 AMO 中使用开发者控制面板调整`maxVersion`。通过这种方式你可以避免你的扩展被再次审核。
+在进入主题之前，首先要提示一下：如果你的扩展所需要的唯一改变只是安装文件中的`maxVersion`信息，并且你的扩展所在的主机是 [addons.mozilla.org](https://addons.mozilla.org)，事实上你不需要上传你的新的版本的扩展！只需要在 AMO 中使用开发者控制面板调整`maxVersion`。通过这种方式你可以避免你的扩展被再次审核。
 
 ### 第一步：升级安装文件
 
@@ -49,7 +49,7 @@ Several APIs have been changed in significant ways. The most significant of thes
 
 #### DOM
 
-将外部文档的节点插入当前文档之前，你必须使用 [`document.importNode()`](/zh-CN/docs/Web/API/Document/importNode) 从外部文档导入源节点，或者使用 [`document.adoptNode()`](/zh-CN/docs/Web/API/Document/adoptNode)导入源节点，
+将外部文档的节点插入当前文档之前，你必须使用 [`document.importNode()`](/zh-CN/docs/Web/API/Document/importNode) 从外部文档导入源节点，或者使用 [`document.adoptNode()`](/zh-CN/docs/Web/API/Document/adoptNode) 导入源节点，
 想要了解更多的 [`Node.ownerDocument`](/zh-CN/docs/Web/API/Node/ownerDocument) 问题，请参考 [W3C DOM FAQ](http://www.w3.org/DOM/faq.html#ownerdoc).
 
 即使你不执行导入动作，就执行插入外部文档中的节点.Firefox 目前也不会报错 (如果严格按标准执行，很多已有的网站都无法正常运行).

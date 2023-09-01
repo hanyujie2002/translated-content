@@ -5,7 +5,7 @@ slug: Learn/Server-side/Django/Forms
 
 {{LearnSidebar}}{{PreviousMenuNext("Learn/Server-side/Django/authentication_and_sessions", "Learn/Server-side/Django/Testing", "Learn/Server-side/Django")}}
 
-在本教程中，我们将向你展示如何在 Django 中使用 HTML 表单，特别是编写表单以创建，更新和删除模型实例的最简单方法。作为本演示的一部分，我们将扩展[LocalLibrary](/zh-CN/docs/Learn/Server-side/Django/Tutorial_local_library_website)网站，以便图书馆员可以使用我们自己的表单（而不是使用管理员应用程序）更新图书，创建，更新和删除作者。
+在本教程中，我们将向你展示如何在 Django 中使用 HTML 表单，特别是编写表单以创建，更新和删除模型实例的最简单方法。作为本演示的一部分，我们将扩展 [LocalLibrary](/zh-CN/docs/Learn/Server-side/Django/Tutorial_local_library_website) 网站，以便图书馆员可以使用我们自己的表单（而不是使用管理员应用程序）更新图书，创建，更新和删除作者。
 
 <table class="learn-box standard-table">
   <tbody>
@@ -32,7 +32,7 @@ slug: Learn/Server-side/Django/Forms
 
 一张 [HTML 表单](/zh-CN/docs/Web/Guide/HTML/Forms) ，是由一个或多个栏位/widget 在一个网页上组成的，以用于向使用者收集资料，并提交至伺服器。表单是一个弹性的机制，用于收集使用者输入，有合适的 widgets 可输入许多不同型态的资料，包含文字框、复选框、单选按钮、日期选取组件等等。若是允许我们用 `POST` 方式传送资料，并附加 CSRF 跨站要求伪造保护，表单也是与伺服器分享资料的一种相对安全的方式。
 
-在这个教程目前为止，我们还没有创造任何表单，但我们已经在 Django 管理站点遇到这些表单了— 例如以下的撷图展示了一张表单，用于编辑我们的一个 [Book 书本](/zh-CN/docs/Learn/Server-side/Django/Models)模型，包含一些选择列表以及文字编辑框。
+在这个教程目前为止，我们还没有创造任何表单，但我们已经在 Django 管理站点遇到这些表单了— 例如以下的撷图展示了一张表单，用于编辑我们的一个 [Book 书本](/zh-CN/docs/Learn/Server-side/Django/Models) 模型，包含一些选择列表以及文字编辑框。
 
 ![Admin Site - Book Add](admin_book_add.png)
 
@@ -42,7 +42,7 @@ slug: Learn/Server-side/Django/Forms
 
 ## HTML 表单
 
-首先简要概述[HTML 表单](/zh-CN/docs/Learn/HTML/Forms)。考虑一个简单的 HTML 表单，其中包含一个文本字段，用于输入某些“团队”的名称及其相关标签：
+首先简要概述 [HTML 表单](/zh-CN/docs/Learn/HTML/Forms)。考虑一个简单的 HTML 表单，其中包含一个文本字段，用于输入某些“团队”的名称及其相关标签：
 
 ![Simple name field example in HTML form](form_example_name_field.png)
 
@@ -131,7 +131,7 @@ class RenewBookForm(forms.Form):
 
 #### 表单字段
 
-在这种情况下，我们有一个 [`DateField`](https://docs.djangoproject.com/zh-hans/2.0/ref/forms/fields//#datefield) 用于输入续借日期，该日期将使用空白值在 HTML 中呈现，默认标签为“续借日期：”，以及一些有用的用法文本：“输入从现在到 4 周之间的日期（默认为 3）周）。”由于没有指定其他可选参数，该字段将使用 [input_formats](https://docs.djangoproject.com/zh-hans/2.0/ref/forms/fields/#django.forms.DateField.input_formats) 接受日期：YYYY-MM-DD（2016-11-06）、MM/DD/YYYY（02/26/2016）、MM/DD/YY（10/25/16），并且将使用默认[小部件](https://docs.djangoproject.com/zh-hans/2.0/ref/forms/fields/#widget)呈现：[DateInput](https://docs.djangoproject.com/zh-hans/2.0/ref/forms/widgets/#django.forms.DateInput)。
+在这种情况下，我们有一个 [`DateField`](https://docs.djangoproject.com/zh-hans/2.0/ref/forms/fields//#datefield) 用于输入续借日期，该日期将使用空白值在 HTML 中呈现，默认标签为“续借日期：”，以及一些有用的用法文本：“输入从现在到 4 周之间的日期（默认为 3）周）。”由于没有指定其他可选参数，该字段将使用 [input_formats](https://docs.djangoproject.com/zh-hans/2.0/ref/forms/fields/#django.forms.DateField.input_formats) 接受日期：YYYY-MM-DD（2016-11-06）、MM/DD/YYYY（02/26/2016）、MM/DD/YY（10/25/16），并且将使用默认[小部件](https://docs.djangoproject.com/zh-hans/2.0/ref/forms/fields/#widget) 呈现：[DateInput](https://docs.djangoproject.com/zh-hans/2.0/ref/forms/widgets/#django.forms.DateInput)。
 
 还有许多其他类型的表单字段，你可以从它们与等效模型字段类的相似性中大致认识到：
 
@@ -140,7 +140,7 @@ class RenewBookForm(forms.Form):
 下面列出了大多数字段共有的参数（这些参数具有合理的默认值）：
 
 - [required](https://docs.djangoproject.com/en/2.0/ref/forms/fields/#required): 如果为`True`，则该字段不能留空或给出`None`值。默认情况下需要字段，因此你可以设置`required=False`以允许表单中的空白值。
-- [label](https://docs.djangoproject.com/en/2.0/ref/forms/fields/#label): 在 HTML 中呈现字段时使用的标签。如果未指定[label](https://docs.djangoproject.com/zh-hans/2.0/ref/forms/fields/#label)，则 Django 将通过大写第一个字母、并用空格替换下划线（例如续订日期）的方式，从字段名称创建一个。
+- [label](https://docs.djangoproject.com/en/2.0/ref/forms/fields/#label): 在 HTML 中呈现字段时使用的标签。如果未指定 [label](https://docs.djangoproject.com/zh-hans/2.0/ref/forms/fields/#label)，则 Django 将通过大写第一个字母、并用空格替换下划线（例如续订日期）的方式，从字段名称创建一个。
 - [label_suffix](https://docs.djangoproject.com/en/2.0/ref/forms/fields/#label-suffix): 默认情况下，标签后面会显示冒号（例如续借日期:)。此参数允许你指定包含其他字符的不同后缀。
 - [initial](https://docs.djangoproject.com/en/2.0/ref/forms/fields/#initial): 显示表单时，字段的初始值。
 - [widget](https://docs.djangoproject.com/en/2.0/ref/forms/fields/#widget): 要使用的显示小部件。
@@ -183,7 +183,7 @@ class RenewBookForm(forms.Form):
 
 第二点是，如果某个值超出了我们的范围，我们会引发`ValidationError`，指定在输入无效值时，我们要在表单中显示的错误文本。上面的例子，也将这个文本包含在 [Django 的翻译函数](https://docs.djangoproject.com/zh-hans/2.0/topics/i18n/translation/)`ugettext_lazy()`中（导入为 `_()`），如果你想在稍后翻译你的网站，这是一个很好的做法。
 
-> **备注：** 在[表单和字段验证](https://docs.djangoproject.com/zh-hans/2.0/ref/forms/validation/)（Django docs）中验证表单还有其他很多方法和示例。例如，如果你有多个相互依赖的字段，则可以覆盖[Form.clean()](https://docs.djangoproject.com/en/2.0/ref/forms/api/#django.forms.Form.clean) 函数并再次引发`ValidationError`。
+> **备注：** 在[表单和字段验证](https://docs.djangoproject.com/zh-hans/2.0/ref/forms/validation/)（Django docs）中验证表单还有其他很多方法和示例。例如，如果你有多个相互依赖的字段，则可以覆盖 [Form.clean()](https://docs.djangoproject.com/en/2.0/ref/forms/api/#django.forms.Form.clean) 函数并再次引发`ValidationError`。
 
 这就是我们在这个例子中，对表单所需要了解的全部内容！
 
@@ -433,7 +433,7 @@ def renew_book_librarian(request, pk):
 
 ### 测试页面
 
-如果你接受了[Django 教程第 8 部分中的“挑战”：用户身份验证和权限](/zh-CN/docs/learn/Server-side/Django/Authentication#Challenge_yourself)，你将获得图书馆中借出的所有书本的列表，这只有图书馆工作人员才能看到。我们可以使用下面的模板代码，为每个项目旁边的续借页面，添加链接。
+如果你接受了 [Django 教程第 8 部分中的“挑战”：用户身份验证和权限](/zh-CN/docs/learn/Server-side/Django/Authentication#Challenge_yourself)，你将获得图书馆中借出的所有书本的列表，这只有图书馆工作人员才能看到。我们可以使用下面的模板代码，为每个项目旁边的续借页面，添加链接。
 
 ```django
 {% if perms.catalog.can_mark_returned %}-
@@ -523,7 +523,7 @@ class RenewBookModelForm(ModelForm):
 
 我们在上面的函数视图示例中，使用的表单处理算法，表示表单编辑视图中非常常见的模式。Django 通过创建基于模型创建、编辑和删除视图的[通用编辑视图](https://docs.djangoproject.com/zh-hans/2.0/ref/class-based-views/generic-editing/)，为你抽象出大部分“样板”。这些不仅处理“视图”行为，而且它们会自动从模型中为你创建表单类（`ModelForm`）。
 
-> **备注：** 除了这里描述的编辑视图之外，还有一个 [FormView](https://docs.djangoproject.com/zh-hans/2.0/ref/class-based-views/generic-editing/#formview)类，它位于我们的函数视图，和其他通用视图之间的“灵活性”与“编码工作”之间。使用 `FormView` ，你仍然需要创建表单，但不必实现所有标准表单处理模式。相反，你只需提供一个函数的实现，一旦知道提交有效，就会调用该函数。
+> **备注：** 除了这里描述的编辑视图之外，还有一个 [FormView](https://docs.djangoproject.com/zh-hans/2.0/ref/class-based-views/generic-editing/#formview) 类，它位于我们的函数视图，和其他通用视图之间的“灵活性”与“编码工作”之间。使用 `FormView` ，你仍然需要创建表单，但不必实现所有标准表单处理模式。相反，你只需提供一个函数的实现，一旦知道提交有效，就会调用该函数。
 
 在本节中，我们将使用通用编辑视图，来创建页面，以添加从我们的库中创建、编辑和删除`Author` 作者记录的功能 - 有效地提供管理站点一部分的基本重新实现（这可能很有用，如果你需要比管理站点能提供的、更加灵活的管理功能）。
 
@@ -554,7 +554,7 @@ class AuthorDelete(DeleteView):
 
 对于“创建”和“更新”的情况，你还需要指定要在表单中显示的字段（使用与`ModelForm`相同的语法）。在这种情况下，我们将说明两者的语法，如何显示“所有”字段，以及如何单独列出它们。你还可以使用 field_name / value 对的字典，为每个字段指定初始值（此处我们为了演示目的，而任意设置死亡日期 - 你可能希望删除它！）。默认情况下，这些视图会在成功时，重定向到显示新创建/编辑的模型项的页面，在我们的示例中，这将是我们在上一个教程中，创建的作者详细信息视图。你可以通过显式声明参数`success_url` ，指定备用重定向位置（与`AuthorDelete` 类一样）。
 
-`AuthorDelete` 类不需要显示任何字段，因此不需要指定这些字段。但是你需要指定`success_url`，因为 Django 没有明显的默认值。在这种情况下，我们使用[`reverse_lazy()`](https://docs.djangoproject.com/en/2.0/ref/urlresolvers/#reverse-lazy)函数，在删除作者后，重定向到我们的作者列表 - `reverse_lazy()`是一个延迟执行的`reverse()`版本，在这里使用，是因为我们提供了一个基于类的 URL 查看属性。
+`AuthorDelete` 类不需要显示任何字段，因此不需要指定这些字段。但是你需要指定`success_url`，因为 Django 没有明显的默认值。在这种情况下，我们使用[`reverse_lazy()`](https://docs.djangoproject.com/en/2.0/ref/urlresolvers/#reverse-lazy) 函数，在删除作者后，重定向到我们的作者列表 - `reverse_lazy()`是一个延迟执行的`reverse()`版本，在这里使用，是因为我们提供了一个基于类的 URL 查看属性。
 
 ### 模板
 

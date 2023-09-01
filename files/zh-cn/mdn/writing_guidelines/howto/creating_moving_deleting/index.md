@@ -5,7 +5,7 @@ slug: MDN/Writing_guidelines/Howto/Creating_moving_deleting
 
 {{MDNSidebar}}
 
-本文描述了创建、移动、删除及编辑页面的方法。在所有这些情况下，最好检查我们的 [MDN 收录规则](/zh-CN/docs/MDN/Writing_guidelines/What_we_write)页面的指导方针，以确认是否应该采取这些行动，并在采取进一步措施之前与 MDN Web 文档团队在 [MDN Web 文档聊天室](/zh-CN/docs/MDN/Community/Communication_channels#聊天室)进行讨论。
+本文描述了创建、移动、删除及编辑页面的方法。在所有这些情况下，最好检查我们的 [MDN 收录规则](/zh-CN/docs/MDN/Writing_guidelines/What_we_write) 页面的指导方针，以确认是否应该采取这些行动，并在采取进一步措施之前与 MDN Web 文档团队在 [MDN Web 文档聊天室](/zh-CN/docs/MDN/Community/Communication_channels#聊天室)进行讨论。
 
 ## 创建页面
 
@@ -13,7 +13,7 @@ MDN Web 文档的所有页面使用 Markdown 格式书写，所有的内容位�
 
 > **备注：** 目录的名称与页面的路径名有微小的差别。最主要的区别是，路径名是符合句式大小写规则的。
 
-很多不同的[页面类型](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Page_types)具有一定的结构和支持它们的页面模板，你可以复制这些模板来开始。
+很多不同的[页面类型](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Page_types) 具有一定的结构和支持它们的页面模板，你可以复制这些模板来开始。
 
 一个文档的 `index.md` 文件必须以 `title`、`slug` 和 `page-type` 的页面元数据（front matter）定义开始。所有这些页面元数据信息都可以在前面提到的页面模板中找到。另外，在类似文件的 `index.md` 中参考这些数据是有帮助的。
 

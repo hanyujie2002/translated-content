@@ -76,7 +76,7 @@ JavaScript 有许多内置的函数，可以让你做很多有用的事情，而
 
 程序员把函数称为对象**方法**（method）的一部分。你还不必了解 JavaScript 中已建构的对象在更深层次上是如何运作的——你可以等到下一小节，我们会教给你有关对象运作方式的一切。在我们继续前进之前，我们需要澄清一些有关方法和函数概念之间可能存在的误会——当你在网络上浏览相关信息的时候，你很可能会碰上这两个术语。
 
-到目前为止我们所使用的内置代码同属于这两种形式：函数和方法。你可以在[这里](/zh-CN/docs/Web/JavaScript/Reference/Global_Objects)查看内置函数，内置对象以及其相关方法的完整列表。
+到目前为止我们所使用的内置代码同属于这两种形式：函数和方法。你可以在[这里](/zh-CN/docs/Web/JavaScript/Reference/Global_Objects) 查看内置函数，内置对象以及其相关方法的完整列表。
 
 严格说来，内置浏览器函数并不是函数——它们是**方法**。这听起来有点可怕和令人困惑，但不要担心——函数和方法在很大程度上是可互换的，至少在我们的学习阶段是这样的。
 
@@ -84,7 +84,7 @@ JavaScript 有许多内置的函数，可以让你做很多有用的事情，而
 
 ## 自定义函数
 
-你在过去的课程中还看到很多定制功能 - 在代码中定义的功能，而不是在浏览器中。每当你看到一个自定义名称后面都带有括号，那么你使用的是自定义函数。在我们的[循环文章中](/zh-CN/docs/Learn/JavaScript/Building_blocks/Looping_code)的 [random-canvas-circles.html](http://mdn.github.io/learning-area/javascript/building-blocks/loops/random-canvas-circles.html) 示例（参见完整的[源代码](https://github.com/mdn/learning-area/blob/main/javascript/building-blocks/loops/random-canvas-circles.html)）中，我们包括一个如下所示的自定义函数：`draw()`
+你在过去的课程中还看到很多定制功能 - 在代码中定义的功能，而不是在浏览器中。每当你看到一个自定义名称后面都带有括号，那么你使用的是自定义函数。在我们的[循环文章中](/zh-CN/docs/Learn/JavaScript/Building_blocks/Looping_code) 的 [random-canvas-circles.html](http://mdn.github.io/learning-area/javascript/building-blocks/loops/random-canvas-circles.html) 示例（参见完整的[源代码](https://github.com/mdn/learning-area/blob/main/javascript/building-blocks/loops/random-canvas-circles.html)）中，我们包括一个如下所示的自定义函数：`draw()`
 
 ```js
 function draw() {
@@ -218,7 +218,7 @@ myButton.onclick = function () {
 var myNumber = Math.random();
 ```
 
-浏览器的内置字符串[replace（）](/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace)函数需要两个参数：在主字符串中查找的子字符串，以及用以下替换该字符串的子字符串：
+浏览器的内置字符串 [replace（）](/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace) 函数需要两个参数：在主字符串中查找的子字符串，以及用以下替换该字符串的子字符串：
 
 ```js
 var myText = "I am a string";

@@ -85,7 +85,7 @@ if (CSS.supports("grid-template-columns", "subgrid")) {
 
 #### @supports
 
-CSS 有一个原生的特性检测机制：{{cssxref("@supports")}} at-规则。这与[媒体查询](/zh-CN/docs/Web/CSS/CSS_media_queries)的工作方式类似，只是它不是根据分辨率、屏幕宽度或长宽比等媒体特性选择性地应用 CSS，而是根据是否支持某个 CSS 特性来选择性地应用 CSS，类似于 `CSS.supports()`。
+CSS 有一个原生的特性检测机制：{{cssxref("@supports")}} at-规则。这与[媒体查询](/zh-CN/docs/Web/CSS/CSS_media_queries) 的工作方式类似，只是它不是根据分辨率、屏幕宽度或长宽比等媒体特性选择性地应用 CSS，而是根据是否支持某个 CSS 特性来选择性地应用 CSS，类似于 `CSS.supports()`。
 
 例如，我们可以使用 `@supports` 重写我们之前的例子：
 
@@ -161,11 +161,11 @@ CSS 有一个原生的特性检测机制：{{cssxref("@supports")}} at-规则。
 
 - 方法在元素上的特定返回值
 
-  - : 使用 {{domxref("Document.createElement()")}} 在内存中创建一个元素，然后检查该元素上是否存在一个方法。如果有的话，检查它的返回值。请参阅[深入了解 HTML 视频格式检测](https://diveinto.html5doctor.com/detect.html#video-formats)中的特性测试，了解这种模式的一个例子。
+  - : 使用 {{domxref("Document.createElement()")}} 在内存中创建一个元素，然后检查该元素上是否存在一个方法。如果有的话，检查它的返回值。请参阅[深入了解 HTML 视频格式检测](https://diveinto.html5doctor.com/detect.html#video-formats) 中的特性测试，了解这种模式的一个例子。
 
 - 元素保留分配的属性值
 
-  - : 使用 {{domxref("Document.createElement()")}} 在内存中创建一个元素，将一个属性设置为特定值，然后检查该值是否被保留。关于这种模式的例子，请参见[深入了解 HTML \<input> 类型检测](https://diveinto.html5doctor.com/detect.html#input-types)中的特性测试。
+  - : 使用 {{domxref("Document.createElement()")}} 在内存中创建一个元素，将一个属性设置为特定值，然后检查该值是否被保留。关于这种模式的例子，请参见[深入了解 HTML \<input> 类型检测](https://diveinto.html5doctor.com/detect.html#input-types) 中的特性测试。
 
 #### matchMedia
 
@@ -300,7 +300,7 @@ Modernizr.fetch
 
 1. 首先，将 [`modernizr-js.html`](https://github.com/mdn/learning-area/blob/main/tools-testing/cross-browser-testing/feature-detection/modernizr-js.html) 示例文件复制到本地。
 2. 使用 `<script>` 元素将 Modernizr 库附加到 HTML 中，正如我们在以前的演示中所做的那样。把它放在现有的 `<script>` 元素上面，该元素将谷歌地图 API 附加到页面上。
-3. 接下来，在第二个 `<script>` 元素中的 `YOUR-API-KEY` 占位符文本（就像现在这样）填写一个有效的谷歌地图 API 密钥。要获得密钥，请登录谷歌账户，进入[获取密钥/认证](https://developers.google.com/maps/documentation/javascript/get-api-key)页面，然后点击蓝色的*获取密钥*按钮并按照说明操作。
+3. 接下来，在第二个 `<script>` 元素中的 `YOUR-API-KEY` 占位符文本（就像现在这样）填写一个有效的谷歌地图 API 密钥。要获得密钥，请登录谷歌账户，进入[获取密钥/认证](https://developers.google.com/maps/documentation/javascript/get-api-key) 页面，然后点击蓝色的*获取密钥*按钮并按照说明操作。
 4. 最后，在 HTML 主体的底部（就在 `</body>` 标签之前）再添加一个 `<script>` 元素，并在标签内放入以下脚本：
 
    ```js

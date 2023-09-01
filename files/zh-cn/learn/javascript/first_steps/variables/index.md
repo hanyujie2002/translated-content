@@ -22,7 +22,7 @@ slug: Learn/JavaScript/First_steps/Variables
 
 ## 需要的工具
 
-在本文中，你将要输入一些代码来测试你对相关内容的理解。如果你是用的桌面浏览器，输入这些代码最好的地方是浏览器的 JavaScript 控制台（参考[什么是浏览器开发工具](/zh-CN/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools)以查看如何使用这些工具）。
+在本文中，你将要输入一些代码来测试你对相关内容的理解。如果你是用的桌面浏览器，输入这些代码最好的地方是浏览器的 JavaScript 控制台（参考[什么是浏览器开发工具](/zh-CN/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) 以查看如何使用这些工具）。
 
 当然，我们也提供了一个简单的 JavaScript 终端，嵌入在下文的页面中，以便你更容易的输入和测试这些代码。
 
@@ -228,7 +228,7 @@ let myName = "Chris";
 
 这可能是大多数时间你都会使用的方式，因为它要比在单独的两行上做两次操作要快。
 
-> **备注：** 如果你写一个声明和初始化变量的多行 JavaScript 代码的程序，你可以在初始化变量之后再实际声明它，并且它仍然可以工作。这是因为变量的声明通常在其余的代码执行之前完成。这叫做**顶置**—阅读[var hoisting](/zh-CN/docs/Web/JavaScript/Reference/Statements/var#var_hoisting)来了解更多细节。
+> **备注：** 如果你写一个声明和初始化变量的多行 JavaScript 代码的程序，你可以在初始化变量之后再实际声明它，并且它仍然可以工作。这是因为变量的声明通常在其余的代码执行之前完成。这叫做**顶置**—阅读 [var hoisting](/zh-CN/docs/Web/JavaScript/Reference/Statements/var#var_hoisting) 来了解更多细节。
 
 ## var 与 let 的区别
 
@@ -306,7 +306,7 @@ myAge = 40;
 - 变量名大小写敏感——因此`myage`与`myAge`是 2 个不同的变量。
 - 最后也是最重要的一点—— 你应当避免使用 JavaScript 的保留字给变量命名。保留字，即是组成 JavaScript 的实际语法的单词！因此诸如 `var`、`function`、`let` 和 `for` 等，都不能被作为变量名使用。浏览器将把它们识别为不同的代码项，因此你将得到错误。
 
-> **备注：** 你能从[词汇语法—关键字](/zh-CN/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords)找到一个相当完整的保留关键字列表来避免使用关键字当作变量。
+> **备注：** 你能从[词汇语法—关键字](/zh-CN/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords) 找到一个相当完整的保留关键字列表来避免使用关键字当作变量。
 
 好的命名示例：
 

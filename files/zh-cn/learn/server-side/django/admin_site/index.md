@@ -33,7 +33,7 @@ slug: Learn/Server-side/Django/Admin_site
 
 Django 管理应用程序可以使用你的模型自动构建可用于创建，查看，更新和删除记录的站点区域。这可以在开发过程中节省大量的时间，从而很容易测试你的模型，并了解你是否拥有正确的数据。根据网站的类型，管理应用程序也可用于管理生产中的数据。Django 项目建议仅用于内部数据管理（即仅供管理员或组织内部人员使用），因为以模型为中心的方法不一定是所有用户最好的界面，并且暴露了大量不必要的细节关于模型。
 
-[创建基础项目时，](/zh-CN/docs/Learn/Server-side/Django/skeleton_website)自动完成所有将你的网站中的管理应用程序包含在内的配置文件（有关所需实际依赖关系的信息 (如有需要请看 [Django docs here](https://docs.djangoproject.com/en/1.10/ref/contrib/admin/)). 其结果是，你必须做你的模型添加到管理应用程序是 注册 他们。在本文末尾，我们将简要介绍如何进一步配置管理区域以更好地显示我们的模型数据。
+[创建基础项目时，](/zh-CN/docs/Learn/Server-side/Django/skeleton_website) 自动完成所有将你的网站中的管理应用程序包含在内的配置文件（有关所需实际依赖关系的信息 (如有需要请看 [Django docs here](https://docs.djangoproject.com/en/1.10/ref/contrib/admin/)). 其结果是，你必须做你的模型添加到管理应用程序是 注册 他们。在本文末尾，我们将简要介绍如何进一步配置管理区域以更好地显示我们的模型数据。
 
 注册模型后，我们将展示如何创建一个新的“超级用户”，登录到该网站，并创建一些书籍，作者，书籍实例和流派。这些将有助于测试我们将在下一个教程中开始创建的视图和模板。
 
@@ -138,7 +138,7 @@ Django 使用注册模型的信息为创建基本管理站点做了非常好的�
 
 在本节中，我们将看一些改进本地图书馆界面的更改，其中包括添加更多信息 Book 和 Author 模型列表，以及改进编辑视图的布局。我们不会改变 Language 和 Genre 模拟演示，因为它们只有一个字段，所以这样没有真正的好处。
 
-你可以 在[The Django Admin site](https://docs.djangoproject.com/en/1.10/ref/contrib/admin/) 中找到所以管理员网站自定义选项的完整参考。
+你可以 在 [The Django Admin site](https://docs.djangoproject.com/en/1.10/ref/contrib/admin/) 中找到所以管理员网站自定义选项的完整参考。
 
 ### 注册 一个 ModelAdmin 类
 
@@ -188,7 +188,7 @@ class BookInstanceAdmin(admin.ModelAdmin):
 
 ### 配置列表视图
 
-该 本地图书馆 目前列出的所以作者都使用从模型生成的对象名称的`__str__()` 方法。如果只是几个作者，这无关紧要。但一旦你有许多作者，这可能会重复。要区分它们，或仅仅因为你想要显示有关每个作者的更多有趣的信息，你可以使用[list_display](https://docs.djangoproject.com/en/dev/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_display) 向视图添加其他字段。
+该 本地图书馆 目前列出的所以作者都使用从模型生成的对象名称的`__str__()` 方法。如果只是几个作者，这无关紧要。但一旦你有许多作者，这可能会重复。要区分它们，或仅仅因为你想要显示有关每个作者的更多有趣的信息，你可以使用 [list_display](https://docs.djangoproject.com/en/dev/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_display) 向视图添加其他字段。
 
 用下面的代码替代 你 **AuthorAdmin** 的类。在元组中声明要显示列表中的字段名称以所需的顺序排列，如图（这些和原始模型中指定的名称相同）。
 

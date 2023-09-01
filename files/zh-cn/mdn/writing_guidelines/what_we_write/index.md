@@ -23,7 +23,7 @@ MDN Web 文档上的文章必须保持[中立的观点](https://zh.wikipedia.org
 
 ### 开放性
 
-MDN Web 文档上记录的 Web 技术应该朝着标准方向发展，并且必须至少有一个渲染引擎实现了它。浏览器支持的变化会记录在文章的[浏览器兼容性](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables)部分。
+MDN Web 文档上记录的 Web 技术应该朝着标准方向发展，并且必须至少有一个渲染引擎实现了它。浏览器支持的变化会记录在文章的[浏览器兼容性](/zh-CN/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables) 部分。
 
 ## 内容建议
 

@@ -5,9 +5,9 @@ slug: Learn/JavaScript/Objects/Classes_in_JavaScript
 
 {{LearnSidebar}}{{PreviousMenuNext("Learn/JavaScript/Objects/Object-oriented_programming", "Learn/JavaScript/Objects/JSON", "Learn/JavaScript/Objects")}}
 
-在[上一篇文章](/zh-CN/docs/Learn/JavaScript/Objects/Object-oriented_programming)中，我们介绍了面向对象编程（OOP）的基本概念，并介绍了一个使用 OOP 原则对学校的教授和学生进行建模的示例。
+在[上一篇文章](/zh-CN/docs/Learn/JavaScript/Objects/Object-oriented_programming) 中，我们介绍了面向对象编程（OOP）的基本概念，并介绍了一个使用 OOP 原则对学校的教授和学生进行建模的示例。
 
-我们还讨论了如何使用[原型](/zh-CN/docs/Learn/JavaScript/Objects/Object_prototypes)和[构造函数](/zh-CN/docs/Learn/JavaScript/Objects/Basics#introducing_constructors)来实现这样的模型，而 JavaScript 还提供了更接近经典 OOP 概念的特性。
+我们还讨论了如何使用[原型](/zh-CN/docs/Learn/JavaScript/Objects/Object_prototypes) 和[构造函数](/zh-CN/docs/Learn/JavaScript/Objects/Basics#introducing_constructors) 来实现这样的模型，而 JavaScript 还提供了更接近经典 OOP 概念的特性。
 
 在本文中，我们将介绍这些特性。注意，这里描述的特性并不是一种继承对象的新方式：在引擎的底层，这一特性使用的仍是原型。这只是一种更容易的创建原型链的方法。
 
@@ -63,7 +63,7 @@ class Person {
 
 你也可以在声明属性时，为其初始化一个默认值。就像这样：`name = '';`。
 
-构造函数使用 {{jsxref("Classes/constructor", "constructor")}} 关键字来声明。就像[在类声明外的构造函数](/zh-CN/docs/Learn/JavaScript/Objects/Basics)一样，它会：
+构造函数使用 {{jsxref("Classes/constructor", "constructor")}} 关键字来声明。就像[在类声明外的构造函数](/zh-CN/docs/Learn/JavaScript/Objects/Basics) 一样，它会：
 
 - 创建一个新的对象
 - 将 `this` 绑定到这个新的对象，你可以在构造函数代码中使用 `this` 来引用它
@@ -207,4 +207,4 @@ myExample.#somePrivateMethod(); // SyntaxError
 
 ## 总结
 
-本文中，我们介绍了 JavaScript 中可用的面向对象编程的主要工具。我们没有涵盖所有的内容，但这些应该足以让你入门。我们的[关于类的文章](/zh-CN/docs/Web/JavaScript/Reference/Classes)可让你进一步学习相关的知识。
+本文中，我们介绍了 JavaScript 中可用的面向对象编程的主要工具。我们没有涵盖所有的内容，但这些应该足以让你入门。我们的[关于类的文章](/zh-CN/docs/Web/JavaScript/Reference/Classes) 可让你进一步学习相关的知识。
